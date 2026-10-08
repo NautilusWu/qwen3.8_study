@@ -1,0 +1,193 @@
+config,prompt_id,category,passed,answer_present,finish_reason,prompt_tokens,output_tokens,thinking_tokens,output_tok_s,time_to_answer_text_s,total_time_s,tokens_per_verification_step
+vLLM 0.27.1 / NVIDIA NVFP4 / no speculation,c_cpp_dijkstra,coding,1,1,stop,206,8165,7642,8.933,854.7,914.2,
+vLLM 0.27.1 / NVIDIA NVFP4 / no speculation,r_quadres,reasoning,1,1,stop,115,1504,1052,8.963,117.58,167.92,
+vLLM 0.27.1 / NVIDIA NVFP4 / no speculation,c_justify,coding,1,1,stop,241,5283,4909,8.897,551.83,593.95,
+vLLM 0.27.1 / NVIDIA NVFP4 / no speculation,r_pipes,reasoning,1,1,stop,222,1773,1227,8.963,137.13,197.97,
+vLLM 0.27.1 / NVIDIA NVFP4 / no speculation,c_fix_pctl,coding,0,0,length,393,24576,,8.634,,2846.51,
+vLLM 0.27.1 / NVIDIA NVFP4 / no speculation,c_recdec,coding,0,0,length,213,24576,,8.641,,2844.13,
+vLLM 0.27.1 / NVIDIA NVFP4 / no speculation,r_jugs,reasoning,1,1,stop,217,10948,10864,8.829,1230.6,1240.03,
+vLLM 0.27.1 / NVIDIA NVFP4 / no speculation,r_doc_trains,reasoning,0,0,stop,1869,17190,,8.694,,1978.14,
+vLLM 0.27.1 / NVIDIA NVFP4 / no speculation,r_inst_lines,reasoning,1,1,stop,354,2563,2553,8.945,285.8,286.7,
+vLLM 0.27.1 / NVIDIA NVFP4 / no speculation,c_tile4,coding,1,1,stop,195,19149,18544,8.711,2127.34,2198.39,
+vLLM 0.27.1 / NVIDIA NVFP4 / no speculation,r_lattice,reasoning,1,1,stop,143,12901,12474,8.803,1416.47,1465.7,
+vLLM 0.27.1 / NVIDIA NVFP4 / no speculation,r_consecutive,reasoning,1,1,stop,139,18507,18231,8.723,2089.44,2121.79,
+vLLM 0.27.1 / NVIDIA NVFP4 / no speculation,r_schedule,reasoning,1,1,stop,389,2601,2399,8.934,268.86,291.35,
+vLLM 0.27.1 / NVIDIA NVFP4 / no speculation,r_doc_shipping,reasoning,1,1,stop,1152,10798,10357,8.805,1176.25,1226.83,
+vLLM 0.27.1 / NVIDIA NVFP4 / no speculation,r_saline,reasoning,1,1,stop,181,4088,3651,8.93,408.89,457.91,
+vLLM 0.27.1 / NVIDIA NVFP4 / no speculation,c_avoid,coding,0,0,length,215,24576,,8.646,,2842.59,
+vLLM 0.27.1 / NVIDIA NVFP4 / no speculation,c_long_ledger,coding,1,1,stop,2321,8177,7943,8.812,903.13,929.74,
+vLLM 0.27.1 / NVIDIA NVFP4 / no speculation,r_inst_cipher,reasoning,1,1,stop,346,6237,6204,8.893,698.0,701.53,
+vLLM 0.27.1 / NVIDIA NVFP4 / no speculation,c_topo,coding,1,1,stop,235,20140,19746,8.705,2267.46,2313.78,
+vLLM 0.27.1 / NVIDIA NVFP4 / no speculation,c_cpp_lru,coding,0,1,stop,270,22237,21724,8.706,2493.51,2554.3,
+vLLM 0.27.1 / NVIDIA NVFP4 / no speculation,c_out_cpp1,coding,1,1,stop,647,15579,15189,8.755,1734.39,1779.83,
+vLLM 0.27.1 / NVIDIA NVFP4 / no speculation,c_diff,coding,0,0,length,250,24576,,8.654,,2840.13,
+vLLM 0.27.1 / NVIDIA NVFP4 / no speculation,c_ttl,coding,1,1,stop,295,7563,7236,8.878,814.95,851.97,
+vLLM 0.27.1 / NVIDIA NVFP4 / no speculation,r_committee,reasoning,1,1,stop,166,3023,2325,8.941,260.08,338.23,
+vLLM 0.27.1 / NVIDIA NVFP4 / MTP3,c_cpp_dijkstra,coding,1,1,stop,206,5624,5026,20.841,248.87,270.95,3.023
+vLLM 0.27.1 / NVIDIA NVFP4 / MTP3,r_quadres,reasoning,1,1,stop,115,1667,1245,23.293,55.7,71.84,3.345
+vLLM 0.27.1 / NVIDIA NVFP4 / MTP3,c_justify,coding,1,1,stop,241,2125,1742,20.809,88.32,102.41,2.997
+vLLM 0.27.1 / NVIDIA NVFP4 / MTP3,r_pipes,reasoning,1,1,stop,222,2754,2107,23.099,94.54,119.52,3.326
+vLLM 0.27.1 / NVIDIA NVFP4 / MTP3,c_fix_pctl,coding,0,0,length,393,24576,,18.44,,1333.21,2.858
+vLLM 0.27.1 / NVIDIA NVFP4 / MTP3,c_recdec,coding,0,0,length,213,24576,,24.023,,1023.31,3.7
+vLLM 0.27.1 / NVIDIA NVFP4 / MTP3,r_jugs,reasoning,1,1,stop,217,5996,5907,23.512,251.94,255.33,3.422
+vLLM 0.27.1 / NVIDIA NVFP4 / MTP3,r_doc_trains,reasoning,0,0,length,1869,24576,,24.362,,1010.53,3.81
+vLLM 0.27.1 / NVIDIA NVFP4 / MTP3,r_inst_lines,reasoning,1,1,stop,354,2725,2715,22.679,120.23,120.52,3.278
+vLLM 0.27.1 / NVIDIA NVFP4 / MTP3,c_tile4,coding,1,1,stop,195,19991,19557,18.866,1042.12,1059.91,2.868
+vLLM 0.27.1 / NVIDIA NVFP4 / MTP3,r_lattice,reasoning,1,1,stop,143,8935,8096,21.613,380.86,413.69,3.167
+vLLM 0.27.1 / NVIDIA NVFP4 / MTP3,r_consecutive,reasoning,1,1,stop,139,22385,22021,23.342,942.24,959.26,3.593
+vLLM 0.27.1 / NVIDIA NVFP4 / MTP3,r_schedule,reasoning,1,1,stop,389,2677,2384,20.699,118.85,129.7,2.99
+vLLM 0.27.1 / NVIDIA NVFP4 / MTP3,r_doc_shipping,reasoning,1,1,stop,1152,10364,9931,22.188,451.32,468.53,3.295
+vLLM 0.27.1 / NVIDIA NVFP4 / MTP3,r_saline,reasoning,1,1,stop,181,15123,14598,22.513,649.79,672.03,3.377
+vLLM 0.27.1 / NVIDIA NVFP4 / MTP3,c_avoid,coding,0,0,length,215,24576,,17.193,,1429.73,2.667
+vLLM 0.27.1 / NVIDIA NVFP4 / MTP3,c_long_ledger,coding,1,1,stop,2321,9120,8897,18.576,484.05,492.54,2.768
+vLLM 0.27.1 / NVIDIA NVFP4 / MTP3,r_inst_cipher,reasoning,1,1,stop,346,9029,8996,23.506,383.39,384.45,3.463
+vLLM 0.27.1 / NVIDIA NVFP4 / MTP3,c_topo,coding,1,1,stop,235,20582,20263,18.31,1112.66,1124.35,2.743
+vLLM 0.27.1 / NVIDIA NVFP4 / MTP3,c_cpp_lru,coding,0,1,stop,270,9805,9315,20.924,452.17,468.88,2.777
+vLLM 0.27.1 / NVIDIA NVFP4 / MTP3,c_out_cpp1,coding,1,1,stop,647,5747,5347,23.943,226.43,240.84,3.152
+vLLM 0.27.1 / NVIDIA NVFP4 / MTP3,c_diff,coding,0,0,length,250,24576,,18.434,,1333.43,2.745
+vLLM 0.27.1 / NVIDIA NVFP4 / MTP3,c_ttl,coding,1,1,stop,295,12206,11853,18.479,647.09,660.87,2.745
+vLLM 0.27.1 / NVIDIA NVFP4 / MTP3,r_committee,reasoning,1,1,stop,166,7717,7118,22.249,323.45,347.14,3.256
+vLLM 0.27.1 / NVIDIA NVFP4 / MTP4,c_cpp_dijkstra,coding,1,1,stop,206,2595,2013,24.175,90.42,107.61,3.392
+vLLM 0.27.1 / NVIDIA NVFP4 / MTP4,r_quadres,reasoning,1,1,stop,115,1529,1107,26.483,43.78,58.0,3.773
+vLLM 0.27.1 / NVIDIA NVFP4 / MTP4,c_justify,coding,0,1,stop,241,11237,10876,21.45,513.28,524.15,3.107
+vLLM 0.27.1 / NVIDIA NVFP4 / MTP4,r_pipes,reasoning,1,1,stop,222,1724,1105,28.69,41.3,60.39,4.026
+vLLM 0.27.1 / NVIDIA NVFP4 / MTP4,c_fix_pctl,coding,0,0,length,393,24576,,23.481,,1046.99,3.584
+vLLM 0.27.1 / NVIDIA NVFP4 / MTP4,c_recdec,coding,0,0,length,213,24576,,21.61,,1137.39,3.253
+vLLM 0.27.1 / NVIDIA NVFP4 / MTP4,r_jugs,reasoning,1,1,stop,217,8147,7976,27.434,292.25,297.27,3.943
+vLLM 0.27.1 / NVIDIA NVFP4 / MTP4,r_doc_trains,reasoning,1,1,stop,1869,11085,10884,25.885,422.42,429.25,3.793
+vLLM 0.27.1 / NVIDIA NVFP4 / MTP4,r_inst_lines,reasoning,1,1,stop,354,1880,1870,27.205,69.17,69.45,3.833
+vLLM 0.27.1 / NVIDIA NVFP4 / MTP4,c_tile4,coding,0,1,length,195,24576,24517,17.208,1426.45,1428.42,2.588
+vLLM 0.27.1 / NVIDIA NVFP4 / MTP4,r_lattice,reasoning,1,1,stop,143,8014,7546,23.653,323.66,339.09,3.382
+vLLM 0.27.1 / NVIDIA NVFP4 / MTP4,r_consecutive,reasoning,1,1,stop,139,14639,14346,27.825,516.1,526.4,4.084
+vLLM 0.27.1 / NVIDIA NVFP4 / MTP4,r_schedule,reasoning,1,1,stop,389,2611,2417,25.211,97.96,103.94,3.554
+vLLM 0.27.1 / NVIDIA NVFP4 / MTP4,r_doc_shipping,reasoning,1,1,stop,1152,9079,8695,26.733,328.55,340.61,3.873
+vLLM 0.27.1 / NVIDIA NVFP4 / MTP4,r_saline,reasoning,1,1,stop,181,8240,7642,26.129,295.92,315.65,3.75
+vLLM 0.27.1 / NVIDIA NVFP4 / MTP4,c_avoid,coding,0,0,length,215,24576,,19.589,,1254.88,2.967
+vLLM 0.27.1 / NVIDIA NVFP4 / MTP4,c_long_ledger,coding,1,1,stop,2321,9883,9660,20.347,479.98,486.95,2.997
+vLLM 0.27.1 / NVIDIA NVFP4 / MTP4,r_inst_cipher,reasoning,0,1,stop,346,7869,7836,27.397,286.47,287.56,4.051
+vLLM 0.27.1 / NVIDIA NVFP4 / MTP4,c_topo,coding,1,1,stop,235,11214,10836,20.505,535.23,547.19,3.057
+vLLM 0.27.1 / NVIDIA NVFP4 / MTP4,c_cpp_lru,coding,0,1,stop,270,18431,17891,19.733,916.93,934.33,3.013
+vLLM 0.27.1 / NVIDIA NVFP4 / MTP4,c_out_cpp1,coding,1,1,stop,647,8024,7624,22.711,338.8,353.8,3.366
+vLLM 0.27.1 / NVIDIA NVFP4 / MTP4,c_diff,coding,0,0,length,250,24576,,19.056,,1289.98,2.974
+vLLM 0.27.1 / NVIDIA NVFP4 / MTP4,c_ttl,coding,1,1,stop,295,10456,10132,20.169,508.8,518.76,2.998
+vLLM 0.27.1 / NVIDIA NVFP4 / MTP4,r_committee,reasoning,1,1,stop,166,6705,5972,24.442,248.92,274.62,3.587
+vLLM 0.27.1 / NVIDIA NVFP4 / MTP5,c_cpp_dijkstra,coding,1,1,stop,206,4245,3651,22.427,173.2,189.59,3.569
+vLLM 0.27.1 / NVIDIA NVFP4 / MTP5,r_quadres,reasoning,1,1,stop,115,1955,1568,25.121,66.08,78.14,3.98
+vLLM 0.27.1 / NVIDIA NVFP4 / MTP5,c_justify,coding,1,1,stop,241,2433,2043,22.458,97.89,108.68,3.525
+vLLM 0.27.1 / NVIDIA NVFP4 / MTP5,r_pipes,reasoning,1,1,stop,222,2121,1610,27.028,63.15,78.79,4.227
+vLLM 0.27.1 / NVIDIA NVFP4 / MTP5,c_fix_pctl,coding,0,0,length,393,24576,,24.979,,984.25,4.153
+vLLM 0.27.1 / NVIDIA NVFP4 / MTP5,c_recdec,coding,0,0,length,213,24576,,19.516,,1259.64,3.194
+vLLM 0.27.1 / NVIDIA NVFP4 / MTP5,r_jugs,reasoning,1,1,stop,217,14110,14026,27.467,511.45,513.88,4.219
+vLLM 0.27.1 / NVIDIA NVFP4 / MTP5,r_doc_trains,reasoning,1,1,stop,1869,10533,10333,28.547,363.03,370.47,4.385
+vLLM 0.27.1 / NVIDIA NVFP4 / MTP5,r_inst_lines,reasoning,1,1,stop,354,2275,2265,28.66,79.6,79.74,4.25
+vLLM 0.27.1 / NVIDIA NVFP4 / MTP5,c_tile4,coding,1,1,stop,195,23172,21774,22.923,971.92,1011.17,3.591
+vLLM 0.27.1 / NVIDIA NVFP4 / MTP5,r_lattice,reasoning,1,1,stop,143,8055,7511,24.617,311.53,327.52,3.698
+vLLM 0.27.1 / NVIDIA NVFP4 / MTP5,r_consecutive,reasoning,1,1,stop,139,13795,13545,29.307,463.78,471.0,4.491
+vLLM 0.27.1 / NVIDIA NVFP4 / MTP5,r_schedule,reasoning,1,1,stop,389,3060,2802,25.58,113.09,120.01,3.808
+vLLM 0.27.1 / NVIDIA NVFP4 / MTP5,r_doc_shipping,reasoning,1,1,stop,1152,10475,10036,28.185,359.66,372.31,4.287
+vLLM 0.27.1 / NVIDIA NVFP4 / MTP5,r_saline,reasoning,1,1,stop,181,12764,12093,26.561,461.11,480.87,4.058
+vLLM 0.27.1 / NVIDIA NVFP4 / MTP5,c_avoid,coding,0,0,length,215,24576,,19.512,,1259.79,3.092
+vLLM 0.27.1 / NVIDIA NVFP4 / MTP5,c_long_ledger,coding,1,1,stop,2321,5992,5769,22.687,260.39,265.43,3.127
+vLLM 0.27.1 / NVIDIA NVFP4 / MTP5,r_inst_cipher,reasoning,1,1,stop,346,7751,7718,33.353,232.04,232.72,4.404
+vLLM 0.27.1 / NVIDIA NVFP4 / MTP5,c_topo,coding,0,0,length,235,24576,,23.122,,1063.16,3.282
+vLLM 0.27.1 / NVIDIA NVFP4 / MTP5,c_cpp_lru,coding,1,1,stop,270,16847,16338,21.56,768.11,781.74,3.279
+vLLM 0.27.1 / NVIDIA NVFP4 / MTP5,c_out_cpp1,coding,1,1,stop,647,10550,10236,24.656,417.95,428.34,3.696
+vLLM 0.27.1 / NVIDIA NVFP4 / MTP5,c_diff,coding,0,0,length,250,24576,,19.526,,1258.91,3.122
+vLLM 0.27.1 / NVIDIA NVFP4 / MTP5,c_ttl,coding,1,1,stop,295,8048,7730,20.89,377.04,385.46,3.178
+vLLM 0.27.1 / NVIDIA NVFP4 / MTP5,r_committee,reasoning,1,1,stop,166,2528,1988,26.222,79.99,96.71,3.929
+vLLM 0.29.0 / Qwen FP8 / MTP3,c_cpp_dijkstra,coding,1,1,stop,206,5567,5106,14.046,371.6,396.75,3.009
+vLLM 0.29.0 / Qwen FP8 / MTP3,r_quadres,reasoning,1,1,stop,115,1813,1407,15.759,92.34,115.43,3.357
+vLLM 0.29.0 / Qwen FP8 / MTP3,c_justify,coding,0,1,stop,241,4425,4043,13.711,302.75,323.13,2.932
+vLLM 0.29.0 / Qwen FP8 / MTP3,r_pipes,reasoning,0,1,stop,222,2239,1602,16.137,103.82,139.15,3.434
+vLLM 0.29.0 / Qwen FP8 / MTP3,c_fix_pctl,coding,0,0,length,393,24576,,12.751,,1927.81,2.88
+vLLM 0.29.0 / Qwen FP8 / MTP3,c_recdec,coding,0,0,length,213,24576,,12.759,,1926.64,2.877
+vLLM 0.29.0 / Qwen FP8 / MTP3,r_jugs,reasoning,1,1,stop,217,6860,6775,16.242,418.15,422.78,3.498
+vLLM 0.29.0 / Qwen FP8 / MTP3,r_doc_trains,reasoning,1,1,stop,1869,7763,7490,15.162,495.68,513.32,3.299
+vLLM 0.29.0 / Qwen FP8 / MTP3,r_inst_lines,reasoning,1,1,stop,354,2115,2105,14.954,141.47,141.9,3.189
+vLLM 0.29.0 / Qwen FP8 / MTP3,c_tile4,coding,1,1,stop,195,13947,13485,13.764,987.41,1013.71,3.017
+vLLM 0.29.0 / Qwen FP8 / MTP3,r_lattice,reasoning,1,1,stop,143,11041,10442,14.359,734.38,769.35,3.12
+vLLM 0.29.0 / Qwen FP8 / MTP3,r_consecutive,reasoning,1,1,stop,139,18531,18237,16.523,1104.13,1121.95,3.672
+vLLM 0.29.0 / Qwen FP8 / MTP3,r_schedule,reasoning,1,1,stop,389,2807,2586,14.209,185.83,198.03,3.033
+vLLM 0.29.0 / Qwen FP8 / MTP3,r_doc_shipping,reasoning,1,1,stop,1152,9849,9440,15.381,617.65,641.2,3.351
+vLLM 0.29.0 / Qwen FP8 / MTP3,r_saline,reasoning,1,1,stop,181,8039,7542,15.512,490.44,518.65,3.338
+vLLM 0.29.0 / Qwen FP8 / MTP3,c_avoid,coding,0,0,length,215,24576,,11.688,,2103.02,2.634
+vLLM 0.29.0 / Qwen FP8 / MTP3,c_long_ledger,coding,0,0,length,2321,24576,,15.966,,1540.94,3.627
+vLLM 0.29.0 / Qwen FP8 / MTP3,r_inst_cipher,reasoning,0,1,stop,346,5653,5620,15.555,362.37,363.9,3.342
+vLLM 0.29.0 / Qwen FP8 / MTP3,c_topo,coding,1,1,stop,235,12462,12111,12.464,980.63,1000.26,2.737
+vLLM 0.29.0 / Qwen FP8 / MTP3,c_cpp_lru,coding,0,0,length,270,24576,,11.903,,2065.17,2.682
+vLLM 0.29.0 / Qwen FP8 / MTP3,c_out_cpp1,coding,0,1,stop,647,8324,7892,14.163,560.44,588.35,3.062
+vLLM 0.29.0 / Qwen FP8 / MTP3,c_diff,coding,0,0,length,250,24576,,12.378,,1985.81,2.787
+vLLM 0.29.0 / Qwen FP8 / MTP3,c_ttl,coding,1,1,stop,295,16577,16138,12.593,1291.57,1316.78,2.775
+vLLM 0.29.0 / Qwen FP8 / MTP3,r_committee,reasoning,1,1,stop,166,2683,2127,15.204,143.53,176.87,3.231
+vLLM 0.29.0 / Qwen FP8 / DFlash2 k=7,c_cpp_dijkstra,coding,1,1,stop,206,5058,4578,20.405,236.56,248.26,3.918
+vLLM 0.29.0 / Qwen FP8 / DFlash2 k=7,r_quadres,reasoning,1,1,stop,115,1660,1243,28.206,46.23,59.21,5.425
+vLLM 0.29.0 / Qwen FP8 / DFlash2 k=7,c_justify,coding,1,1,stop,241,6983,6634,21.697,313.76,322.24,4.189
+vLLM 0.29.0 / Qwen FP8 / DFlash2 k=7,r_pipes,reasoning,1,1,stop,222,2399,1797,30.214,63.85,79.8,5.767
+vLLM 0.29.0 / Qwen FP8 / DFlash2 k=7,c_fix_pctl,coding,0,0,length,393,24576,,32.237,,762.83,6.488
+vLLM 0.29.0 / Qwen FP8 / DFlash2 k=7,c_recdec,coding,0,0,length,213,24576,,17.454,,1408.46,3.542
+vLLM 0.29.0 / Qwen FP8 / DFlash2 k=7,r_jugs,reasoning,1,1,stop,217,12889,12708,24.129,529.66,534.56,4.752
+vLLM 0.29.0 / Qwen FP8 / DFlash2 k=7,r_doc_trains,reasoning,0,0,length,1869,24576,,29.057,,847.05,5.956
+vLLM 0.29.0 / Qwen FP8 / DFlash2 k=7,r_inst_lines,reasoning,1,1,stop,354,3113,3103,27.511,113.42,113.61,5.267
+vLLM 0.29.0 / Qwen FP8 / DFlash2 k=7,c_tile4,coding,0,1,stop,195,13173,11799,20.761,599.85,634.9,4.086
+vLLM 0.29.0 / Qwen FP8 / DFlash2 k=7,r_lattice,reasoning,1,1,stop,143,6934,6378,26.125,250.16,265.8,5.043
+vLLM 0.29.0 / Qwen FP8 / DFlash2 k=7,r_consecutive,reasoning,1,1,stop,139,8081,7791,28.95,271.0,279.51,5.62
+vLLM 0.29.0 / Qwen FP8 / DFlash2 k=7,r_schedule,reasoning,1,1,stop,389,2282,2164,23.19,95.79,98.86,4.429
+vLLM 0.29.0 / Qwen FP8 / DFlash2 k=7,r_doc_shipping,reasoning,1,1,stop,1152,11191,10760,25.292,431.74,443.29,4.985
+vLLM 0.29.0 / Qwen FP8 / DFlash2 k=7,r_saline,reasoning,1,1,stop,181,8460,7950,25.293,320.55,334.86,4.916
+vLLM 0.29.0 / Qwen FP8 / DFlash2 k=7,c_avoid,coding,0,0,length,215,24576,,16.572,,1483.32,3.371
+vLLM 0.29.0 / Qwen FP8 / DFlash2 k=7,c_long_ledger,coding,0,0,length,2321,24576,,31.482,,782.23,6.407
+vLLM 0.29.0 / Qwen FP8 / DFlash2 k=7,r_inst_cipher,reasoning,1,1,stop,346,5639,5606,28.457,197.85,198.62,5.496
+vLLM 0.29.0 / Qwen FP8 / DFlash2 k=7,c_topo,coding,1,1,stop,235,18120,17690,17.574,1020.52,1031.45,3.468
+vLLM 0.29.0 / Qwen FP8 / DFlash2 k=7,c_cpp_lru,coding,0,0,length,270,24576,,18.54,,1325.95,3.39
+vLLM 0.29.0 / Qwen FP8 / DFlash2 k=7,c_out_cpp1,coding,1,1,stop,647,6040,5640,21.91,260.65,276.03,4.399
+vLLM 0.29.0 / Qwen FP8 / DFlash2 k=7,c_diff,coding,0,0,length,250,24576,,17.548,,1400.86,3.556
+vLLM 0.29.0 / Qwen FP8 / DFlash2 k=7,c_ttl,coding,0,0,length,295,24576,,16.955,,1449.91,3.433
+vLLM 0.29.0 / Qwen FP8 / DFlash2 k=7,r_committee,reasoning,1,1,stop,166,3414,2938,25.568,118.77,133.69,4.89
+TensorFold 0.6.0 / MLX 4-bit / DFlash2,c_cpp_dijkstra,coding,1,1,stop,206,22905,,55.369,412.13,413.82,4.849
+TensorFold 0.6.0 / MLX 4-bit / DFlash2,r_quadres,reasoning,1,1,stop,115,2048,,77.067,22.6,26.68,6.543
+TensorFold 0.6.0 / MLX 4-bit / DFlash2,c_justify,coding,1,1,stop,241,11385,,57.527,197.43,198.07,4.909
+TensorFold 0.6.0 / MLX 4-bit / DFlash2,r_pipes,reasoning,0,1,stop,222,2840,,89.502,27.93,31.87,7.435
+TensorFold 0.6.0 / MLX 4-bit / DFlash2,c_fix_pctl,coding,0,0,length,393,24576,,179.615,,137.18,16.833
+TensorFold 0.6.0 / MLX 4-bit / DFlash2,c_recdec,coding,0,0,length,213,24576,,50.336,,488.38,4.364
+TensorFold 0.6.0 / MLX 4-bit / DFlash2,r_jugs,reasoning,0,0,length,217,24576,,370.927,,66.41,41.166
+TensorFold 0.6.0 / MLX 4-bit / DFlash2,r_doc_trains,reasoning,1,1,stop,1869,15384,,70.224,216.91,220.13,5.954
+TensorFold 0.6.0 / MLX 4-bit / DFlash2,r_inst_lines,reasoning,1,1,stop,354,4433,,75.705,58.79,58.87,6.36
+TensorFold 0.6.0 / MLX 4-bit / DFlash2,c_tile4,coding,0,0,length,195,24576,,58.294,,421.73,5.044
+TensorFold 0.6.0 / MLX 4-bit / DFlash2,r_lattice,reasoning,1,1,stop,143,9183,,70.364,125.54,130.64,5.883
+TensorFold 0.6.0 / MLX 4-bit / DFlash2,r_consecutive,reasoning,1,1,stop,139,17407,,88.313,193.86,197.24,7.529
+TensorFold 0.6.0 / MLX 4-bit / DFlash2,r_schedule,reasoning,1,1,stop,389,5622,,66.452,82.98,84.92,5.539
+TensorFold 0.6.0 / MLX 4-bit / DFlash2,r_doc_shipping,reasoning,1,1,stop,1152,14944,,70.457,209.37,212.77,5.994
+TensorFold 0.6.0 / MLX 4-bit / DFlash2,r_saline,reasoning,1,1,stop,181,8979,,74.995,114.51,119.86,6.257
+TensorFold 0.6.0 / MLX 4-bit / DFlash2,c_avoid,coding,0,0,length,215,24576,,48.454,,507.34,4.195
+TensorFold 0.6.0 / MLX 4-bit / DFlash2,c_long_ledger,coding,1,1,stop,2321,16844,,54.209,310.42,311.99,4.648
+TensorFold 0.6.0 / MLX 4-bit / DFlash2,r_inst_cipher,reasoning,1,1,stop,346,6361,,81.592,78.11,78.28,6.825
+TensorFold 0.6.0 / MLX 4-bit / DFlash2,c_topo,coding,0,0,length,235,24576,,49.167,,499.99,4.244
+TensorFold 0.6.0 / MLX 4-bit / DFlash2,c_cpp_lru,coding,0,0,length,270,24576,,46.316,,530.92,3.997
+TensorFold 0.6.0 / MLX 4-bit / DFlash2,c_out_cpp1,coding,0,1,stop,647,11381,,63.999,171.44,178.3,5.396
+TensorFold 0.6.0 / MLX 4-bit / DFlash2,c_diff,coding,0,0,length,250,24576,,51.428,,478.02,4.443
+TensorFold 0.6.0 / MLX 4-bit / DFlash2,c_ttl,coding,1,1,stop,295,24471,,51.638,471.27,474.21,4.461
+TensorFold 0.6.0 / MLX 4-bit / DFlash2,r_committee,reasoning,1,1,stop,166,2469,,78.895,28.62,31.43,6.515
+TensorFold 0.6.0 / NVIDIA NVFP4 / DFlash2,c_cpp_dijkstra,coding,1,1,stop,206,3953,,45.649,83.5,86.96,5.285
+TensorFold 0.6.0 / NVIDIA NVFP4 / DFlash2,r_quadres,reasoning,1,1,stop,115,1717,,59.925,23.91,29.0,6.896
+TensorFold 0.6.0 / NVIDIA NVFP4 / DFlash2,c_justify,coding,1,1,stop,241,7788,,46.06,168.26,169.44,5.367
+TensorFold 0.6.0 / NVIDIA NVFP4 / DFlash2,r_pipes,reasoning,1,1,stop,222,2724,,62.088,37.52,44.25,7.187
+TensorFold 0.6.0 / NVIDIA NVFP4 / DFlash2,c_fix_pctl,coding,0,0,length,393,24576,,96.166,,256.32,12.012
+TensorFold 0.6.0 / NVIDIA NVFP4 / DFlash2,c_recdec,coding,0,0,length,213,24576,,59.828,,411.15,7.284
+TensorFold 0.6.0 / NVIDIA NVFP4 / DFlash2,r_jugs,reasoning,1,1,stop,217,9960,,60.218,164.69,165.77,7.029
+TensorFold 0.6.0 / NVIDIA NVFP4 / DFlash2,r_doc_trains,reasoning,1,1,stop,1869,10303,,57.953,175.08,179.29,6.878
+TensorFold 0.6.0 / NVIDIA NVFP4 / DFlash2,r_inst_lines,reasoning,1,1,stop,354,3555,,52.637,68.18,68.3,6.119
+TensorFold 0.6.0 / NVIDIA NVFP4 / DFlash2,c_tile4,coding,1,1,stop,195,16126,,45.248,352.47,356.76,5.377
+TensorFold 0.6.0 / NVIDIA NVFP4 / DFlash2,r_lattice,reasoning,1,1,stop,143,7730,,52.518,142.39,147.54,6.145
+TensorFold 0.6.0 / NVIDIA NVFP4 / DFlash2,r_consecutive,reasoning,1,1,stop,139,8325,,59.188,139.0,141.01,6.943
+TensorFold 0.6.0 / NVIDIA NVFP4 / DFlash2,r_schedule,reasoning,1,1,stop,389,3306,,45.471,71.55,73.46,5.29
+TensorFold 0.6.0 / NVIDIA NVFP4 / DFlash2,r_doc_shipping,reasoning,1,1,stop,1152,10209,,53.927,185.85,190.41,6.325
+TensorFold 0.6.0 / NVIDIA NVFP4 / DFlash2,r_saline,reasoning,1,1,stop,181,14532,,56.344,251.07,258.28,6.639
+TensorFold 0.6.0 / NVIDIA NVFP4 / DFlash2,c_avoid,coding,0,0,length,215,24576,,37.214,,660.76,4.482
+TensorFold 0.6.0 / NVIDIA NVFP4 / DFlash2,c_long_ledger,coding,1,1,stop,2321,7101,,38.12,187.28,188.03,4.494
+TensorFold 0.6.0 / NVIDIA NVFP4 / DFlash2,r_inst_cipher,reasoning,0,1,stop,346,4809,,61.987,78.11,78.34,7.188
+TensorFold 0.6.0 / NVIDIA NVFP4 / DFlash2,c_topo,coding,1,1,stop,235,21072,,37.26,563.22,565.91,4.465
+TensorFold 0.6.0 / NVIDIA NVFP4 / DFlash2,c_cpp_lru,coding,0,0,length,270,24576,,37.452,,656.93,4.503
+TensorFold 0.6.0 / NVIDIA NVFP4 / DFlash2,c_out_cpp1,coding,1,1,stop,647,4966,,52.86,94.38,94.85,6.184
+TensorFold 0.6.0 / NVIDIA NVFP4 / DFlash2,c_diff,coding,0,0,length,250,24576,,38.128,,644.94,4.587
+TensorFold 0.6.0 / NVIDIA NVFP4 / DFlash2,c_ttl,coding,1,1,stop,295,22491,,39.075,572.81,576.32,4.693
+TensorFold 0.6.0 / NVIDIA NVFP4 / DFlash2,r_committee,reasoning,1,1,stop,166,9814,,51.733,182.23,190.05,6.051

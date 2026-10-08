@@ -1,0 +1,25 @@
+prompt_id,category,vLLM 0.27.1 / NVIDIA NVFP4 / no speculation,vLLM 0.27.1 / NVIDIA NVFP4 / MTP3,vLLM 0.27.1 / NVIDIA NVFP4 / MTP4,vLLM 0.27.1 / NVIDIA NVFP4 / MTP5,vLLM 0.29.0 / Qwen FP8 / MTP3,vLLM 0.29.0 / Qwen FP8 / DFlash2 k=7,TensorFold 0.6.0 / MLX 4-bit / DFlash2,TensorFold 0.6.0 / NVIDIA NVFP4 / DFlash2,passes_of_8
+c_avoid,coding,0,0,0,0,0,0,0,0,0
+c_cpp_dijkstra,coding,1,1,1,1,1,1,1,1,8
+c_cpp_lru,coding,0,0,0,1,0,0,0,0,1
+c_diff,coding,0,0,0,0,0,0,0,0,0
+c_fix_pctl,coding,0,0,0,0,0,0,0,0,0
+c_justify,coding,1,1,0,1,0,1,1,1,6
+c_long_ledger,coding,1,1,1,1,0,0,1,1,6
+c_out_cpp1,coding,1,1,1,1,0,1,0,1,6
+c_recdec,coding,0,0,0,0,0,0,0,0,0
+c_tile4,coding,1,1,0,1,1,0,0,1,5
+c_topo,coding,1,1,1,0,1,1,0,1,6
+c_ttl,coding,1,1,1,1,1,0,1,1,7
+r_committee,reasoning,1,1,1,1,1,1,1,1,8
+r_consecutive,reasoning,1,1,1,1,1,1,1,1,8
+r_doc_shipping,reasoning,1,1,1,1,1,1,1,1,8
+r_doc_trains,reasoning,0,0,1,1,1,0,1,1,5
+r_inst_cipher,reasoning,1,1,0,1,0,1,1,0,5
+r_inst_lines,reasoning,1,1,1,1,1,1,1,1,8
+r_jugs,reasoning,1,1,1,1,1,1,0,1,7
+r_lattice,reasoning,1,1,1,1,1,1,1,1,8
+r_pipes,reasoning,1,1,1,1,0,1,0,1,6
+r_quadres,reasoning,1,1,1,1,1,1,1,1,8
+r_saline,reasoning,1,1,1,1,1,1,1,1,8
+r_schedule,reasoning,1,1,1,1,1,1,1,1,8

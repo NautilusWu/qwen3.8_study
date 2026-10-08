@@ -1,0 +1,4 @@
+FROM qwen38-tensorfold-repro:0.6.0-c464617
+COPY instrument.py /opt/study/instrument.py
+RUN python /opt/study/instrument.py
+LABEL study.observation="SSE committed IDs, actual prompt IDs, explicit cold-cache isolation"

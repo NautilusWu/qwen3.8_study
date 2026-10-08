@@ -1,0 +1,9 @@
+config,median_output_tok_s,median_time_to_answer_text_s,median_total_time_s,total_hours_24_prompts,total_time_speedup_vs_vllm_nvfp4_mtp3,passed,passed_coding_of_12,passed_reasoning_of_12,incomplete,new_failures_vs_ref,new_passes_vs_ref,tokens_per_step,steps_per_s,est_GB_read_per_step,est_bandwidth_util_pct
+vLLM 0.27.1 / NVIDIA NVFP4 / no speculation,8.81,854.7,1233.4,9.44,0.422,18,7,11,5,,,1.0,8.73,18.5,59
+vLLM 0.27.1 / NVIDIA NVFP4 / MTP3,21.9,380.9,468.7,4.03,1.0,18,7,11,5,,,3.08,6.66,23.2,57
+vLLM 0.27.1 / NVIDIA NVFP4 / MTP4,23.91,326.1,391.5,3.54,1.18,16,5,11,5,c_justify c_tile4 r_inst_cipher,r_doc_trains,3.24,6.69,24.8,61
+vLLM 0.27.1 / NVIDIA NVFP4 / MTP5,24.82,311.5,378.9,3.39,1.24,19,7,12,5,c_topo,c_cpp_lru r_doc_trains,3.59,6.47,26.4,63
+vLLM 0.29.0 / Qwen FP8 / MTP3,14.28,454.3,614.8,5.92,0.702,14,4,10,6,c_justify c_long_ledger c_out_cpp1 r_inst_cipher r_pipes,r_doc_trains,3.0,4.51,36.9,61
+vLLM 0.29.0 / Qwen FP8 / DFlash2 k=7,24.71,255.4,389.1,4.03,1.072,15,4,11,8,c_long_ledger c_tile4 c_ttl,,4.27,5.04,34.3,63
+TensorFold 0.6.0 / MLX 4-bit / DFlash2,68.34,148.5,197.7,1.64,2.528,14,4,10,8,c_out_cpp1 c_tile4 c_topo r_jugs r_pipes,r_doc_trains,5.47,11.59,20.6,87
+TensorFold 0.6.0 / NVIDIA NVFP4 / DFlash2,52.58,164.7,183.7,1.73,2.336,18,7,11,5,r_inst_cipher,r_doc_trains,5.63,8.38,22.8,70

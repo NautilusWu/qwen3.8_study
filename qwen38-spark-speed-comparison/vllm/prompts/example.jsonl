@@ -1,0 +1,2 @@
+{"id": "example_reasoning", "category": "reasoning", "messages": [{"role": "user", "content": "A train leaves at 09:40 and arrives at 13:05. How long is the trip? End with FINAL: <hours>h <minutes>m."}]}
+{"id": "example_coding", "category": "coding", "messages": [{"role": "user", "content": "Write a Python function is_palindrome(s) that ignores case and non-alphanumeric characters."}]}

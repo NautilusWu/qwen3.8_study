@@ -1,0 +1,5 @@
+4caed4472b50ed77a973f124d57e3a9d18c4871fadd5d3d8fb097993573fddd4  recipe/patches/0001-qwen27-many-images-video.patch
+773016a2e1aae8169f53401062e418ba83e869e197722fdb84d760c22fd9adca  recipe/patches/0002-qwen27-yarn.patch
+add4423fd8aa419fb9d9d6cf6ebbd0aea668488ecdbeb79407624fb5c3ad0873  recipe/patches/0003-qwen27-kv-fp8.patch
+970f00d99b1708ac608511ce9f50275aa58d03f8e391a3eac698f1ab868e73d2  recipe/patches/0004-qwen27-memory-reserve.patch
+76eae4fd493e02df0085174cf596059b262ca1d3a669ca67fd370694dd4a1daa  recipe/patches/0005-qwen27-kv-pool.patch
