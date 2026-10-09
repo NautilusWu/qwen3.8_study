@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Turn the monitor off (DPMS) and keep it off while a measurement runs; every 15 s log the number of
 # active monitors, whether it had to be turned off again, GPU temperature and GPU power.
-#   part2-display-off/display_off.sh display_log.csv &      # stop it with: kill %1
+#   scripts/display_off.sh display_log.csv &      # stop it with: kill %1
 # X11 sessions only (xset, xrandr). A mouse move or key press wakes the monitor; this turns it off again
 # within 15 s and records it. It does not stop anything on high temperature; it only logs it.
 set -u

@@ -1,0 +1,62 @@
+# Settings shared by every vLLM configuration. A configuration file may set only
+# `precision`, `mtp` and (for draft-model methods) `spec`; everything else lives here,
+# so two configurations can never differ in anything else.
+
+# Checkpoints, pinned to Hugging Face commit hashes.
+models:
+  nvidia_nvfp4:
+    # ModelOpt mixed precision: NVFP4 (group 16) MLPs, FP8 attention and linear attention,
+    # unquantized MTP head, no KV-cache quantization.
+    repo: nvidia/Qwen3.8-27B-NVFP4
+    revision: 482ca0f3832238542f8f5295dde86b5f22711d80
+  fp8:
+    # Keeps lm_head unquantized, which vLLM's DFlash2 support requires.
+    repo: Qwen/Qwen3.8-27B-FP8
+    revision: 017b9c7af6b5689d5dd426a76e0bc077eb5ca20a
+
+# Every configuration uses the official Qwen tokenizer + chat template, so prompts are
+# token-identical across checkpoints (run.py records the sha256 of the prompt token ids).
+tokenizer:
+  repo: Qwen/Qwen3.8-27B
+  revision: 1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0
+chat_template: /hf/hub/models--Qwen--Qwen3.8-27B/snapshots/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/chat_template.jinja
+
+server:
+  container_name: q38-single-stream
+  port: 8110
+  cpuset: "5-9,15-19"          # the 10 Cortex-X925 performance cores of the GB10
+  shm_size: 32g
+  dtype: bfloat16
+  max_model_len: 32768
+  # Explicit, not "auto": with "auto" vLLM may switch a checkpoint that declares a
+  # kv_cache_scheme to an FP8 KV cache.
+  kv_cache_dtype: bfloat16
+  gpu_memory_utilization: 0.75
+  max_num_seqs: 4
+  max_num_batched_tokens: 8192
+  enable_chunked_prefill: true
+  enable_prefix_caching: false
+  language_model_only: true     # skip the vision tower; text only
+  generation_config: vllm       # ignore checkpoint sampling defaults
+  mtp_method: mtp
+  startup_timeout_s: 1800
+  # Startup only: prefetch checkpoint files into page cache. Does not change weights or kernels.
+  extra_args: ["--safetensors-load-strategy", "prefetch"]
+  env: {}                       # extra environment variables for the server container
+
+client:
+  cpuset: "0-3"                 # Cortex-A725 efficiency cores, away from the server
+
+generation:
+  system_prompt: "You are a helpful assistant."
+  enable_thinking: true         # thinking on, at the chat template's default effort
+  temperature: 0.0
+  seed: 1234
+  max_tokens: 24576             # thinking + final answer; leaves room for the prompt in 32768
+
+benchmark:
+  warmup_prompts: prompts/warmup.jsonl
+  prompts: prompts/prompts.jsonl  # your own prompts; format in prompts/example.jsonl
+  telemetry_interval_s: 0.5
+  # http.client timeout is per socket read, not per request; a stalled stream fails after this.
+  request_timeout_s: 600

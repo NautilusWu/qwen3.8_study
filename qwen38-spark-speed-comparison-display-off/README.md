@@ -1,6 +1,8 @@
-# Part 2: display off, MTP depth 3-7, and run-to-run determinism
+# Part 2: how much the monitor slows decoding, and where vLLM MTP depth stops helping (Qwen3.8-27B, DGX Spark)
 
-Follow-up to [Part 1](../README.md). Same DGX Spark, same 24 prompts, same engines, checkpoints, flags and grading. Two things changed: the monitor was kept off for every run, and vLLM MTP depths 6 and 7 were added.
+The [Part 1](../qwen38-spark-speed-comparison-display-on/README.md) setups rerun with the monitor off, plus vLLM MTP6 and MTP7. Same configuration, same output token for token, so the display effect is measured cleanly.
+
+Same DGX Spark, same 24 prompts, same engines, checkpoints, flags and grading as Part 1. This folder is self-contained: [REPRODUCE.md](REPRODUCE.md) and the scripts here set up and run everything in this experiment.
 
 ![Display on vs off](figures/display_on_vs_off.png)
 
@@ -45,24 +47,30 @@ The TensorFold MLX 4-bit run is not in this comparison: its Part 1 run had the d
 
 - Everything not listed here is identical to Part 1 (prompts, prompt token IDs, chat template, thinking on, temperature 0, `max_tokens` 24,576, flags, images, checkpoint revisions, graders). One launch per configuration.
 - Order: TensorFold NVFP4, then vLLM in random order (MTP4, MTP7, MTP5, MTP3, MTP6), then TensorFold MLX 4-bit; 20 hours in total.
-- Display: turned off with DPMS (`xset dpms force off`) and checked every 15 s by `display_off.sh`, which turns it off again if anything wakes it. It was on in 2 of 4,801 checks, both in the first two minutes, each time for at most 15 s (`data/display_and_gpu_log.csv`).
+- Display: turned off with DPMS (`xset dpms force off`) and checked every 15 s by `scripts/display_off.sh`, which turns it off again if anything wakes it. It was on in 2 of 4,801 checks, both in the first two minutes, each time for at most 15 s (`data/display_and_gpu_log.csv`).
 - Thermal protection: none automatic, as in Part 1; GPU temperature logged every 15 s. Peaks: 80 °C (TensorFold NVFP4), 72 °C (vLLM), 81 °C (TensorFold MLX 4-bit).
 - Driver messages: every vLLM server start logged one or two NVIDIA `NV_ERR_NO_MEMORY` check-failure lines in the kernel log (`nvCheckOkFailedNoLog`, during memory profiling and graph capture). The servers started normally, and nothing was logged while prompts were being measured. Several vLLM starts in Part 1 logged the same kind of lines. TensorFold launches logged none, and there were no Xid errors.
 - Display-on numbers come from Part 1 runs on 2026-10-05 to 10-07; the display-off runs were all on 2026-10-08.
 
-## Reproducing
+## What is in this folder
 
-Follow [REPRODUCE.md](../REPRODUCE.md). Two additions:
-
-- MTP6 and MTP7 use `vllm/configs/nvidia_nvfp4_mtp6.yaml` and `nvidia_nvfp4_mtp7.yaml` (same settings, only `num_speculative_tokens` differs).
-- To keep the monitor off, start `part2-display-off/display_off.sh display_log.csv &` before a run and stop it afterwards (X11 sessions only). Do not touch the keyboard or mouse during the run.
-
-## Data
-
-| File | Contents |
+| Path | Contents |
 |---|---|
-| `data/summary_display_off.csv` | The table above, with medians, paired ratios vs vLLM MTP3, tokens per step and pass counts. |
+| `REPRODUCE.md` | Step-by-step setup and the commands that run every configuration of this experiment with the display off. |
+| `scripts/download_models.sh` | Downloads the checkpoints at the exact revisions used. |
+| `scripts/display_off.sh` | Keeps the monitor off during a run and logs display state, GPU temperature and power every 15 s. |
+| `vllm/` | vLLM runtime image, one config per vLLM configuration (including MTP6 and MTP7), launch scripts and the measurement client. Identical to Part 1 plus the two new configs. |
+| `tensorfold/` | TensorFold image build (pinned and hash-checked), launch script and measurement client. Identical to Part 1. |
+| `data/summary_display_off.csv` | The results table, with medians, paired ratios vs vLLM MTP3, tokens per step and pass counts. |
 | `data/display_on_vs_off.csv` | Each configuration run in both parts: token-identical prompts, same pass/fail, speeds and hours with the display on and off. |
 | `data/per_request_metrics_display_off.csv` | 168 rows (7 configurations x 24 prompts), same columns as Part 1. |
 | `data/display_and_gpu_log.csv` | Every 15 s during the 20-hour run: active monitors, whether it was turned off again, GPU temperature and power. |
-| `figures/make_figures.py` | Draws both figures from `data/`. |
+| `figures/` | Both figures and the script that draws them from `data/` (`python3 figures/make_figures.py`, needs matplotlib). |
+
+The prompts are not published, as in Part 1; which tests to run is up to you.
+
+## Credits and licenses
+
+Built on vLLM, NVIDIA NGC containers, TensorFold (Ash Hart), MiaAI-Lab's TensorFold recipe, `nvidia/Qwen3.8-27B-NVFP4`, `Qwen/Qwen3.8-27B`, `TensorFold/Qwen3.8-27B-MLX-4bit` and `z-lab/Qwen3.8-27B-DFlash2`, all Apache-2.0 at the revisions used. No model weights or third-party code are redistributed; `tensorfold/fetch_sources.sh` downloads TensorFold and the recipe from their own repositories.
+
+This folder is released under the [MIT License](LICENSE).

@@ -1,0 +1,7 @@
+# Run with the vLLM 0.29.0 image (STUDY_IMAGE, see REPRODUCE.md). DFlash2 drafts 7 tokens,
+# capped by the drafter's block_size 8.
+inherit: common.yaml
+condition: fp8_dflash2
+precision: fp8
+mtp: 0
+spec: {"method": "dflash", "model": "/hf/hub/models--z-lab--Qwen3.8-27B-DFlash2/snapshots/50307d4c4cde6860d4eee73e2547cd786fe8e8a4", "num_speculative_tokens": 7}

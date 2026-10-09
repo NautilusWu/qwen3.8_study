@@ -1,0 +1,5 @@
+# Run with the vLLM 0.29.0 image (STUDY_IMAGE, see REPRODUCE.md).
+inherit: common.yaml
+condition: fp8_mtp3
+precision: fp8
+mtp: 3
