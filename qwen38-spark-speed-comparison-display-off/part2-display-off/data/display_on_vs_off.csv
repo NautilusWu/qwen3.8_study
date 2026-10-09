@@ -1,0 +1,6 @@
+config,earlier_run_display,outputs_token_identical_prompts,same_pass_fail,median_output_tok_s_display_on,median_output_tok_s_display_off,output_speed_ratio_off_vs_on_paired,total_hours_display_on,total_hours_display_off,passed
+TensorFold 0.6.0 / NVIDIA NVFP4 / DFlash2,on,24,True,52.58,58.61,1.114,1.73,1.55,18
+TensorFold 0.6.0 / MLX 4-bit / DFlash2,"on for 4 prompts, reportedly off for 20 (not verified)",24,True,68.34,62.85,0.934,1.64,1.75,14
+vLLM 0.27.1 / NVIDIA NVFP4 / MTP3,on,24,True,21.9,25.7,1.18,4.03,3.41,18
+vLLM 0.27.1 / NVIDIA NVFP4 / MTP4,on,24,True,23.91,26.2,1.107,3.54,3.19,16
+vLLM 0.27.1 / NVIDIA NVFP4 / MTP5,on,24,True,24.82,27.65,1.093,3.39,3.12,19

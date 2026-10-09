@@ -1,4 +1,6 @@
-# Qwen3.8-27B single-stream speed vs correctness on one DGX Spark (thinking on)
+# Qwen3.8-27B on one NVIDIA DGX Spark: which serving setup answers a single user fastest without losing accuracy?
+
+8 setups compared (vLLM with MTP or DFlash2, TensorFold with DFlash2; NVIDIA NVFP4, Qwen FP8 and MLX 4-bit weights), one request at a time, thinking on, graded on 24 coding and reasoning prompts.
 
 Eight serving configurations of Qwen3.8-27B on a single NVIDIA DGX Spark (GB10), measured the way one user experiences them: one request at a time, thinking on, ~10K-token answers, every answer graded per question.
 
@@ -62,7 +64,7 @@ Short version: TensorFold + NVIDIA NVFP4 + DFlash2 was ~2.3x faster to a complet
 - vLLM rows: no automatic thermal stop; GPU temperature logged every 0.5 s; peaks 69-77 °C.
 - TensorFold MLX 4-bit: the first launch had an automatic stop at 80 °C held for 3 s, which triggered after 4 prompts; the other 20 prompts ran in a second launch with the automatic stop disabled (peak 79 °C).
 - TensorFold NVIDIA NVFP4: automatic stop disabled, temperature logged; peak 80 °C.
-- A host-memory and driver-error watchdog ran during the TensorFold launches and never triggered. No run logged an NVIDIA out-of-memory or Xid error.
+- A host-memory and driver-error watchdog ran during the TensorFold launches and never triggered. Five of the six vLLM server starts logged one to nine NVIDIA `NV_ERR_NO_MEMORY` check-failure lines in the kernel log (`nvCheckOkFailedNoLog`) while loading or warming up; the servers ran normally, and nothing was logged while prompts were being measured. No run logged an Xid error.
 
 ## Caveats
 

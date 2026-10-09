@@ -1,0 +1,8 @@
+config,median_output_tok_s,median_time_to_answer_text_s,median_total_time_s,total_hours_24_prompts,total_time_speedup_vs_vllm_mtp3_display_off,output_speed_ratio_vs_vllm_mtp3_display_off,tokens_per_step,budget_exhausted,passed,passed_coding_of_12,passed_reasoning_of_12
+TensorFold 0.6.0 / NVIDIA NVFP4 / DFlash2,58.61,148.0,165.0,1.55,2.204,2.252,5.63,5,18,7,11
+TensorFold 0.6.0 / MLX 4-bit / DFlash2,62.85,159.3,212.1,1.75,2.001,2.671,5.47,8,14,4,10
+vLLM 0.27.1 / NVIDIA NVFP4 / MTP3,25.7,318.6,403.0,3.41,1.0,1.0,3.08,5,18,7,11
+vLLM 0.27.1 / NVIDIA NVFP4 / MTP4,26.2,297.6,352.6,3.19,1.106,1.035,3.24,5,16,5,11
+vLLM 0.27.1 / NVIDIA NVFP4 / MTP5,27.65,282.4,342.2,3.12,1.148,1.072,3.59,5,19,7,12
+vLLM 0.27.1 / NVIDIA NVFP4 / MTP6,26.16,233.6,337.8,3.25,1.125,1.044,3.93,6,17,7,10
+vLLM 0.27.1 / NVIDIA NVFP4 / MTP7,27.93,227.7,371.8,3.29,1.073,1.083,3.93,6,18,6,12
