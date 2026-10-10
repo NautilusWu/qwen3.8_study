@@ -1,0 +1,5 @@
+test,scope,passed_first,passed_second,only_first_passed,only_second_passed,exact_sign_test_p_two_sided
+primary: TensorFold NVFP4 vs vLLM MTP5,"71 (dev + sealed, without c_segtree)",49,51,2,4,0.688
+primary: TensorFold NVFP4 vs vLLM MTP5,47 sealed (without c_segtree),31,32,1,2,1.0
+secondary: TensorFold MLX 4-bit vs TensorFold NVFP4,"71 (dev + sealed, without c_segtree)",44,49,4,9,0.267
+secondary: TensorFold MLX 4-bit vs TensorFold NVFP4,47 sealed (without c_segtree),30,31,3,4,1.0

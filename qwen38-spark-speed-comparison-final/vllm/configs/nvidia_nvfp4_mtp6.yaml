@@ -1,0 +1,4 @@
+inherit: common.yaml
+condition: nvidia_nvfp4_mtp6
+precision: nvidia_nvfp4
+mtp: 6
