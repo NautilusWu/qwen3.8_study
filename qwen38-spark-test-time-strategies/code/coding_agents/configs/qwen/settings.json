@@ -1,0 +1,6 @@
+{
+  "security": {"auth": {"selectedType": "openai"}},
+  "model": {"name": "qwen3.8-27b-tensorfold-nvfp4"},
+  "privacy": {"usageStatisticsEnabled": false},
+  "telemetry": {"enabled": false}
+}

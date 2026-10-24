@@ -1,0 +1,1 @@
+In this repository, `median` in stats.py returns the wrong value for lists with an even number of elements (it should return the mean of the two middle values), and it should raise ValueError for an empty list, like `mean` does. Fix it without changing the function's name or signature, and add tests for both cases to tests/test_stats.py. Run the tests before you finish.

@@ -1,0 +1,15 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "autoupdate": false,
+  "share": "disabled",
+  "provider": {
+    "local": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "local TensorFold via normalizing proxy",
+      "options": {"baseURL": "http://127.0.0.1:8099/v1", "apiKey": "local-only"},
+      "models": {"qwen3.8-27b-tensorfold-nvfp4": {"name": "Qwen3.8 27B (TensorFold NVFP4)", "limit": {"context": 262144, "output": 32768}}}
+    }
+  },
+  "model": "local/qwen3.8-27b-tensorfold-nvfp4",
+  "permission": {"edit": "allow", "bash": "allow", "webfetch": "deny"}
+}

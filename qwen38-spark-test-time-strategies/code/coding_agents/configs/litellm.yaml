@@ -1,0 +1,11 @@
+# Anthropic Messages API (Claude Code) -> OpenAI chat API -> normalizing proxy -> TensorFold. Local only.
+model_list:
+  - model_name: "*"
+    litellm_params:
+      model: hosted_vllm/qwen3.8-27b-tensorfold-nvfp4
+      api_base: http://127.0.0.1:8099/v1
+      api_key: local-only
+litellm_settings:
+  drop_params: true
+general_settings:
+  master_key: sk-local-harness-test
