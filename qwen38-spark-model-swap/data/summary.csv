@@ -1,0 +1,15 @@
+task_set,config,tasks,correct,correct_coding,correct_reasoning,total_min,min_per_correct,hit_output_limit,output_tokens
+72,original_deep_A65,72,54,24,30,473.3,8.764,13,1634053
+72,original_low_D2,72,60,33,27,131.9,2.199,0,518985
+72,original_plan_then_low_H,72,62,35,27,166.6,2.687,0,612021
+72,original_vote4_low_CL4,72,66,33,33,154.3,2.338,0,1108149
+72,finetune_deep_A65,72,64,31,33,227.7,3.558,4,849141
+72,finetune_low_D2,72,54,29,25,74.3,1.376,0,356237
+72,finetune_plan_then_low_H,72,59,30,29,109.8,1.861,0,497443
+72,finetune_vote4_low_CL4,72,63,32,31,111.5,1.771,0,967977
+400,original_deep_A65,400,372,184,188,1477.2,3.971,17,4322514
+400,original_low_D2,400,363,187,176,311.9,0.859,0,1397899
+400,original_vote4_low_CL4,400,373,182,191,345.0,0.925,0,2792963
+400,finetune_deep_A65,400,367,184,183,746.9,2.035,13,2763462
+400,finetune_low_D2,400,359,179,180,256.8,0.715,0,1295031
+400,finetune_vote4_low_CL4,400,368,180,188,303.3,0.824,0,2468908

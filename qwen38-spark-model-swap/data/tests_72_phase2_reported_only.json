@@ -1,0 +1,77 @@
+{
+ "note": "phase 2 (H, CL4) reported only per PLAN_05; A65/D2 repeated from swap-001-tests.json",
+ "all_72": {
+  "A65": {
+   "orig_correct": 54,
+   "swap_correct": 64,
+   "orig_min": 473.3,
+   "swap_min": 227.7,
+   "orig_min_per_correct": 8.764,
+   "swap_min_per_correct": 3.558,
+   "ratio": 0.406,
+   "ci95": [
+    0.303,
+    0.542
+   ],
+   "swap_only": 11,
+   "orig_only": 1,
+   "p_two_sided": 0.0063,
+   "conf_orig": 35,
+   "conf_swap": 43
+  },
+  "D2": {
+   "orig_correct": 60,
+   "swap_correct": 54,
+   "orig_min": 131.9,
+   "swap_min": 74.3,
+   "orig_min_per_correct": 2.199,
+   "swap_min_per_correct": 1.376,
+   "ratio": 0.626,
+   "ci95": [
+    0.443,
+    0.918
+   ],
+   "swap_only": 5,
+   "orig_only": 11,
+   "p_two_sided": 0.2101,
+   "conf_orig": 38,
+   "conf_swap": 36
+  },
+  "H": {
+   "orig_correct": 62,
+   "swap_correct": 59,
+   "orig_min": 166.6,
+   "swap_min": 109.8,
+   "orig_min_per_correct": 2.687,
+   "swap_min_per_correct": 1.861,
+   "ratio": 0.693,
+   "ci95": [
+    0.574,
+    0.843
+   ],
+   "swap_only": 4,
+   "orig_only": 7,
+   "p_two_sided": 0.5488,
+   "conf_orig": 40,
+   "conf_swap": 39
+  },
+  "CL4": {
+   "orig_correct": 66,
+   "swap_correct": 63,
+   "orig_min": 154.3,
+   "swap_min": 111.5,
+   "orig_min_per_correct": 2.338,
+   "swap_min_per_correct": 1.771,
+   "ratio": 0.757,
+   "ci95": [
+    0.658,
+    0.909
+   ],
+   "swap_only": 2,
+   "orig_only": 5,
+   "p_two_sided": 0.4531,
+   "conf_orig": 44,
+   "conf_swap": 42
+  }
+ }
+}

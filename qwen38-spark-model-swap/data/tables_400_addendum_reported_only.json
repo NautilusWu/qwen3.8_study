@@ -1,0 +1,278 @@
+{
+ "tasks": 400,
+ "dropped_unpaired": {},
+ "totals": {
+  "O-A65": {
+   "correct": 372,
+   "total_min": 1477.2,
+   "min_per_correct": 3.971
+  },
+  "O-D2": {
+   "correct": 363,
+   "total_min": 311.8,
+   "min_per_correct": 0.859
+  },
+  "O-CL4": {
+   "correct": 373,
+   "total_min": 345.0,
+   "min_per_correct": 0.925
+  },
+  "F-A65": {
+   "correct": 367,
+   "total_min": 746.9,
+   "min_per_correct": 2.035
+  },
+  "F-D2": {
+   "correct": 359,
+   "total_min": 256.8,
+   "min_per_correct": 0.715
+  },
+  "F-CL4": {
+   "correct": 368,
+   "total_min": 303.3,
+   "min_per_correct": 0.824
+  }
+ },
+ "pairs": {
+  "O-A65 vs O-D2": {
+   "only_first": 28,
+   "only_second": 19,
+   "p": 0.243,
+   "acc_diff_pp": 2.25,
+   "acc_ci95": [
+    -1.0,
+    5.5
+   ],
+   "time_ratio": 4.623,
+   "time_ci95": [
+    3.835,
+    5.623
+   ],
+   "p_holm": 1.0
+  },
+  "O-A65 vs O-CL4": {
+   "only_first": 20,
+   "only_second": 21,
+   "p": 1.0,
+   "acc_diff_pp": -0.25,
+   "acc_ci95": [
+    -3.25,
+    2.75
+   ],
+   "time_ratio": 4.293,
+   "time_ci95": [
+    3.547,
+    5.197
+   ],
+   "p_holm": 1.0
+  },
+  "O-A65 vs F-A65": {
+   "only_first": 20,
+   "only_second": 15,
+   "p": 0.4996,
+   "acc_diff_pp": 1.25,
+   "acc_ci95": [
+    -1.5,
+    4.0
+   ],
+   "time_ratio": 1.951,
+   "time_ci95": [
+    1.714,
+    2.226
+   ],
+   "p_holm": 1.0
+  },
+  "O-A65 vs F-D2": {
+   "only_first": 32,
+   "only_second": 19,
+   "p": 0.0919,
+   "acc_diff_pp": 3.25,
+   "acc_ci95": [
+    -0.25,
+    6.75
+   ],
+   "time_ratio": 5.554,
+   "time_ci95": [
+    4.498,
+    6.901
+   ],
+   "p_holm": 1.0
+  },
+  "O-A65 vs F-CL4": {
+   "only_first": 23,
+   "only_second": 19,
+   "p": 0.644,
+   "acc_diff_pp": 1.0,
+   "acc_ci95": [
+    -2.0,
+    4.25
+   ],
+   "time_ratio": 4.819,
+   "time_ci95": [
+    3.966,
+    5.922
+   ],
+   "p_holm": 1.0
+  },
+  "O-D2 vs O-CL4": {
+   "only_first": 14,
+   "only_second": 24,
+   "p": 0.1433,
+   "acc_diff_pp": -2.5,
+   "acc_ci95": [
+    -5.5,
+    0.5
+   ],
+   "time_ratio": 0.929,
+   "time_ci95": [
+    0.807,
+    1.062
+   ],
+   "p_holm": 1.0
+  },
+  "O-D2 vs F-A65": {
+   "only_first": 21,
+   "only_second": 25,
+   "p": 0.6587,
+   "acc_diff_pp": -1.0,
+   "acc_ci95": [
+    -4.25,
+    2.25
+   ],
+   "time_ratio": 0.422,
+   "time_ci95": [
+    0.351,
+    0.507
+   ],
+   "p_holm": 1.0
+  },
+  "O-D2 vs F-D2": {
+   "only_first": 28,
+   "only_second": 24,
+   "p": 0.6778,
+   "acc_diff_pp": 1.0,
+   "acc_ci95": [
+    -2.5,
+    4.5
+   ],
+   "time_ratio": 1.201,
+   "time_ci95": [
+    1.004,
+    1.442
+   ],
+   "p_holm": 1.0
+  },
+  "O-D2 vs F-CL4": {
+   "only_first": 18,
+   "only_second": 23,
+   "p": 0.5327,
+   "acc_diff_pp": -1.25,
+   "acc_ci95": [
+    -4.25,
+    2.0
+   ],
+   "time_ratio": 1.042,
+   "time_ci95": [
+    0.87,
+    1.248
+   ],
+   "p_holm": 1.0
+  },
+  "O-CL4 vs F-A65": {
+   "only_first": 23,
+   "only_second": 17,
+   "p": 0.4296,
+   "acc_diff_pp": 1.5,
+   "acc_ci95": [
+    -1.5,
+    4.5
+   ],
+   "time_ratio": 0.455,
+   "time_ci95": [
+    0.38,
+    0.543
+   ],
+   "p_holm": 1.0
+  },
+  "O-CL4 vs F-D2": {
+   "only_first": 26,
+   "only_second": 12,
+   "p": 0.0336,
+   "acc_diff_pp": 3.5,
+   "acc_ci95": [
+    0.5,
+    6.5
+   ],
+   "time_ratio": 1.294,
+   "time_ci95": [
+    1.132,
+    1.483
+   ],
+   "p_holm": 0.5033
+  },
+  "O-CL4 vs F-CL4": {
+   "only_first": 18,
+   "only_second": 13,
+   "p": 0.4731,
+   "acc_diff_pp": 1.25,
+   "acc_ci95": [
+    -1.5,
+    4.0
+   ],
+   "time_ratio": 1.123,
+   "time_ci95": [
+    1.01,
+    1.238
+   ],
+   "p_holm": 1.0
+  },
+  "F-A65 vs F-D2": {
+   "only_first": 31,
+   "only_second": 23,
+   "p": 0.3409,
+   "acc_diff_pp": 2.0,
+   "acc_ci95": [
+    -1.5,
+    5.75
+   ],
+   "time_ratio": 2.846,
+   "time_ci95": [
+    2.301,
+    3.523
+   ],
+   "p_holm": 1.0
+  },
+  "F-A65 vs F-CL4": {
+   "only_first": 23,
+   "only_second": 24,
+   "p": 1.0,
+   "acc_diff_pp": -0.25,
+   "acc_ci95": [
+    -3.5,
+    3.0
+   ],
+   "time_ratio": 2.47,
+   "time_ci95": [
+    2.054,
+    2.987
+   ],
+   "p_holm": 1.0
+  },
+  "F-D2 vs F-CL4": {
+   "only_first": 16,
+   "only_second": 25,
+   "p": 0.211,
+   "acc_diff_pp": -2.25,
+   "acc_ci95": [
+    -5.5,
+    0.75
+   ],
+   "time_ratio": 0.868,
+   "time_ci95": [
+    0.745,
+    1.009
+   ],
+   "p_holm": 1.0
+  }
+ }
+}

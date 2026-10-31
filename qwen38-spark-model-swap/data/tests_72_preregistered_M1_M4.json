@@ -1,0 +1,98 @@
+{
+ "summary": {
+  "A65_orig": {
+   "tasks": 72,
+   "correct": 54,
+   "coding": 24,
+   "reasoning": 30,
+   "dev_correct": 19,
+   "conf_correct": 35,
+   "total_min": 473.3,
+   "min_per_correct": 8.764,
+   "output_tokens": 1634053,
+   "tok_per_s_overall": 57.5,
+   "hit_cap": 13,
+   "no_answer": 14
+  },
+  "A65_swap": {
+   "tasks": 72,
+   "correct": 64,
+   "coding": 31,
+   "reasoning": 33,
+   "dev_correct": 21,
+   "conf_correct": 43,
+   "total_min": 227.7,
+   "min_per_correct": 3.558,
+   "output_tokens": 849141,
+   "tok_per_s_overall": 62.1,
+   "hit_cap": 4,
+   "no_answer": 4
+  },
+  "D2_orig": {
+   "tasks": 72,
+   "correct": 60,
+   "coding": 33,
+   "reasoning": 27,
+   "dev_correct": 22,
+   "conf_correct": 38,
+   "total_min": 131.9,
+   "min_per_correct": 2.199,
+   "output_tokens": 518985,
+   "tok_per_s_overall": 65.6,
+   "hit_cap": 0,
+   "no_answer": 4
+  },
+  "D2_swap": {
+   "tasks": 72,
+   "correct": 54,
+   "coding": 29,
+   "reasoning": 25,
+   "dev_correct": 18,
+   "conf_correct": 36,
+   "total_min": 74.3,
+   "min_per_correct": 1.376,
+   "output_tokens": 356237,
+   "tok_per_s_overall": 79.9,
+   "hit_cap": 0,
+   "no_answer": 4
+  }
+ },
+ "tests": {
+  "M1": {
+   "method": "A65",
+   "what": "accuracy",
+   "swap_only": 11,
+   "orig_only": 1,
+   "p_two_sided": 0.0063,
+   "verdict": "more accurate"
+  },
+  "M2": {
+   "method": "A65",
+   "what": "min per correct",
+   "ratio_swap_over_orig": 0.406,
+   "ci95": [
+    0.303,
+    0.542
+   ],
+   "verdict": "faster"
+  },
+  "M3": {
+   "method": "D2",
+   "what": "accuracy",
+   "swap_only": 5,
+   "orig_only": 11,
+   "p_two_sided": 0.2101,
+   "verdict": "no detectable difference"
+  },
+  "M4": {
+   "method": "D2",
+   "what": "min per correct",
+   "ratio_swap_over_orig": 0.626,
+   "ci95": [
+    0.443,
+    0.918
+   ],
+   "verdict": "faster"
+  }
+ }
+}

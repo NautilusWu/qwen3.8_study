@@ -1,0 +1,6 @@
+run,min_mem_available_gib,ngram_tables_in_page_cache_max_gib
+"check: example tasks, 60K prompt, 65,536 reply",28.97,23.9
+"check: reply to the 65,536 limit",31.66,23.9
+"400 tasks: low, vote (81,920 window)",25.62,25.8
+"400 tasks: deep (81,920 window)",30.63,24.6
+"400 tasks: low, 262,144 window",27.05,22.3

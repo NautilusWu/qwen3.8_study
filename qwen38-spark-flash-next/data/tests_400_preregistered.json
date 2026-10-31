@@ -1,0 +1,59 @@
+{
+ "flashnext vs qwen27b, A65": {
+  "only_first": 15,
+  "only_second": 23,
+  "p": 0.2559,
+  "acc_diff_pp": -2.0,
+  "acc_ci95": [
+   -5.0,
+   1.0
+  ],
+  "time_ratio": 1.008,
+  "time_ci95": [
+   0.886,
+   1.147
+  ],
+  "p_holm": 0.2559,
+  "holm3": 0.2559,
+  "holm_over_3": 0.2559,
+  "p_holm_note": "p_holm in this record is over this pair only; holm_over_3 is the locked adjustment"
+ },
+ "flashnext vs qwen27b, D2": {
+  "only_first": 30,
+  "only_second": 9,
+  "p": 0.0011,
+  "acc_diff_pp": 5.25,
+  "acc_ci95": [
+   2.25,
+   8.25
+  ],
+  "time_ratio": 2.006,
+  "time_ci95": [
+   1.595,
+   2.501
+  ],
+  "p_holm": 0.0011,
+  "holm3": 0.0022,
+  "holm_over_3": 0.0022,
+  "p_holm_note": "p_holm in this record is over this pair only; holm_over_3 is the locked adjustment"
+ },
+ "flashnext vs qwen27b, CL4": {
+  "only_first": 21,
+  "only_second": 3,
+  "p": 0.0003,
+  "acc_diff_pp": 4.5,
+  "acc_ci95": [
+   2.25,
+   7.0
+  ],
+  "time_ratio": 2.426,
+  "time_ci95": [
+   2.027,
+   2.897
+  ],
+  "p_holm": 0.0003,
+  "holm3": 0.0009,
+  "holm_over_3": 0.0009,
+  "p_holm_note": "p_holm in this record is over this pair only; holm_over_3 is the locked adjustment"
+ }
+}

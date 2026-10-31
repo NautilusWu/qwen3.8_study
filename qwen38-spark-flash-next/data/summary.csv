@@ -1,0 +1,8 @@
+config,tasks,correct,correct_coding,correct_reasoning,total_min,min_per_correct,hit_output_limit,no_answer,ends_in_repetition,output_tokens,max_output_tokens,time_limit_min
+flashnext_deep_A65,400,364,176,188,1457.0,4.003,29,29,18,4365521,65536,40
+flashnext_low_D2,400,384,194,190,661.6,1.723,5,7,3,2052826,65536,40
+flashnext_vote4_low_CL4,400,391,195,196,877.5,2.244,4,1,1,3307185,219964,40
+qwen27b_deep_A65,400,372,184,188,1477.2,3.971,17,19,8,4322514,65536,40
+qwen27b_low_D2,400,363,187,176,311.8,0.859,0,6,0,1397899,45500,40
+qwen27b_vote4_low_CL4,400,373,182,191,345.0,0.925,0,0,0,2792963,164791,40
+flashnext_low_D2_maxlimit,400,384,194,190,758.4,1.975,2,7,3,2507091,260096,none

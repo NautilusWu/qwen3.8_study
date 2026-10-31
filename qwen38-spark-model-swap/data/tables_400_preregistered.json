@@ -1,0 +1,95 @@
+{
+ "totals": {
+  "O-CL4": {
+   "correct": 373,
+   "coding": 182,
+   "reasoning": 191,
+   "total_min": 345.0,
+   "min_per_correct": 0.925,
+   "hit_cap": 0,
+   "timed_out": 0,
+   "output_tokens": 2792963
+  },
+  "F-CL4": {
+   "correct": 368,
+   "coding": 180,
+   "reasoning": 188,
+   "total_min": 303.3,
+   "min_per_correct": 0.824,
+   "hit_cap": 0,
+   "timed_out": 0,
+   "output_tokens": 2468908
+  },
+  "F-A65": {
+   "correct": 367,
+   "coding": 184,
+   "reasoning": 183,
+   "total_min": 746.9,
+   "min_per_correct": 2.035,
+   "hit_cap": 13,
+   "timed_out": 0,
+   "output_tokens": 2763462
+  }
+ },
+ "pairs": {
+  "O-CL4 vs F-CL4": {
+   "only_first": 18,
+   "only_second": 13,
+   "p": 0.4731,
+   "acc_diff_pp": 1.25,
+   "acc_ci95": [
+    -1.5,
+    4.0
+   ],
+   "time_ratio": 1.123,
+   "time_ci95": [
+    1.01,
+    1.238
+   ],
+   "p_holm": 1.0
+  },
+  "O-CL4 vs F-A65": {
+   "only_first": 23,
+   "only_second": 17,
+   "p": 0.4296,
+   "acc_diff_pp": 1.5,
+   "acc_ci95": [
+    -1.5,
+    4.5
+   ],
+   "time_ratio": 0.455,
+   "time_ci95": [
+    0.38,
+    0.543
+   ],
+   "p_holm": 1.0
+  },
+  "F-CL4 vs F-A65": {
+   "only_first": 24,
+   "only_second": 23,
+   "p": 1.0,
+   "acc_diff_pp": 0.25,
+   "acc_ci95": [
+    -3.0,
+    3.5
+   ],
+   "time_ratio": 0.405,
+   "time_ci95": [
+    0.335,
+    0.487
+   ],
+   "p_holm": 1.0
+  }
+ },
+ "vote_rules_reasoning": {
+  "F-CL4/majority": "176/177",
+  "F-CL4/no_answer": "0/2",
+  "F-CL4/plurality": "8/9",
+  "F-CL4/tie_earliest": "4/12",
+  "O-CL4/majority": "183/183",
+  "O-CL4/plurality": "6/10",
+  "O-CL4/tie_earliest": "2/7"
+ },
+ "any_config_correct": 392,
+ "all_configs_correct": 333
+}

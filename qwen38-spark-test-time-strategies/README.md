@@ -115,4 +115,6 @@ Setting `PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True` lets freed memory be 
 | [code/coding_agents/](code/coding_agents/) | agent harness: pinned image, model server, proxy, LiteLLM gateway, configs, runner |
 | [code/memory/](code/memory/) | memory guard and the allocator probe |
 
+**Deeper test:** [Part 5](https://github.com/NautilusWu/qwen3.8_study/blob/main/qwen38-spark-model-swap/README.md) repeats these comparisons with a fine-tuned model and on 400 new tasks.
+
 Code: MIT ([LICENSE](LICENSE)).
