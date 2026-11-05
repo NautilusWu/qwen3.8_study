@@ -1,97 +1,65 @@
-# Qwen3.8-27B on NVIDIA DGX Spark: Inference and Test-Time Compute Studies
+# Qwen3.8 on one NVIDIA DGX Spark
 
-An empirical research repository investigating how to run **Qwen3.8-27B** efficiently on a single **NVIDIA DGX Spark**, and how to turn inference-time computation into more correct answers rather than merely more generated tokens.
+[English](#english) | [中文](#中文)
 
-The project covers inference backends, quantization, speculative decoding, performance–accuracy trade-offs, and test-time reasoning strategies. Each study retains its own methodology and experimental artifacts; this page is the entry point.
+## English
 
-> **Scope:** These are measurements on specific model snapshots, software versions, workloads, and hardware settings—not universal rankings of inference engines or reasoning methods.
+Seven studies of running Qwen3.8 locally on one **DGX Spark** (GB10, 128 GB) for **one user**, with thinking on. One question: **how do you get correct answers fastest?** The measure is **minutes per correct answer** (all time, including wrong answers, divided by the number of correct answers), not tokens/s.
 
-## Research questions
-
-1. How much inference performance can a single DGX Spark deliver for Qwen3.8-27B?
-2. What changes when we switch inference engines, numerical formats, and decoding techniques?
-3. Does higher token throughput actually reduce end-to-end time to a correct answer?
-4. When is additional test-time computation useful—and should it be spent on longer reasoning, parallel candidates, or tools?
-
-## Key findings
-
-The most recent test-time compute study compares strategies on a **48-task confirmation set**, separate from earlier exploratory tasks. The published summary reports:
-
-| Strategy | Correct / 48 | Accuracy | Total task time | Minutes per correct answer |
-|---|---:|---:|---:|---:|
-| A65 — extended/deep reasoning | 35 | 72.9% | 336.5 min | 9.61 |
-| D2 — low-effort reasoning | 38 | 79.2% | 112.4 min | 2.96 |
-| H — hybrid reasoning | 40 | 83.3% | 124.0 min | 3.10 |
-| CL4 — four concurrent low-effort candidates | 44 | 91.7% | 124.3 min | 2.82 |
-
-**Interpretation:** In this particular test set, longer single-path reasoning did not improve accuracy or time efficiency. Concurrent candidates produced the highest observed accuracy while retaining a competitive time per correct answer. This does **not** establish a universal advantage: the one-sided paired test comparing CL4 with D2 was reported as *p* = 0.055, above the conventional 0.05 threshold.
-
-The earlier engine-comparison study also explores why raw output tokens/second and end-to-end task completion time can rank configurations differently. Refer to the individual reports for setup, caveats, and precise metric definitions.
-
-## Studies
-
-| Study | Focus | Where to start |
+| Part | Question | Folder |
 |---|---|---|
-| Part 1 | Initial Qwen3.8-27B deployment and inference measurements | Browse the repository directories below |
-| Part 2 | Inference optimization and decoding configurations | Browse the repository directories below |
-| Part 3 | Engine, quantization, throughput, and accuracy comparisons | [Inference speed comparison](qwen38-spark-speed-comparison-final/README.md) |
-| Part 4 | Reasoning budgets, parallel sampling, and cooperative tool-using strategies | [Test-time strategies](qwen38-spark-test-time-strategies/README.md) |
+| 1 | Which engine, weight format and drafter is fastest for one user? | [speed-comparison-display-on](qwen38-spark-speed-comparison-display-on/README.md) |
+| 2 | How much does the monitor slow decoding? Where does vLLM MTP depth stop helping? | [speed-comparison-display-off](qwen38-spark-speed-comparison-display-off/README.md) |
+| 3 | Final engine test on 48 unseen prompts | [speed-comparison-final](qwen38-spark-speed-comparison-final/README.md) |
+| 4 | Deep vs low thinking, parallel vote, agents | [test-time-strategies](qwen38-spark-test-time-strategies/README.md) |
+| 5 | Does it hold for a fine-tune and 400 new tasks? | [model-swap](qwen38-spark-model-swap/README.md) |
+| 6 | Qwen3.8-Flash-Next (125B MoE) vs Qwen3.8-27B | [flash-next](qwen38-spark-flash-next/README.md) |
+| 7 | Reasoning loops, and a thinking budget that removes them | [reasoning-loops](qwen38-spark-reasoning-loops/README.md) |
 
-The studies are related but should not be interpreted as a single controlled experiment: workloads and configurations may differ between parts.
+**Key findings**
 
-## Part 4: Test-time compute
+- **Engine:** TensorFold 0.6.0 + NVIDIA NVFP4 + DFlash2: 6.0 min per correct answer vs 11.2 for the best vLLM setup (Part 3). The monitor alone costs 9-18% of decode speed (Part 2).
+- **Think less:** deep thinking 35/48 at 9.61 min per correct answer; low thinking 38/48 at 2.96; 4 low-thinking branches + vote 44/48 at 2.82 (Part 4). The same pattern holds on 400 new tasks and for a fine-tune (Part 5).
+- **Bigger model:** Flash Next with the vote gets 391/400 vs 373/400 for 27B, but takes 2.4x as long per correct answer (Part 6).
+- **Loops:** a 32,768-token thinking budget removes every output-limit hit in deep thinking: Flash Next 364 → 387/400, 27B 372 → 383/400, and both get faster (Part 7).
 
-The fourth study investigates several ways to allocate inference-time work:
+**Recommended setup**
 
-- **Single-path reasoning:** compare low and extended reasoning budgets.
-- **Independent parallel candidates:** generate multiple solutions and choose a result using task-dependent selection rules.
-- **Hybrid reasoning:** combine stages with different reasoning budgets.
-- **Cooperative strategies:** divide tasks or assign specialized roles, including sandbox-based code execution and verification.
+- TensorFold 0.6.0 + `nvidia/Qwen3.8-27B-NVFP4` + `z-lab/Qwen3.8-27B-DFlash2`, FP8 KV cache.
+- `reasoning_effort: low` by default; 4 branches + majority vote for checkable answers; deep thinking only with `"thinking_budget": 32768`.
+- `PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True` for long sessions and agents.
 
-Its evaluation includes exploratory development tasks, a harder exploratory set, and a separate confirmation set. Published per-task data enables readers to inspect failures, elapsed time, output tokens, and selection rules rather than relying only on aggregate accuracy.
+**Reproduce:** each folder has a `REPRODUCE.md` with pinned versions (images by digest, checkpoints by commit). Tables can be recomputed without a GPU (`scripts/recheck.sh` in Parts 5-7). Task prompts and graders are private; per-task results are published by task id.
 
-### Recompute published confirmation statistics
+Results are specific to these model snapshots, software versions, tasks and one machine. Code: MIT.
 
-From the repository root:
+## 中文
 
-```bash
-cd qwen38-spark-test-time-strategies/code/strategies
-python3 analyze_confirm.py --csv ../../data/per_task.csv
-```
+在一台 **DGX Spark**（GB10，128 GB）上本地运行 Qwen3.8 的七项研究，单用户，开启思考。只问一个问题：**怎样最快得到正确答案？** 指标是**每答对一题的分钟数**（全部时间，包括答错的题，除以答对题数），而不是 tok/s。
 
-This analysis script computes paired comparisons and bootstrap intervals from the published per-task CSV. It does **not** rerun model inference.
+| 部分 | 问题 | 文件夹 |
+|---|---|---|
+| 1 | 哪种引擎、权重格式和草稿模型对单用户最快？ | [speed-comparison-display-on](qwen38-spark-speed-comparison-display-on/README.md) |
+| 2 | 显示器让生成慢多少？vLLM 的 MTP 深度到几就不再变快？ | [speed-comparison-display-off](qwen38-spark-speed-comparison-display-off/README.md) |
+| 3 | 在 48 道没用过的题上做引擎的最终检验 | [speed-comparison-final](qwen38-spark-speed-comparison-final/README.md) |
+| 4 | 深度思考、低思考、并行投票、代理，怎么用最快 | [test-time-strategies](qwen38-spark-test-time-strategies/README.md) |
+| 5 | 换成微调模型、换成 400 道新题，结论还成立吗？ | [model-swap](qwen38-spark-model-swap/README.md) |
+| 6 | Qwen3.8-Flash-Next（125B MoE）对比 Qwen3.8-27B | [flash-next](qwen38-spark-flash-next/README.md) |
+| 7 | 推理循环，以及消除循环的思考预算 | [reasoning-loops](qwen38-spark-reasoning-loops/README.md) |
 
-### Data and implementation
+**主要结论**
 
-- [Aggregate results](qwen38-spark-test-time-strategies/data/summary.csv)
-- [Per-task results](qwen38-spark-test-time-strategies/data/per_task.csv)
-- [Confirmation analysis](qwen38-spark-test-time-strategies/code/strategies/analyze_confirm.py)
-- [Cooperative strategy implementation](qwen38-spark-test-time-strategies/code/strategies/coop.py)
-- [Shared inference, grading, and sandbox utilities](qwen38-spark-test-time-strategies/code/strategies/common.py)
+- **引擎**：TensorFold 0.6.0 + NVIDIA NVFP4 + DFlash2 每答对一题 6.0 分钟，最好的 vLLM 配置是 11.2 分钟（Part 3）。光是开着显示器，生成就慢 9-18%（Part 2）。
+- **少想更快**：深度思考 35/48，每答对一题 9.61 分钟；低思考 38/48，2.96 分钟；4 条低思考分支并行投票 44/48，2.82 分钟（Part 4）。在 400 道新题和微调模型上结论相同（Part 5）。
+- **更大的模型**：Flash Next 投票答对 391/400，27B 是 373/400，但每答对一题的时间是 27B 的 2.4 倍（Part 6）。
+- **循环**：32,768 token 的思考预算消除了深度思考里所有写满上限的情况：Flash Next 从 364/400 提高到 387/400，27B 从 372/400 提高到 383/400，而且两者都更快（Part 7）。
 
-## Reproducibility
+**推荐设置**
 
-The repository provides strategy implementations, aggregated and per-task measurements, and analysis scripts. For full inference reproduction, follow the instructions and pinned environment details in each study's own README.
+- TensorFold 0.6.0 + `nvidia/Qwen3.8-27B-NVFP4` + `z-lab/Qwen3.8-27B-DFlash2`，FP8 KV 缓存。
+- 默认 `reasoning_effort: low`；答案可以核对的题用 4 条分支多数投票；只在需要时用深度思考，并加 `"thinking_budget": 32768`。
+- 长对话和代理设置 `PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True`。
 
-**Important limitation:** The Part 4 task prompts and grading package used in the original study are not published. As a result, the public CSV-based statistical analysis is reproducible, but an independent end-to-end reproduction of the original scores requires equivalent task and grader inputs. The strategy code expects these inputs via `TASKS_DIR` and `GRADER_DIR`.
+**复现**：每个文件夹都有 `REPRODUCE.md`，版本全部固定（镜像按 digest，检查点按提交）。表格不用 GPU 就能重算（Part 5-7 的 `scripts/recheck.sh`）。题目和评分器不公开，逐题结果按题号公开。
 
-Additional dependencies for Part 4 include a compatible TensorFold serving environment, model snapshots, Docker, and an isolated execution image. The code is tuned for the tested DGX Spark environment; do not assume it is portable without adjustments.
-
-## Reading the results responsibly
-
-- **Tokens/second is not the same as time to a correct answer.** Generated length, prompt processing, parallel scheduling, and tool overhead matter.
-- **A higher observed score is not necessarily statistically conclusive.** Paired task-level comparisons are more informative than comparing two percentages alone.
-- **More computation is not automatically better.** The value of longer reasoning or parallel sampling depends on task type and the selection mechanism.
-- **Results are configuration-specific.** Quantization, model snapshot, backend, task selection, and hardware constraints can change the outcome.
-
-## Future directions
-
-Potential extensions include adaptive selection between low-effort reasoning, parallel candidates, and tool-assisted verification; evaluation on fully public benchmarks; additional independent runs; and explicit latency–accuracy Pareto comparisons across hardware and models.
-
-These are research directions, not claims of completed results.
-
-## Repository
-
-[GitHub: NautilusWu/qwen3.8_study](https://github.com/NautilusWu/qwen3.8_study)
-
-For detailed methodology, configuration flags, and interpretation, begin with the [Part 3](qwen38-spark-speed-comparison-final/README.md) and [Part 4](qwen38-spark-test-time-strategies/README.md) reports.
+结果只针对这些模型版本、软件版本、题目和这一台机器。代码采用 MIT 协议。
