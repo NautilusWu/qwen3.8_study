@@ -98,6 +98,8 @@ For orientation: with these settings Flash Next decoded about 40-43 tokens/s on 
 
 The 400 tasks stay private for future model comparisons. Per-task results are published under the same anonymous ids as in Part 5 (T001-T400, same order in both parts), with their category; the prompts' sha256 is in [PREREGISTRATION.md](PREREGISTRATION.md).
 
+**Next:** [Part 7](https://github.com/NautilusWu/qwen3.8_study/blob/main/qwen38-spark-reasoning-loops/README.md) looks at the replies that hit the output limit: what stops these reasoning loops (sampling, a thinking budget, a loop detector), on both models.
+
 ## Files
 
 | Path | Content |
