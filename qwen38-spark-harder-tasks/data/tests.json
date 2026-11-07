@@ -1,0 +1,140 @@
+{
+ "plan_10_primary": {
+  "h250": {
+   "pair": "flashnext_deep_budget vs qwen27b_vote4_low_CL4",
+   "only_first": 27,
+   "only_second": 8,
+   "p": 0.0019,
+   "acc_diff_pp": 7.6,
+   "acc_ci95": [
+    3.2,
+    12.0
+   ],
+   "time_ratio": 2.742,
+   "time_ci95": [
+    2.269,
+    3.336
+   ],
+   "p_holm_2": 0.0038,
+   "time_ci_resamples_dropped": 0
+  },
+  "arxivmath": {
+   "pair": "flashnext_deep_budget vs qwen27b_vote4_low_CL4",
+   "only_first": 10,
+   "only_second": 2,
+   "p": 0.0386,
+   "acc_diff_pp": 7.27,
+   "acc_ci95": [
+    1.82,
+    13.64
+   ],
+   "time_ratio": 0.176,
+   "time_ci95": [
+    0.059,
+    0.637
+   ],
+   "p_holm_2": 0.0386,
+   "time_ci_resamples_dropped": 1346
+  }
+ },
+ "plan_09_primary": {
+  "D2": {
+   "pair": "flashnext vs qwen27b, D2",
+   "only_first": 8,
+   "only_second": 3,
+   "p": 0.2266,
+   "acc_diff_pp": 6.94,
+   "acc_ci95": [
+    -1.39,
+    15.28
+   ],
+   "time_ratio": 1.365,
+   "time_ci95": [
+    1.058,
+    1.787
+   ],
+   "p_holm_3": 0.6798
+  },
+  "CL4": {
+   "pair": "flashnext vs qwen27b, CL4",
+   "only_first": 2,
+   "only_second": 3,
+   "p": 1.0,
+   "acc_diff_pp": -1.39,
+   "acc_ci95": [
+    -6.94,
+    4.17
+   ],
+   "time_ratio": 1.867,
+   "time_ci95": [
+    1.428,
+    2.518
+   ],
+   "p_holm_3": 1.0
+  },
+  "A65": {
+   "pair": "flashnext vs qwen27b, A65",
+   "only_first": 9,
+   "only_second": 8,
+   "p": 1.0,
+   "acc_diff_pp": 1.39,
+   "acc_ci95": [
+    -9.72,
+    12.5
+   ],
+   "time_ratio": 1.029,
+   "time_ci95": [
+    0.739,
+    1.424
+   ],
+   "p_holm_3": 1.0
+  }
+ },
+ "plan_09_flashnext_internal_reported_only": {
+  "FN-B vs FN-A65": {
+   "only_first": 14,
+   "only_second": 0,
+   "p": 0.0001,
+   "acc_diff_pp": 19.44,
+   "acc_ci95": [
+    11.11,
+    29.17
+   ],
+   "time_ratio": 0.547,
+   "time_ci95": [
+    0.452,
+    0.651
+   ]
+  },
+  "FN-B vs FN-CL4": {
+   "only_first": 4,
+   "only_second": 0,
+   "p": 0.125,
+   "acc_diff_pp": 5.56,
+   "acc_ci95": [
+    1.39,
+    11.11
+   ],
+   "time_ratio": 0.938,
+   "time_ci95": [
+    0.711,
+    1.306
+   ]
+  },
+  "FN-D2 vs FN-CL4": {
+   "only_first": 1,
+   "only_second": 4,
+   "p": 0.375,
+   "acc_diff_pp": -4.17,
+   "acc_ci95": [
+    -11.11,
+    1.39
+   ],
+   "time_ratio": 0.699,
+   "time_ci95": [
+    0.541,
+    0.946
+   ]
+  }
+ }
+}

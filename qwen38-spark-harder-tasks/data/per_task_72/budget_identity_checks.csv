@@ -1,0 +1,6 @@
+task_id,set,output_tokens,identical_text_and_tokens
+h_c_k_intervals,hard,15763,1
+h_c_kth_perm,hard,4831,1
+h_c_sliding_median,hard,17408,1
+h_c_paint,hard,5619,1
+h_c_damerau,hard,25164,1

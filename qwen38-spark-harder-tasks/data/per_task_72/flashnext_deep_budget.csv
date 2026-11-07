@@ -1,0 +1,73 @@
+task_id,set,category,passed,wall_s,output_tokens,hit_output_limit,answered,over_32768_tokens,source
+h_c_brackets,hard,coding,1,700.0,33509,0,1,1,run
+h_c_chain,hard,coding,1,307.7,13727,0,1,0,deep greedy reply (identical below budget)
+h_c_cpp_bigmul,hard,coding,1,496.7,33432,0,1,1,run
+h_c_cpp_fenwick2d,hard,coding,1,702.4,34039,0,1,1,run
+h_c_damerau,hard,coding,1,602.4,25164,0,1,0,deep greedy reply (identical below budget)
+h_c_diameter_pairs,hard,coding,1,698.4,33544,0,1,1,run
+h_c_k_intervals,hard,coding,1,368.8,15763,0,1,0,deep greedy reply (identical below budget)
+h_c_kth_perm,hard,coding,1,113.3,4831,0,1,0,deep greedy reply (identical below budget)
+h_c_paint,hard,coding,1,131.8,5619,0,1,0,deep greedy reply (identical below budget)
+h_c_prime_range,hard,coding,1,723.1,34148,0,1,1,run
+h_c_regex,hard,coding,1,568.8,33848,0,1,1,run
+h_c_sliding_median,hard,coding,1,409.0,17408,0,1,0,deep greedy reply (identical below budget)
+h_r_coin_runs,hard,reasoning,1,58.4,3245,0,1,0,deep greedy reply (identical below budget)
+h_r_coupon_partial,hard,reasoning,1,15.0,815,0,1,0,deep greedy reply (identical below budget)
+h_r_grid_king,hard,reasoning,1,227.4,12488,0,1,0,deep greedy reply (identical below budget)
+h_r_grundy,hard,reasoning,0,483.0,33050,0,1,1,run
+h_r_lattice_triangle,hard,reasoning,1,47.7,2699,0,1,0,deep greedy reply (identical below budget)
+h_r_magic,hard,reasoning,1,12.3,631,0,1,0,deep greedy reply (identical below budget)
+h_r_markov_walk,hard,reasoning,1,20.5,1116,0,1,0,deep greedy reply (identical below budget)
+h_r_parking,hard,reasoning,1,258.7,12428,0,1,0,deep greedy reply (identical below budget)
+h_r_perm_cycles,hard,reasoning,1,442.8,33169,0,1,1,run
+h_r_recurrence_cycle,hard,reasoning,0,598.3,33226,0,1,1,run
+h_r_two_squares,hard,reasoning,1,566.8,33295,0,1,1,run
+h_r_weighted_jobs,hard,reasoning,1,666.2,32970,0,1,1,run
+k_baggage,confirm,reasoning,1,60.0,2952,0,1,0,deep greedy reply (identical below budget)
+k_ballot3d,confirm,reasoning,1,160.1,8794,0,1,0,deep greedy reply (identical below budget)
+k_circle_mod,confirm,reasoning,1,52.7,2700,0,1,0,deep greedy reply (identical below budget)
+k_circle_seating,confirm,reasoning,1,118.3,5164,0,1,0,deep greedy reply (identical below budget)
+k_coin_row_game,confirm,reasoning,1,137.0,8986,0,1,0,deep greedy reply (identical below budget)
+k_collatz,confirm,reasoning,1,29.0,1351,0,1,0,deep greedy reply (identical below budget)
+k_compositions,confirm,reasoning,1,257.7,14600,0,1,0,deep greedy reply (identical below budget)
+k_dice_stop,confirm,reasoning,1,18.5,1022,0,1,0,deep greedy reply (identical below budget)
+k_factorial_base12,confirm,reasoning,1,69.2,4230,0,1,0,deep greedy reply (identical below budget)
+k_four_primes,confirm,reasoning,0,674.2,32781,0,1,1,run
+k_friday13,confirm,reasoning,1,320.1,18470,0,1,0,deep greedy reply (identical below budget)
+k_gambler,confirm,reasoning,1,88.4,5970,0,1,0,deep greedy reply (identical below budget)
+k_line_regions,confirm,reasoning,1,84.7,4594,0,1,0,deep greedy reply (identical below budget)
+k_necklaces,confirm,reasoning,1,12.7,762,0,1,0,deep greedy reply (identical below budget)
+k_no_ap,confirm,reasoning,0,561.7,32809,0,1,1,run
+k_overtime,confirm,reasoning,1,60.8,3036,0,1,0,deep greedy reply (identical below budget)
+k_power_bill,confirm,reasoning,1,28.6,1734,0,1,0,deep greedy reply (identical below budget)
+k_production_plan,confirm,reasoning,1,84.6,4250,0,1,0,deep greedy reply (identical below budget)
+k_rook_derangement,confirm,reasoning,1,168.6,8358,0,1,0,deep greedy reply (identical below budget)
+k_savings,confirm,reasoning,1,240.1,15749,0,1,0,deep greedy reply (identical below budget)
+k_spanning_trees,confirm,reasoning,1,540.2,33218,0,1,1,run
+k_triple_birthday,confirm,reasoning,1,585.1,33124,0,1,1,run
+k_urn_colours,confirm,reasoning,1,90.1,5402,0,1,0,deep greedy reply (identical below budget)
+k_word_rules,confirm,reasoning,1,80.9,3713,0,1,0,deep greedy reply (identical below budget)
+q_auto,confirm,coding,1,477.5,19434,0,1,0,deep greedy reply (identical below budget)
+q_balance,confirm,coding,1,440.0,18676,0,1,0,deep greedy reply (identical below budget)
+q_baseconv,confirm,coding,1,683.0,34279,0,1,1,run
+q_coins,confirm,coding,1,477.5,19859,0,1,0,deep greedy reply (identical below budget)
+q_cpp_heap,confirm,coding,1,127.3,6494,0,1,0,deep greedy reply (identical below budget)
+q_cpp_inv,confirm,coding,1,67.3,3300,0,1,0,deep greedy reply (identical below budget)
+q_cpp_rational,confirm,coding,1,654.1,33939,0,1,1,run
+q_cpp_signed,confirm,coding,1,359.4,33716,0,1,1,run
+q_csv,confirm,coding,1,565.7,33178,0,1,1,run
+q_cuts,confirm,coding,1,362.0,14675,0,1,0,deep greedy reply (identical below budget)
+q_huffman,confirm,coding,1,640.5,33256,0,1,1,run
+q_jptr,confirm,coding,1,368.2,33125,0,1,1,run
+q_keys,confirm,coding,1,85.9,3778,0,1,0,deep greedy reply (identical below budget)
+q_kpairs,confirm,coding,1,728.7,33038,0,1,1,run
+q_levels,confirm,coding,1,43.5,1749,0,1,0,deep greedy reply (identical below budget)
+q_lrs,confirm,coding,1,779.7,33527,0,1,1,run
+q_nextds,confirm,coding,1,675.9,33084,0,1,1,run
+q_parity,confirm,coding,1,590.4,33191,0,1,1,run
+q_rational,confirm,coding,1,746.7,33923,0,1,1,run
+q_roman,confirm,coding,1,571.3,33251,0,1,1,run
+q_rooms,confirm,coding,1,18.7,912,0,1,0,deep greedy reply (identical below budget)
+q_split,confirm,coding,1,70.8,3053,0,1,0,deep greedy reply (identical below budget)
+q_tsp,confirm,coding,1,614.5,28856,0,1,0,deep greedy reply (identical below budget)
+q_zsub,confirm,coding,1,194.4,8235,0,1,0,deep greedy reply (identical below budget)
