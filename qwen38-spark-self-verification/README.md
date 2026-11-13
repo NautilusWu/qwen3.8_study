@@ -177,6 +177,8 @@ The known wrong answers are the typical wrong answers built with each task, incl
 - **Per-task results use Part 8's anonymous ids** (H001-H250), with language, tier, split and a specification-style flag.
 - **The tests and code the model wrote are not published,** since they encode the tasks. The published files hold only ids, times, token counts, pass/fail results and failure kinds assigned by program.
 
+**Next:** [Part 10](https://github.com/NautilusWu/qwen3.8_study/blob/main/qwen38-spark-engine-upgrade/README.md) changes only the engine: TensorFold 1.2.5, the new native engine, against 0.6.0 for the 27B.
+
 ## Files
 
 | Path | Content |

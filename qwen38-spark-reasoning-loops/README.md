@@ -126,6 +126,8 @@ Each row of the per-task files says where it came from (column `source`). The co
 
 The 400 tasks stay private for future model comparisons. Per-task results use the same anonymous ids as Parts 5 and 6 (T001-T400). Reply texts are not published, since they quote the tasks; the loop labels and detector positions are.
 
+**Next:** [Part 8](https://github.com/NautilusWu/qwen3.8_study/blob/main/qwen38-spark-harder-tasks/README.md) moves to harder tasks: Flash Next and the 27B on 250 new private tasks and 110 recent arXiv math problems.
+
 ## Files
 
 | Path | Content |

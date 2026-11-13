@@ -157,6 +157,8 @@ Flash Next B on the 72 tasks was composed in the way described in Part 7. Greedy
 - **The 72 tasks of step 1:** they keep the ids Part 4 already published.
 - **Reply texts are not published,** since they quote the tasks.
 
+**Next:** [Part 9](https://github.com/NautilusWu/qwen3.8_study/blob/main/qwen38-spark-self-verification/README.md) asks whether the 27B can check its own code with tests it writes itself.
+
 ## Files
 
 | Path | Content |
