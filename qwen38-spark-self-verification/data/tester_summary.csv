@@ -1,0 +1,6 @@
+run,writer,tasks,tests_given,accepts_reference,ref_assert_failed,ref_check_failed,ref_exception,ref_crash,ref_compile_error,ref_timeout,test_code_errors,passes_on_empty_code,first_failure_hand_written_constant,first_failure_check_inside_a_loop,first_failure_other_check,first_failure_exception,first_failure_compile_error,first_failure_timeout,first_failure_no_line_in_output,bads_wrong_rejected,bads_wrong_total,bads_slow_rejected,bads_slow_total,candidates_tested,false_rejections,hidden_correct,false_acceptances,hidden_wrong,random_inputs,python_tests,python_tests_with_unused_functions,python_unused_functions
+run1_dev_tester_low,T,50,50,13,28,3,0,0,2,4,2,0,26,0,5,0,2,4,0,116,116,34,37,198,129,182,0,16,50,37,2,12
+run1_dev_tester_low,K (critic),50,14,6,,,,,,,,,,,,,,,,28,28,11,13,56,32,54,0,2,,,,
+run2_dev_tester_medium,T,50,48,15,23,8,0,0,1,1,1,1,28,1,1,0,1,1,1,107,109,34,37,190,118,177,2,13,48,35,3,28
+run3_dev_tester_new_prompt,T,50,50,31,9,3,3,0,3,1,6,0,7,1,4,3,3,1,0,115,116,31,37,198,61,182,2,16,50,37,3,26
+run4_test_locked,T,150,149,84,30,4,19,0,10,2,29,0,17,7,10,19,10,2,0,342,346,85,95,591,214,518,2,73,146,102,6,42

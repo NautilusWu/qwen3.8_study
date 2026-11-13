@@ -1,0 +1,96 @@
+{
+ "release": {
+  "archive_sha256": "1a0192b28d6ab6ec2749f3ff25515379dba4895171e781b30f810afc971ae4f8",
+  "archive_ok": true,
+  "files_ok": true,
+  "version": "tensorfold-native 1.2.5",
+  "version_ok": true
+ },
+ "criteria": {
+  "1 release": true,
+  "2 start": true,
+  "3 examples": true,
+  "4 determinism": true,
+  "5 speed": true,
+  "6 memory": true
+ },
+ "notes": {
+  "2 start": "--precision full accepted (the startup lines do not name the activation precision)",
+  "3 examples": {
+   "finished_branch_tokens_median_new_old": [
+    671,
+    730,
+    0.92
+   ],
+   "effort_seen": [
+    "low"
+   ],
+   "rules_new": {
+    "ex_primes": "majority",
+    "ex_trains": "majority",
+    "ex_palindrome": "first_with_code",
+    "ex_gcd_cpp": "first_with_code",
+    "ex_five_numbers": "majority"
+   },
+   "rules_old": {
+    "ex_primes": "majority",
+    "ex_trains": "majority",
+    "ex_palindrome": "first_with_code",
+    "ex_gcd_cpp": "first_with_code",
+    "ex_five_numbers": "majority"
+   },
+   "cancelled_branches_new": 9,
+   "idle_after_decision_s_new": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "chosen_correct": {
+    "new": 5,
+    "old": 5
+   },
+   "finished_branches_correct": {
+    "new": "11/11",
+    "old": "11/11"
+   }
+  },
+  "5 speed": {
+   "long_tok_s_new_old": [
+    67.52,
+    69.99
+   ],
+   "ratio": 0.96
+  },
+  "7 report only": {
+   "new": {
+    "greedy_concurrent_equals_alone": true,
+    "greedy_twice_same": true,
+    "seeded_twice_same": true
+   },
+   "old": {
+    "greedy_concurrent_equals_alone": true,
+    "greedy_twice_same": true,
+    "seeded_twice_same": true
+   },
+   "outside_sockets_new": [
+    {
+     "sockets": 1,
+     "outside": [],
+     "error": null
+    },
+    {
+     "sockets": 1,
+     "outside": [],
+     "error": null
+    }
+   ]
+  }
+ },
+ "mem_available_low_gib": 76.0,
+ "memory_guard_fired": false,
+ "container_removed": true,
+ "passed": true,
+ "note": "compat_e01 on the 5 example tasks of Part 4, both engines, before the plan was locked; \"new\" = TensorFold 1.2.5, \"old\" = 0.6.0"
+}

@@ -1,0 +1,82 @@
+{
+ "M1": {
+  "what": "CL4 on the 400 tasks, TensorFold 1.2.5 (tf125) vs 0.6.0 (tf060), both run in this study; exact two-sided McNemar (one test, no correction); ratio of minutes per correct answer tf125/tf060 with a paired bootstrap 95% interval (10,000 resamples, seed 2026), 40 minutes per task at most",
+  "stats_py": {
+   "tasks": 400,
+   "dropped_unpaired": {},
+   "totals": {
+    "tf125": {
+     "correct": 377,
+     "total_min": 378.8,
+     "min_per_correct": 1.005
+    },
+    "tf060": {
+     "correct": 373,
+     "total_min": 357.3,
+     "min_per_correct": 0.958
+    }
+   },
+   "pairs": {
+    "tf125 vs tf060": {
+     "only_first": 13,
+     "only_second": 9,
+     "p": 0.5235,
+     "acc_diff_pp": 1.0,
+     "acc_ci95": [
+      -1.25,
+      3.25
+     ],
+     "time_ratio": 1.049,
+     "time_ci95": [
+      0.912,
+      1.22
+     ],
+     "p_holm": 0.5235
+    }
+   }
+  },
+  "rule": "accuracy significantly lower (p < 0.05, tf125 worse) -> do not upgrade; else CI upper < 1 -> 1.2.5 faster; else CI lower > 1 -> 1.2.5 slower; otherwise -> no speed difference detected, stay on 0.6.0",
+  "reading": "no speed difference detected: stay on 0.6.0 (accuracy: no difference detected)"
+ },
+ "M1_tasks_both_engines_ran": {
+  "what": "the same test on the tasks both engines ran (all 400: no block failed)",
+  "identical_to_M1": true
+ },
+ "tf060_this_run_vs_part5_run_reported_only": {
+  "what": "0.6.0 in this study vs Part 5's run of the same configuration (October)",
+  "stats_py": {
+   "tasks": 400,
+   "dropped_unpaired": {},
+   "totals": {
+    "tf060": {
+     "correct": 373,
+     "total_min": 357.3,
+     "min_per_correct": 0.958
+    },
+    "tf060_part5_run": {
+     "correct": 373,
+     "total_min": 345.0,
+     "min_per_correct": 0.925
+    }
+   },
+   "pairs": {
+    "tf060 vs tf060_part5_run": {
+     "only_first": 0,
+     "only_second": 0,
+     "p": 1.0,
+     "acc_diff_pp": 0.0,
+     "acc_ci95": [
+      0.0,
+      0.0
+     ],
+     "time_ratio": 1.036,
+     "time_ci95": [
+      1.032,
+      1.039
+     ],
+     "p_holm": 1.0
+    }
+   }
+  }
+ }
+}

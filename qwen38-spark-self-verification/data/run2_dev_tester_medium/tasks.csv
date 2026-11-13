@@ -1,0 +1,51 @@
+task_id,category,tier,spec,tester_end_s,tester_output_tokens,tester_finish,tests_given,tests_form,empty_run_passed,empty_run_container_s,passes_on_empty_code,accepts_reference,reference_failure,reference_failure_as_first_labelled,reference_first_failure,bads_wrong_rejected,bads_wrong_total,bads_slow_rejected,bads_slow_total,random_inputs,python_unused_functions
+H004,python,A,1,300.562766,15065,stop,1,as written,,,0,0,assert failed,assert failed,hand-written constant,4,4,0,0,1,0
+H007,python,A,0,277.271771,13963,stop,1,as written,,,1,1,,,,0,2,0,1,1,13
+H009,python,B,1,138.472824,8894,stop,1,as written,,,0,0,assert failed,assert failed,hand-written constant,3,3,0,0,1,0
+H014,python,A,0,80.050075,3868,stop,1,as written,,,0,0,assert failed,assert failed,hand-written constant,3,3,1,1,1,0
+H019,python,C,0,126.153403,7592,stop,1,as written,,,0,1,,,,2,2,1,1,1,0
+H020,python,B,0,54.676951,3090,stop,1,as written,,,0,1,,,,2,2,1,1,1,0
+H030,cpp,B,0,72.839057,3938,stop,1,statements,,,0,0,compile error,crash,compile error,2,2,1,1,1,
+H033,cpp,C,0,72.605484,4120,stop,1,statements,,,0,1,,,,2,2,0,1,1,
+H039,cpp,C,0,143.916130,8644,stop,1,statements,,,0,0,check failed,check failed,hand-written constant,2,2,0,0,1,
+H047,cpp,C,0,97.331391,5274,stop,1,statements,,,0,1,,,,2,2,0,1,1,
+H050,cpp,C,0,62.927089,3182,stop,1,statements,,,0,1,,,,2,2,1,1,1,
+H058,cpp,B,0,51.766362,3182,stop,1,statements,,,0,0,check failed,check failed,hand-written constant,2,2,1,1,1,
+H061,cpp,B,0,79.270250,4881,stop,1,statements,,,0,0,check failed,check failed,no line in output,2,2,1,1,1,
+H067,cpp,B,0,65.451767,3525,stop,1,statements,,,0,0,check failed,check failed,hand-written constant,2,2,1,1,1,
+H068,cpp,A,0,48.842228,2980,stop,1,statements,,,0,0,check failed,check failed,hand-written constant,2,2,1,1,1,
+H070,cpp,C,0,108.090218,6008,stop,1,statements,,,0,0,check failed,check failed,hand-written constant,2,2,1,1,1,
+H071,cpp,B,0,72.958466,5318,stop,1,statements,,,0,1,,,,2,2,1,1,1,
+H073,cpp,B,0,74.129049,4675,stop,1,statements,,,0,0,check failed,check failed,hand-written constant,2,2,1,1,1,
+H075,cpp,C,0,66.304149,3671,stop,1,statements,,,0,0,check failed,check failed,hand-written constant,2,2,1,1,1,
+H082,python,A,0,117.094112,5663,stop,1,as written,,,0,0,assert failed,assert failed,hand-written constant,2,2,0,0,1,0
+H087,python,B,0,59.150685,3143,stop,1,as written,,,0,0,assert failed,assert failed,hand-written constant,2,2,1,1,1,0
+H092,python,A,1,162.851415,10285,stop,1,as written,,,0,0,assert failed,assert failed,hand-written constant,3,3,0,0,1,0
+H094,python,C,0,75.519551,3435,stop,1,as written,,,0,0,timeout,timeout,timeout,2,2,1,1,1,0
+H098,python,A,0,69.122811,3789,stop,1,as written,,,0,0,assert failed,assert failed,hand-written constant,2,2,1,1,1,0
+H106,python,B,1,345.549890,15051,stop,0,,,,,,,,,,,,,,
+H115,python,B,0,79.687125,4055,stop,1,as written,,,0,0,assert failed,assert failed,hand-written constant,2,2,1,1,1,0
+H132,python,B,0,70.415249,3790,stop,1,as written,,,0,0,assert failed,assert failed,other check,2,2,1,1,1,0
+H139,python,A,0,89.262484,4981,stop,1,as written,,,0,1,,,,2,2,1,1,1,0
+H142,python,C,1,338.799059,18306,stop,1,as written,,,0,0,assert failed,assert failed,hand-written constant,4,4,0,0,1,6
+H149,python,A,0,51.519498,2745,stop,1,as written,,,0,0,assert failed,assert failed,hand-written constant,2,2,1,1,1,0
+H150,python,B,0,62.797765,3144,stop,1,as written,,,0,0,assert failed,assert failed,hand-written constant,2,2,1,1,1,0
+H158,python,A,0,67.872683,4163,stop,1,as written,,,0,0,assert failed,assert failed,hand-written constant,2,2,1,1,1,0
+H160,python,C,0,139.146299,5771,stop,1,as written,,,0,0,assert failed,assert failed,hand-written constant,2,2,1,1,1,0
+H163,python,A,0,59.578548,3397,stop,1,as written,,,0,0,assert failed,assert failed,hand-written constant,2,2,1,1,1,0
+H172,python,C,0,58.009553,3184,stop,1,as written,,,0,1,,,,2,2,1,1,1,0
+H176,python,C,0,114.149755,5299,stop,1,as written,,,0,0,assert failed,assert failed,hand-written constant,3,3,1,1,1,0
+H177,python,A,1,287.882958,15591,stop,1,as written,,,0,0,assert failed,assert failed,hand-written constant,4,4,0,0,1,0
+H178,python,C,0,83.964548,3788,stop,1,as written,,,0,1,,,,2,2,1,1,1,0
+H180,python,A,0,204.348784,10650,stop,1,as written,,,0,0,assert failed,assert failed,hand-written constant,3,3,0,0,1,0
+H181,python,B,0,151.996488,8851,stop,1,as written,,,0,0,assert failed,assert failed,check inside a loop,3,3,0,0,1,0
+H198,python,B,1,142.303301,8621,stop,1,as written,,,0,0,assert failed,assert failed,hand-written constant,3,3,0,0,1,9
+H201,python,A,0,73.036868,3461,stop,1,as written,,,0,1,,,,2,2,1,1,1,0
+H215,python,A,0,44.680229,3090,stop,1,as written,,,0,1,,,,2,2,1,1,1,0
+H219,python,C,0,249.681424,11074,stop,1,as written,,,0,0,assert failed,assert failed,hand-written constant,2,2,1,1,1,0
+H223,python,B,0,54.940553,3339,stop,1,as written,,,0,1,,,,2,2,1,1,1,0
+H224,python,B,0,65.014718,3979,stop,1,as written,,,0,0,assert failed,assert failed,hand-written constant,2,2,0,0,1,0
+H225,python,B,0,62.273910,2936,stop,1,as written,,,0,1,,,,2,2,1,1,1,0
+H226,python,A,1,101.235633,4416,stop,0,,,,,,,,,,,,,,
+H231,python,B,0,138.136521,6789,stop,1,as written,,,0,0,assert failed,assert failed,hand-written constant,2,2,1,1,1,0
+H234,python,B,0,66.651249,3973,stop,1,as written,,,0,1,,,,2,2,1,1,1,0

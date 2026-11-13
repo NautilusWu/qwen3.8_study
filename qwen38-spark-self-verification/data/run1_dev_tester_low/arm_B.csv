@@ -1,0 +1,51 @@
+task_id,passed,wall_s,chosen_branch,verified,why
+H004,0,278.148,0,0,none passed T
+H007,0,319.367,1,0,none passed T
+H009,1,89.896,1,0,none passed T
+H014,1,104.176,1,0,none passed T
+H019,1,134.711,0,1,passed T
+H020,1,67.078,2,1,passed T
+H030,1,67.382,1,1,passed T
+H033,1,44.000,1,1,passed T
+H039,1,149.981,3,0,none passed T
+H047,1,133.030,1,1,passed T
+H050,1,67.007,0,1,passed T
+H058,1,70.768,1,0,none passed T
+H061,1,67.973,3,1,passed T
+H067,1,53.245,0,1,passed T
+H068,1,52.150,3,0,none passed T
+H070,1,114.894,3,0,none passed T
+H071,1,72.488,2,1,passed T
+H073,1,55.733,3,0,none passed T
+H075,1,57.739,2,0,none passed T
+H082,1,104.491,3,0,none passed T
+H087,1,46.566,0,0,none passed T
+H092,1,177.822,1,0,none passed T
+H094,1,164.389,0,0,none passed T
+H098,1,44.289,1,0,none passed T
+H106,0,323.726,3,0,none passed T
+H115,1,86.295,0,0,none passed T
+H132,1,51.633,1,1,passed T
+H139,1,113.524,1,0,none passed T
+H142,1,220.249,0,0,none passed T
+H149,1,362.197,0,0,none passed T
+H150,1,768.216,3,0,none passed T
+H158,1,45.324,3,0,none passed T
+H160,0,555.545,0,0,none passed T
+H163,1,48.010,1,0,none passed T
+H172,0,81.534,3,0,none passed T
+H176,1,147.804,3,0,none passed T
+H177,0,363.007,3,0,none passed T
+H178,1,147.924,0,0,none passed T
+H180,1,150.449,2,0,none passed T
+H181,1,73.287,0,0,none passed T
+H198,1,123.392,2,0,none passed T
+H201,1,64.134,3,0,none passed T
+H215,1,32.528,3,1,passed T
+H219,1,962.040,3,0,none passed T
+H223,1,49.186,1,0,none passed T
+H224,1,49.498,3,1,passed T
+H225,1,79.541,1,1,passed T
+H226,1,207.129,1,0,none passed T
+H231,1,191.809,2,0,none passed T
+H234,1,57.482,3,1,passed T

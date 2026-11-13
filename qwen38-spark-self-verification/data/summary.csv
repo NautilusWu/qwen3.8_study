@@ -1,0 +1,185 @@
+run,group,config,tasks,correct,total_min,min_per_correct,verified,verified_wrong,unverified,unverified_correct
+run1_dev_tester_low,all,A,50,43,52.8,1.23,0,0,50,43
+run1_dev_tester_low,all,B,50,44,131.5,2.99,14,0,36,30
+run1_dev_tester_low,all,C,50,44,164.5,3.74,6,0,44,38
+run1_dev_tester_low,all,O,50,49,,,,,,
+run1_dev_tester_low,all,plan10_qwen27b_vote4_low_CL4,50,43,48.1,1.12,,,,
+run1_dev_tester_low,all,plan10_flashnext_deep_budget,50,48,292.2,6.09,,,,
+run1_dev_tester_low,python,A,37,31,43.1,1.39,0,0,37,31
+run1_dev_tester_low,python,B,37,31,114.8,3.70,7,0,30,24
+run1_dev_tester_low,python,C,37,31,129.2,4.17,3,0,34,28
+run1_dev_tester_low,python,O,37,36,,,,,,
+run1_dev_tester_low,python,plan10_qwen27b_vote4_low_CL4,37,31,39.2,1.26,,,,
+run1_dev_tester_low,python,plan10_flashnext_deep_budget,37,35,243.3,6.95,,,,
+run1_dev_tester_low,cpp,A,13,12,9.8,0.81,0,0,13,12
+run1_dev_tester_low,cpp,B,13,13,16.8,1.29,7,0,6,6
+run1_dev_tester_low,cpp,C,13,13,35.3,2.72,3,0,10,10
+run1_dev_tester_low,cpp,O,13,13,,,,,,
+run1_dev_tester_low,cpp,plan10_qwen27b_vote4_low_CL4,13,12,8.9,0.74,,,,
+run1_dev_tester_low,cpp,plan10_flashnext_deep_budget,13,13,49.0,3.77,,,,
+run1_dev_tester_low,tier A,A,16,13,12.5,0.96,0,0,16,13
+run1_dev_tester_low,tier A,B,16,13,41.1,3.16,1,0,15,12
+run1_dev_tester_low,tier A,C,16,13,42.4,3.26,0,0,16,13
+run1_dev_tester_low,tier A,O,16,16,,,,,,
+run1_dev_tester_low,tier A,plan10_qwen27b_vote4_low_CL4,16,13,11.3,0.87,,,,
+run1_dev_tester_low,tier A,plan10_flashnext_deep_budget,16,15,91.8,6.12,,,,
+run1_dev_tester_low,tier B,A,20,19,17.1,0.90,0,0,20,19
+run1_dev_tester_low,tier B,B,20,19,40.8,2.14,9,0,11,10
+run1_dev_tester_low,tier B,C,20,19,60.6,3.19,4,0,16,15
+run1_dev_tester_low,tier B,O,20,20,,,,,,
+run1_dev_tester_low,tier B,plan10_qwen27b_vote4_low_CL4,20,19,15.6,0.82,,,,
+run1_dev_tester_low,tier B,plan10_flashnext_deep_budget,20,19,106.4,5.60,,,,
+run1_dev_tester_low,tier C,A,14,11,23.3,2.12,0,0,14,11
+run1_dev_tester_low,tier C,B,14,12,49.7,4.14,4,0,10,8
+run1_dev_tester_low,tier C,C,14,12,61.6,5.14,2,0,12,10
+run1_dev_tester_low,tier C,O,14,13,,,,,,
+run1_dev_tester_low,tier C,plan10_qwen27b_vote4_low_CL4,14,11,21.2,1.93,,,,
+run1_dev_tester_low,tier C,plan10_flashnext_deep_budget,14,14,94.0,6.71,,,,
+run1_dev_tester_low,spec,A,8,5,12.5,2.50,0,0,8,5
+run1_dev_tester_low,spec,B,8,5,29.7,5.94,0,0,8,5
+run1_dev_tester_low,spec,C,8,5,29.7,5.94,0,0,8,5
+run1_dev_tester_low,spec,O,8,8,,,,,,
+run1_dev_tester_low,spec,plan10_qwen27b_vote4_low_CL4,8,5,11.4,2.29,,,,
+run1_dev_tester_low,spec,plan10_flashnext_deep_budget,8,6,83.9,13.98,,,,
+run1_dev_tester_low,other,A,42,38,40.3,1.06,0,0,42,38
+run1_dev_tester_low,other,B,42,39,101.8,2.61,14,0,28,25
+run1_dev_tester_low,other,C,42,39,134.8,3.46,6,0,36,33
+run1_dev_tester_low,other,O,42,41,,,,,,
+run1_dev_tester_low,other,plan10_qwen27b_vote4_low_CL4,42,38,36.7,0.96,,,,
+run1_dev_tester_low,other,plan10_flashnext_deep_budget,42,42,208.4,4.96,,,,
+run2_dev_tester_medium,all,A,50,43,55.0,1.28,0,0,50,43
+run2_dev_tester_medium,all,B,50,45,138.1,3.07,16,1,34,30
+run2_dev_tester_medium,all,O,50,49,,,,,,
+run2_dev_tester_medium,all,plan10_qwen27b_vote4_low_CL4,50,43,48.1,1.12,,,,
+run2_dev_tester_medium,all,plan10_flashnext_deep_budget,50,48,292.2,6.09,,,,
+run2_dev_tester_medium,python,A,37,31,44.8,1.45,0,0,37,31
+run2_dev_tester_medium,python,B,37,32,119.2,3.73,11,1,26,22
+run2_dev_tester_medium,python,O,37,36,,,,,,
+run2_dev_tester_medium,python,plan10_qwen27b_vote4_low_CL4,37,31,39.2,1.26,,,,
+run2_dev_tester_medium,python,plan10_flashnext_deep_budget,37,35,243.3,6.95,,,,
+run2_dev_tester_medium,cpp,A,13,12,10.1,0.84,0,0,13,12
+run2_dev_tester_medium,cpp,B,13,13,18.9,1.45,5,0,8,8
+run2_dev_tester_medium,cpp,O,13,13,,,,,,
+run2_dev_tester_medium,cpp,plan10_qwen27b_vote4_low_CL4,13,12,8.9,0.74,,,,
+run2_dev_tester_medium,cpp,plan10_flashnext_deep_budget,13,13,49.0,3.77,,,,
+run2_dev_tester_medium,tier A,A,16,13,13.0,1.00,0,0,16,13
+run2_dev_tester_medium,tier A,B,16,14,39.5,2.82,4,0,12,10
+run2_dev_tester_medium,tier A,O,16,16,,,,,,
+run2_dev_tester_medium,tier A,plan10_qwen27b_vote4_low_CL4,16,13,11.3,0.87,,,,
+run2_dev_tester_medium,tier A,plan10_flashnext_deep_budget,16,15,91.8,6.12,,,,
+run2_dev_tester_medium,tier B,A,20,19,17.7,0.93,0,0,20,19
+run2_dev_tester_medium,tier B,B,20,19,45.8,2.41,6,0,14,13
+run2_dev_tester_medium,tier B,O,20,20,,,,,,
+run2_dev_tester_medium,tier B,plan10_qwen27b_vote4_low_CL4,20,19,15.6,0.82,,,,
+run2_dev_tester_medium,tier B,plan10_flashnext_deep_budget,20,19,106.4,5.60,,,,
+run2_dev_tester_medium,tier C,A,14,11,24.3,2.21,0,0,14,11
+run2_dev_tester_medium,tier C,B,14,12,52.7,4.40,6,1,8,7
+run2_dev_tester_medium,tier C,O,14,13,,,,,,
+run2_dev_tester_medium,tier C,plan10_qwen27b_vote4_low_CL4,14,11,21.2,1.93,,,,
+run2_dev_tester_medium,tier C,plan10_flashnext_deep_budget,14,14,94.0,6.71,,,,
+run2_dev_tester_medium,spec,A,8,5,13.6,2.71,0,0,8,5
+run2_dev_tester_medium,spec,B,8,5,30.3,6.06,0,0,8,5
+run2_dev_tester_medium,spec,O,8,8,,,,,,
+run2_dev_tester_medium,spec,plan10_qwen27b_vote4_low_CL4,8,5,11.4,2.29,,,,
+run2_dev_tester_medium,spec,plan10_flashnext_deep_budget,8,6,83.9,13.98,,,,
+run2_dev_tester_medium,other,A,42,38,41.4,1.09,0,0,42,38
+run2_dev_tester_medium,other,B,42,40,107.8,2.69,16,1,26,25
+run2_dev_tester_medium,other,O,42,41,,,,,,
+run2_dev_tester_medium,other,plan10_qwen27b_vote4_low_CL4,42,38,36.7,0.96,,,,
+run2_dev_tester_medium,other,plan10_flashnext_deep_budget,42,42,208.4,4.96,,,,
+run3_dev_tester_new_prompt,all,A,50,43,53.3,1.24,0,0,50,43
+run3_dev_tester_new_prompt,all,B,50,46,105.4,2.29,33,1,17,14
+run3_dev_tester_new_prompt,all,B2,50,46,105.4,2.29,33,1,17,14
+run3_dev_tester_new_prompt,all,O,50,49,,,,,,
+run3_dev_tester_new_prompt,all,plan10_qwen27b_vote4_low_CL4,50,43,48.1,1.12,,,,
+run3_dev_tester_new_prompt,all,plan10_flashnext_deep_budget,50,48,292.2,6.09,,,,
+run3_dev_tester_new_prompt,python,A,37,31,43.5,1.40,0,0,37,31
+run3_dev_tester_new_prompt,python,B,37,33,86.9,2.63,25,1,12,9
+run3_dev_tester_new_prompt,python,B2,37,33,86.9,2.63,25,1,12,9
+run3_dev_tester_new_prompt,python,O,37,36,,,,,,
+run3_dev_tester_new_prompt,python,plan10_qwen27b_vote4_low_CL4,37,31,39.2,1.26,,,,
+run3_dev_tester_new_prompt,python,plan10_flashnext_deep_budget,37,35,243.3,6.95,,,,
+run3_dev_tester_new_prompt,cpp,A,13,12,9.8,0.82,0,0,13,12
+run3_dev_tester_new_prompt,cpp,B,13,13,18.4,1.42,8,0,5,5
+run3_dev_tester_new_prompt,cpp,B2,13,13,18.4,1.42,8,0,5,5
+run3_dev_tester_new_prompt,cpp,O,13,13,,,,,,
+run3_dev_tester_new_prompt,cpp,plan10_qwen27b_vote4_low_CL4,13,12,8.9,0.74,,,,
+run3_dev_tester_new_prompt,cpp,plan10_flashnext_deep_budget,13,13,49.0,3.77,,,,
+run3_dev_tester_new_prompt,tier A,A,16,13,12.8,0.99,0,0,16,13
+run3_dev_tester_new_prompt,tier A,B,16,15,29.7,1.98,10,0,6,5
+run3_dev_tester_new_prompt,tier A,B2,16,15,29.7,1.98,10,0,6,5
+run3_dev_tester_new_prompt,tier A,O,16,16,,,,,,
+run3_dev_tester_new_prompt,tier A,plan10_qwen27b_vote4_low_CL4,16,13,11.3,0.87,,,,
+run3_dev_tester_new_prompt,tier A,plan10_flashnext_deep_budget,16,15,91.8,6.12,,,,
+run3_dev_tester_new_prompt,tier B,A,20,19,17.4,0.92,0,0,20,19
+run3_dev_tester_new_prompt,tier B,B,20,19,27.7,1.46,15,0,5,4
+run3_dev_tester_new_prompt,tier B,B2,20,19,27.7,1.46,15,0,5,4
+run3_dev_tester_new_prompt,tier B,O,20,20,,,,,,
+run3_dev_tester_new_prompt,tier B,plan10_qwen27b_vote4_low_CL4,20,19,15.6,0.82,,,,
+run3_dev_tester_new_prompt,tier B,plan10_flashnext_deep_budget,20,19,106.4,5.60,,,,
+run3_dev_tester_new_prompt,tier C,A,14,11,23.1,2.10,0,0,14,11
+run3_dev_tester_new_prompt,tier C,B,14,12,47.9,3.99,8,1,6,5
+run3_dev_tester_new_prompt,tier C,B2,14,12,47.9,3.99,8,1,6,5
+run3_dev_tester_new_prompt,tier C,O,14,13,,,,,,
+run3_dev_tester_new_prompt,tier C,plan10_qwen27b_vote4_low_CL4,14,11,21.2,1.93,,,,
+run3_dev_tester_new_prompt,tier C,plan10_flashnext_deep_budget,14,14,94.0,6.71,,,,
+run3_dev_tester_new_prompt,spec,A,8,5,13.8,2.76,0,0,8,5
+run3_dev_tester_new_prompt,spec,B,8,7,24.5,3.49,4,0,4,3
+run3_dev_tester_new_prompt,spec,B2,8,7,24.5,3.49,4,0,4,3
+run3_dev_tester_new_prompt,spec,O,8,8,,,,,,
+run3_dev_tester_new_prompt,spec,plan10_qwen27b_vote4_low_CL4,8,5,11.4,2.29,,,,
+run3_dev_tester_new_prompt,spec,plan10_flashnext_deep_budget,8,6,83.9,13.98,,,,
+run3_dev_tester_new_prompt,other,A,42,38,39.5,1.04,0,0,42,38
+run3_dev_tester_new_prompt,other,B,42,39,80.9,2.07,29,1,13,11
+run3_dev_tester_new_prompt,other,B2,42,39,80.9,2.07,29,1,13,11
+run3_dev_tester_new_prompt,other,O,42,41,,,,,,
+run3_dev_tester_new_prompt,other,plan10_qwen27b_vote4_low_CL4,42,38,36.7,0.96,,,,
+run3_dev_tester_new_prompt,other,plan10_flashnext_deep_budget,42,42,208.4,4.96,,,,
+run4_test_locked,all,A,150,134,242.0,1.81,0,0,150,134
+run4_test_locked,all,B,150,139,490.9,3.53,85,1,65,55
+run4_test_locked,all,B2,150,139,490.9,3.53,85,1,65,55
+run4_test_locked,all,O,150,144,,,,,,
+run4_test_locked,all,plan10_qwen27b_vote4_low_CL4,150,133,221.6,1.67,,,,
+run4_test_locked,all,plan10_flashnext_deep_budget,150,139,915.0,6.58,,,,
+run4_test_locked,python,A,103,90,210.3,2.34,0,0,103,90
+run4_test_locked,python,B,103,93,431.3,4.64,51,0,52,42
+run4_test_locked,python,B2,103,93,431.3,4.64,51,0,52,42
+run4_test_locked,python,O,103,98,,,,,,
+run4_test_locked,python,plan10_qwen27b_vote4_low_CL4,103,90,193.6,2.15,,,,
+run4_test_locked,python,plan10_flashnext_deep_budget,103,93,768.0,8.26,,,,
+run4_test_locked,cpp,A,47,44,31.8,0.72,0,0,47,44
+run4_test_locked,cpp,B,47,46,59.6,1.29,34,1,13,13
+run4_test_locked,cpp,B2,47,46,59.6,1.29,34,1,13,13
+run4_test_locked,cpp,O,47,46,,,,,,
+run4_test_locked,cpp,plan10_qwen27b_vote4_low_CL4,47,43,28.0,0.65,,,,
+run4_test_locked,cpp,plan10_flashnext_deep_budget,47,46,147.0,3.20,,,,
+run4_test_locked,tier A,A,46,43,40.7,0.95,0,0,46,43
+run4_test_locked,tier A,B,46,44,79.0,1.80,26,0,20,18
+run4_test_locked,tier A,B2,46,44,79.0,1.80,26,0,20,18
+run4_test_locked,tier A,O,46,46,,,,,,
+run4_test_locked,tier A,plan10_qwen27b_vote4_low_CL4,46,43,36.6,0.85,,,,
+run4_test_locked,tier A,plan10_flashnext_deep_budget,46,44,194.1,4.41,,,,
+run4_test_locked,tier B,A,60,57,107.0,1.88,0,0,60,57
+run4_test_locked,tier B,B,60,58,186.5,3.22,37,1,23,22
+run4_test_locked,tier B,B2,60,58,186.5,3.22,37,1,23,22
+run4_test_locked,tier B,O,60,59,,,,,,
+run4_test_locked,tier B,plan10_qwen27b_vote4_low_CL4,60,57,100.4,1.76,,,,
+run4_test_locked,tier B,plan10_flashnext_deep_budget,60,55,370.2,6.73,,,,
+run4_test_locked,tier C,A,44,34,94.4,2.78,0,0,44,34
+run4_test_locked,tier C,B,44,37,225.4,6.09,22,0,22,15
+run4_test_locked,tier C,B2,44,37,225.4,6.09,22,0,22,15
+run4_test_locked,tier C,O,44,39,,,,,,
+run4_test_locked,tier C,plan10_qwen27b_vote4_low_CL4,44,33,84.7,2.57,,,,
+run4_test_locked,tier C,plan10_flashnext_deep_budget,44,40,350.7,8.77,,,,
+run4_test_locked,spec,A,42,32,98.3,3.07,0,0,42,32
+run4_test_locked,spec,B,42,33,192.9,5.85,13,0,29,20
+run4_test_locked,spec,B2,42,33,192.9,5.85,13,0,29,20
+run4_test_locked,spec,O,42,38,,,,,,
+run4_test_locked,spec,plan10_qwen27b_vote4_low_CL4,42,32,86.5,2.70,,,,
+run4_test_locked,spec,plan10_flashnext_deep_budget,42,32,392.0,12.25,,,,
+run4_test_locked,other,A,108,102,143.7,1.41,0,0,108,102
+run4_test_locked,other,B,108,106,297.9,2.81,72,1,36,35
+run4_test_locked,other,B2,108,106,298.0,2.81,72,1,36,35
+run4_test_locked,other,O,108,106,,,,,,
+run4_test_locked,other,plan10_qwen27b_vote4_low_CL4,108,101,135.1,1.34,,,,
+run4_test_locked,other,plan10_flashnext_deep_budget,108,107,523.0,4.89,,,,

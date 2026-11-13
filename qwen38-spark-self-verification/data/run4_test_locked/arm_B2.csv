@@ -1,0 +1,151 @@
+task_id,passed,wall_s,chosen_branch,verified,why
+H001,1,361.596,1,1,passed T
+H002,1,38.337,1,1,passed T
+H003,1,35.714,0,1,passed T
+H006,1,107.459,0,0,none passed T
+H010,0,567.977,2,0,none passed T
+H011,1,193.259,3,0,none passed T
+H012,0,521.098,3,0,none passed T
+H013,1,72.850,1,0,none passed T
+H016,0,306.111,2,0,none passed T
+H018,1,49.434,0,1,passed T
+H021,1,77.467,0,1,passed T
+H022,1,54.147,3,1,passed T
+H023,1,69.692,1,1,passed T
+H024,1,101.601,3,1,passed T
+H025,1,76.539,2,1,passed T
+H026,1,67.440,2,1,passed T
+H027,1,69.626,1,0,none passed T
+H028,1,58.102,0,1,passed T
+H029,1,100.783,1,0,none passed T
+H031,1,188.755,2,0,none passed T
+H032,1,68.649,0,0,none passed T
+H034,1,51.166,0,1,passed T
+H035,1,51.108,1,1,passed T
+H036,1,47.729,0,1,passed T
+H037,1,65.986,0,1,passed T
+H038,1,203.515,1,0,none passed T
+H040,1,48.666,0,1,passed T
+H041,1,28.952,3,1,passed T
+H042,1,45.617,1,1,passed T
+H043,1,51.547,0,1,passed T
+H044,1,151.609,2,0,none passed T
+H045,1,67.609,3,1,passed T
+H046,1,65.686,1,0,none passed T
+H048,1,64.370,3,1,passed T
+H049,1,51.605,0,0,none passed T
+H051,1,191.801,0,1,passed T
+H052,1,105.348,0,1,passed T
+H053,1,40.957,2,1,passed T
+H054,0,95.953,2,1,passed T
+H055,1,39.123,2,1,passed T
+H056,1,57.938,3,1,passed T
+H057,1,74.713,0,1,passed T
+H059,1,52.207,1,1,passed T
+H060,1,56.444,2,0,none passed T
+H062,1,132.975,0,0,none passed T
+H063,1,82.733,3,1,passed T
+H064,1,73.324,0,0,none passed T
+H065,1,46.814,1,1,passed T
+H066,1,40.971,3,1,passed T
+H069,1,139.817,3,0,none passed T
+H072,1,84.591,1,1,passed T
+H074,1,60.528,2,1,passed T
+H076,1,43.767,2,1,passed T
+H077,1,50.197,1,1,passed T
+H078,1,55.249,3,0,none passed T
+H079,1,45.429,0,1,passed T
+H080,1,74.540,3,1,passed T
+H083,1,169.008,1,1,passed T
+H084,1,179.529,0,0,none passed T
+H085,1,167.935,2,1,passed T
+H086,1,64.461,1,1,passed T
+H088,1,32.357,1,0,none passed T
+H089,1,45.824,0,0,none passed T
+H091,1,79.710,0,0,none passed T
+H093,1,234.424,2,1,passed T
+H095,1,77.820,2,1,passed T
+H097,1,99.040,1,0,none passed T
+H099,1,436.899,0,0,none passed T
+H100,1,56.604,3,1,passed T
+H101,1,2031.102,3,0,none passed T
+H103,1,65.421,0,1,passed T
+H104,1,42.787,0,0,none passed T
+H105,1,146.996,3,0,none passed T
+H111,1,45.845,2,1,passed T
+H114,1,64.293,1,0,none passed T
+H117,1,187.295,3,1,passed T
+H118,1,116.112,2,1,passed T
+H119,1,72.459,3,0,none passed T
+H120,1,66.971,1,1,passed T
+H122,1,437.853,1,0,none passed T
+H123,1,78.181,0,1,passed T
+H124,1,59.458,2,1,passed T
+H125,1,44.270,0,1,passed T
+H126,1,62.915,0,0,none passed T
+H127,1,379.731,2,0,none passed T
+H129,1,49.830,1,0,none passed T
+H130,1,246.846,1,1,passed T
+H131,1,34.051,2,1,passed T
+H135,1,71.959,0,1,passed T
+H138,0,225.517,3,0,none passed T
+H140,1,319.542,2,1,passed T
+H144,1,275.579,1,0,none passed T
+H145,1,54.031,0,1,passed T
+H146,1,394.267,1,0,none passed T
+H147,1,179.108,1,1,passed T
+H148,1,2093.488,3,0,none passed T
+H151,1,111.367,3,0,none passed T
+H152,1,216.773,3,1,passed T
+H153,0,308.023,2,0,none passed T
+H155,0,661.601,3,0,none passed T
+H159,1,222.558,2,1,passed T
+H161,1,30.427,0,1,passed T
+H162,1,134.773,2,0,none passed T
+H164,1,358.074,0,0,no tests
+H165,1,54.782,2,1,passed T
+H168,1,396.797,3,0,none passed T
+H169,1,124.737,3,0,none passed T
+H170,1,79.587,3,1,passed T
+H173,1,136.846,1,1,passed T
+H174,1,123.455,3,1,passed T
+H179,1,100.367,1,0,none passed T
+H183,1,471.500,0,0,none passed T
+H185,1,78.514,1,1,passed T
+H186,1,55.301,3,0,none passed T
+H187,1,37.176,3,1,passed T
+H188,1,315.370,2,1,passed T
+H189,1,767.902,3,0,none passed T
+H194,1,148.766,1,0,none passed T
+H196,1,96.047,0,1,passed T
+H197,1,67.901,3,1,passed T
+H199,1,61.409,3,1,passed T
+H200,1,294.734,0,0,none passed T
+H203,1,72.915,3,1,passed T
+H204,1,88.438,1,1,passed T
+H205,1,66.945,1,1,passed T
+H209,1,461.452,1,0,none passed T
+H210,1,52.844,1,1,passed T
+H213,1,100.792,2,0,none passed T
+H214,1,306.373,2,0,none passed T
+H216,1,83.685,0,1,passed T
+H217,1,89.045,3,1,passed T
+H218,1,420.080,0,0,none passed T
+H220,1,104.062,0,1,passed T
+H221,1,43.335,2,1,passed T
+H222,1,85.472,3,1,passed T
+H227,0,304.180,3,0,none passed T
+H228,0,474.835,1,0,none passed T
+H232,1,2253.205,3,1,passed T
+H233,1,57.823,1,1,passed T
+H235,1,705.957,0,0,none passed T
+H236,1,1121.438,3,0,none passed T
+H238,1,77.273,2,1,passed T
+H239,0,242.631,2,0,none passed T
+H240,1,501.182,3,0,none passed T
+H241,0,458.256,3,0,none passed T
+H242,1,230.573,0,0,none passed T
+H247,1,45.617,3,1,passed T
+H248,1,87.317,2,0,none passed T
+H249,1,63.380,2,1,passed T
+H250,1,83.238,0,0,none passed T

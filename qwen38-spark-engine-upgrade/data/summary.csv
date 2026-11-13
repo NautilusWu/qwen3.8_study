@@ -1,0 +1,4 @@
+config,engine,run,tasks,correct,correct_coding_python,correct_coding_cpp,correct_reasoning,total_min,min_per_correct,output_tokens,finished_branches,cancelled_branches,branches_hit_output_limit,timed_out,no_answer,any_branch_correct
+tf125,TensorFold 1.2.5,this study,400,377,158,27,192,378.8,1.005,2937369,833,767,0,0,3,380
+tf060,TensorFold 0.6.0,this study,400,373,154,28,191,357.3,0.958,2797868,840,760,0,0,0,377
+tf060_part5_run,TensorFold 0.6.0,Part 5 (October),400,373,154,28,191,345.0,0.925,2792963,,,,,0,
