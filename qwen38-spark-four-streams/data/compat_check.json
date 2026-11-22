@@ -1,0 +1,441 @@
+{
+ "PLAN_19": {
+  "streams": 1,
+  "runs": {
+   "27b": {
+    "startup_s": 15.1,
+    "image_id": "sha256:75d748c5ad605502eaa632ba1e7d82f42292deda13b0b77c575a62ee3ee1b93a",
+    "warm_up": true,
+    "examples_correct": "4/5",
+    "examples_tokens": 3737,
+    "second_set_tasks": {
+     "O001": {
+      "status": "pass",
+      "tokens": 549,
+      "finish": "stop"
+     },
+     "O161": {
+      "status": "pass",
+      "tokens": 588,
+      "finish": "stop"
+     },
+     "O321": {
+      "status": "pass",
+      "tokens": 367,
+      "finish": "stop"
+     },
+     "O381": {
+      "status": "pass",
+      "tokens": 381,
+      "finish": "stop"
+     }
+    },
+    "mem_available_low_gib": 89.9,
+    "memory_guard_fired": false
+   },
+   "flashnext": {
+    "startup_s": 82.0,
+    "image_id": "sha256:75d748c5ad605502eaa632ba1e7d82f42292deda13b0b77c575a62ee3ee1b93a",
+    "warm_up": true,
+    "examples_correct": "5/5",
+    "examples_tokens": 2541,
+    "second_set_tasks": {
+     "O001": {
+      "status": "pass",
+      "tokens": 869,
+      "finish": "stop"
+     },
+     "O161": {
+      "status": "pass",
+      "tokens": 397,
+      "finish": "stop"
+     },
+     "O321": {
+      "status": "pass",
+      "tokens": 368,
+      "finish": "stop"
+     },
+     "O381": {
+      "status": "pass",
+      "tokens": 423,
+      "finish": "stop"
+     }
+    },
+    "mem_available_low_gib": 36.2,
+    "memory_guard_fired": false
+   }
+  },
+  "criteria": {
+   "1_start": {
+    "27b": true,
+    "flashnext": true
+   },
+   "2_examples": {
+    "27b": true,
+    "flashnext": true
+   },
+   "3_o_pipeline": {
+    "27b": true,
+    "flashnext": true
+   },
+   "4_refcheck": true,
+   "5_memory": {
+    "27b": true,
+    "flashnext": true
+   }
+  },
+  "decision": "go",
+  "reference_check": {
+   "tasks": [
+    "O001",
+    "O161",
+    "O321",
+    "O381"
+   ],
+   "reference": "pass on all 4",
+   "first_wrong_answer": "rejected (wrong_answer) on all 4",
+   "note": "the plan text says 6 tasks; the locked code checked these 4 (deviation found while preparing the report)"
+  }
+ },
+ "PLAN_20": {
+  "streams": 4,
+  "runs": {
+   "27b": {
+    "startup_s": 21.2,
+    "image_id": "sha256:75d748c5ad605502eaa632ba1e7d82f42292deda13b0b77c575a62ee3ee1b93a",
+    "warm_up": true,
+    "examples_correct": "4/5",
+    "examples_tokens": 3737,
+    "second_set_tasks": {
+     "O001": {
+      "status": "pass",
+      "tokens": 549,
+      "finish": "stop"
+     },
+     "O161": {
+      "status": "pass",
+      "tokens": 588,
+      "finish": "stop"
+     },
+     "O321": {
+      "status": "pass",
+      "tokens": 367,
+      "finish": "stop"
+     },
+     "O381": {
+      "status": "pass",
+      "tokens": 381,
+      "finish": "stop"
+     }
+    },
+    "mem_available_low_gib": 87.8,
+    "memory_guard_fired": false,
+    "max_requests_running": 4,
+    "four_tasks_block_s": 9.993
+   },
+   "flashnext": {
+    "startup_s": 72.8,
+    "image_id": "sha256:75d748c5ad605502eaa632ba1e7d82f42292deda13b0b77c575a62ee3ee1b93a",
+    "warm_up": true,
+    "examples_correct": "5/5",
+    "examples_tokens": 2541,
+    "second_set_tasks": {
+     "O001": {
+      "status": "pass",
+      "tokens": 869,
+      "finish": "stop"
+     },
+     "O161": {
+      "status": "pass",
+      "tokens": 397,
+      "finish": "stop"
+     },
+     "O321": {
+      "status": "pass",
+      "tokens": 368,
+      "finish": "stop"
+     },
+     "O381": {
+      "status": "pass",
+      "tokens": 423,
+      "finish": "stop"
+     }
+    },
+    "mem_available_low_gib": 35.6,
+    "memory_guard_fired": false,
+    "max_requests_running": 4,
+    "four_tasks_block_s": 20.133
+   }
+  },
+  "criteria": {
+   "1_start": {
+    "27b": true,
+    "flashnext": true
+   },
+   "2_examples": {
+    "27b": true,
+    "flashnext": true
+   },
+   "3_o_pipeline": {
+    "27b": true,
+    "flashnext": true
+   },
+   "4_four_running": {
+    "27b": true,
+    "flashnext": true
+   },
+   "5_memory": {
+    "27b": true,
+    "flashnext": true
+   }
+  },
+  "decision": "go"
+ },
+ "part4_examples_per_task": {
+  "27b": {
+   "ex_five_numbers": {
+    "passed": false,
+    "tokens": 1780,
+    "identical_1_vs_4_streams": true
+   },
+   "ex_gcd_cpp": {
+    "passed": true,
+    "tokens": 577,
+    "identical_1_vs_4_streams": true
+   },
+   "ex_palindrome": {
+    "passed": true,
+    "tokens": 116,
+    "identical_1_vs_4_streams": true
+   },
+   "ex_primes": {
+    "passed": true,
+    "tokens": 741,
+    "identical_1_vs_4_streams": true
+   },
+   "ex_trains": {
+    "passed": true,
+    "tokens": 523,
+    "identical_1_vs_4_streams": true
+   }
+  },
+  "flashnext": {
+   "ex_five_numbers": {
+    "passed": true,
+    "tokens": 607,
+    "identical_1_vs_4_streams": true
+   },
+   "ex_gcd_cpp": {
+    "passed": true,
+    "tokens": 399,
+    "identical_1_vs_4_streams": true
+   },
+   "ex_palindrome": {
+    "passed": true,
+    "tokens": 120,
+    "identical_1_vs_4_streams": true
+   },
+   "ex_primes": {
+    "passed": true,
+    "tokens": 900,
+    "identical_1_vs_4_streams": true
+   },
+   "ex_trains": {
+    "passed": true,
+    "tokens": 515,
+    "identical_1_vs_4_streams": true
+   }
+  }
+ },
+ "PLAN_21": {
+  "streams": [
+   2,
+   8
+  ],
+  "queue": "the 4 set O tasks first, then Part 4's 5 examples, N at a time",
+  "runs": {
+   "27b_2streams": {
+    "startup_s": 18.2,
+    "image_id": "sha256:75d748c5ad605502eaa632ba1e7d82f42292deda13b0b77c575a62ee3ee1b93a",
+    "warm_up": true,
+    "examples_correct": "4/5",
+    "examples_tokens": 3737,
+    "examples_identical_to_PLAN_20_check": 5,
+    "second_set_tasks": {
+     "O001": {
+      "status": "pass",
+      "tokens": 549,
+      "finish": "stop",
+      "server_error": null
+     },
+     "O161": {
+      "status": "pass",
+      "tokens": 588,
+      "finish": "stop",
+      "server_error": null
+     },
+     "O321": {
+      "status": "pass",
+      "tokens": 367,
+      "finish": "stop",
+      "server_error": null
+     },
+     "O381": {
+      "status": "pass",
+      "tokens": 381,
+      "finish": "stop",
+      "server_error": null
+     }
+    },
+    "max_requests_running": 2,
+    "mem_available_low_gib": 88.9,
+    "memory_guard_fired": false
+   },
+   "27b_8streams": {
+    "startup_s": 21.2,
+    "image_id": "sha256:75d748c5ad605502eaa632ba1e7d82f42292deda13b0b77c575a62ee3ee1b93a",
+    "warm_up": true,
+    "examples_correct": "4/5",
+    "examples_tokens": 3737,
+    "examples_identical_to_PLAN_20_check": 5,
+    "second_set_tasks": {
+     "O001": {
+      "status": "pass",
+      "tokens": 549,
+      "finish": "stop",
+      "server_error": null
+     },
+     "O161": {
+      "status": "pass",
+      "tokens": 588,
+      "finish": "stop",
+      "server_error": null
+     },
+     "O321": {
+      "status": "pass",
+      "tokens": 367,
+      "finish": "stop",
+      "server_error": null
+     },
+     "O381": {
+      "status": "pass",
+      "tokens": 381,
+      "finish": "stop",
+      "server_error": null
+     }
+    },
+    "max_requests_running": 8,
+    "mem_available_low_gib": 86.6,
+    "memory_guard_fired": false
+   },
+   "flashnext_2streams": {
+    "startup_s": 72.8,
+    "image_id": "sha256:75d748c5ad605502eaa632ba1e7d82f42292deda13b0b77c575a62ee3ee1b93a",
+    "warm_up": true,
+    "examples_correct": "5/5",
+    "examples_tokens": 2541,
+    "examples_identical_to_PLAN_20_check": 5,
+    "second_set_tasks": {
+     "O001": {
+      "status": "format_error",
+      "tokens": null,
+      "finish": null,
+      "server_error": "MTP context past the cache capacity"
+     },
+     "O161": {
+      "status": "format_error",
+      "tokens": null,
+      "finish": null,
+      "server_error": "MTP context past the cache capacity"
+     },
+     "O321": {
+      "status": "pass",
+      "tokens": 368,
+      "finish": "stop",
+      "server_error": null
+     },
+     "O381": {
+      "status": "pass",
+      "tokens": 423,
+      "finish": "stop",
+      "server_error": null
+     }
+    },
+    "max_requests_running": 2,
+    "mem_available_low_gib": 36.7,
+    "memory_guard_fired": false
+   },
+   "flashnext_8streams": {
+    "startup_s": 72.9,
+    "image_id": "sha256:75d748c5ad605502eaa632ba1e7d82f42292deda13b0b77c575a62ee3ee1b93a",
+    "warm_up": true,
+    "examples_correct": "5/5",
+    "examples_tokens": 2541,
+    "examples_identical_to_PLAN_20_check": 5,
+    "second_set_tasks": {
+     "O001": {
+      "status": "pass",
+      "tokens": 869,
+      "finish": "stop",
+      "server_error": null
+     },
+     "O161": {
+      "status": "format_error",
+      "tokens": null,
+      "finish": null,
+      "server_error": "MTP context past the cache capacity"
+     },
+     "O321": {
+      "status": "pass",
+      "tokens": 368,
+      "finish": "stop",
+      "server_error": null
+     },
+     "O381": {
+      "status": "pass",
+      "tokens": 423,
+      "finish": "stop",
+      "server_error": null
+     }
+    },
+    "max_requests_running": 8,
+    "mem_available_low_gib": 33.2,
+    "memory_guard_fired": false
+   }
+  },
+  "criteria": {
+   "1_start": {
+    "27b_2streams": true,
+    "27b_8streams": true,
+    "flashnext_2streams": true,
+    "flashnext_8streams": true
+   },
+   "2_examples": {
+    "27b_2streams": true,
+    "27b_8streams": true,
+    "flashnext_2streams": true,
+    "flashnext_8streams": true
+   },
+   "3_o_pipeline": {
+    "27b_2streams": true,
+    "27b_8streams": true,
+    "flashnext_2streams": false,
+    "flashnext_8streams": false
+   },
+   "4_n_running": {
+    "27b_2streams": true,
+    "27b_8streams": true,
+    "flashnext_2streams": true,
+    "flashnext_8streams": true
+   },
+   "5_memory": {
+    "27b_2streams": true,
+    "27b_8streams": true,
+    "flashnext_2streams": true,
+    "flashnext_8streams": true
+   }
+  },
+  "decision": "stop: Flash Next failed criterion 3 (server errors on set O tasks)",
+  "next": "PLAN_21b: the 27B alone, on this check's 27B results (all criteria passed at 2 and 8 streams)"
+ }
+}

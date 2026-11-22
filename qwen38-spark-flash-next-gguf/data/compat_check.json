@@ -1,0 +1,335 @@
+{
+ "PLAN_18_P0": {
+  "arms": {
+   "IQ3_S": {
+    "criteria": {
+     "1_load": true,
+     "2_tokenize": true,
+     "3_template": true,
+     "4_repeat": true,
+     "5_examples": true,
+     "6_budget": true,
+     "7_tool_call": true,
+     "8_speed": true,
+     "9_sockets": true,
+     "no_error": true
+    },
+    "startup_s": 68.1,
+    "mem_available_low_gib": 55.08,
+    "tokenize_same_ids_all_arms": true,
+    "template": {
+     "low_differs_from_default": true,
+     "tools_in_agent_prompt": true,
+     "same_as_jinja2_report_only": {
+      "low": true,
+      "default": true,
+      "agent": true
+     }
+    },
+    "greedy_twice_identical": true,
+    "examples_D2": {
+     "correct": 5,
+     "of": 5,
+     "answered": 5,
+     "tokens": 2259,
+     "finish": [
+      "stop",
+      "stop",
+      "stop",
+      "stop",
+      "stop"
+     ]
+    },
+    "thinking_budget_1024": {
+     "thinking_tokens": 1023,
+     "finish": "stop",
+     "completion_tokens": 1577
+    },
+    "tool_call_parsed": [
+     {
+      "tool_calls": 1,
+      "names": [
+       "bash"
+      ],
+      "finish": "tool_calls"
+     }
+    ],
+    "speed": {
+     "short_decode_tok_s": [
+      30.97,
+      30.16,
+      30.39
+     ],
+     "long_reply_tokens": 11444,
+     "long_reply_decode_tok_s": 29.38,
+     "first_token_s": {
+      "7k": {
+       "prompt_tokens": 7267,
+       "first_s": 9.12
+      },
+      "24k": {
+       "prompt_tokens": 24322,
+       "first_s": 29.71
+      }
+     }
+    },
+    "server_sockets": {
+     "listening_on_loopback_only": true,
+     "remote_connections": 0
+    },
+    "memory_guard_fired": false
+   },
+   "UD-IQ3_XXS": {
+    "criteria": {
+     "1_load": true,
+     "2_tokenize": true,
+     "3_template": true,
+     "4_repeat": true,
+     "5_examples": true,
+     "6_budget": true,
+     "7_tool_call": true,
+     "8_speed": true,
+     "9_sockets": true,
+     "no_error": true
+    },
+    "startup_s": 82.7,
+    "mem_available_low_gib": 56.96,
+    "tokenize_same_ids_all_arms": true,
+    "template": {
+     "low_differs_from_default": true,
+     "tools_in_agent_prompt": true,
+     "same_as_jinja2_report_only": {
+      "low": true,
+      "default": true,
+      "agent": true
+     }
+    },
+    "greedy_twice_identical": true,
+    "examples_D2": {
+     "correct": 5,
+     "of": 5,
+     "answered": 5,
+     "tokens": 3118,
+     "finish": [
+      "stop",
+      "stop",
+      "stop",
+      "stop",
+      "stop"
+     ]
+    },
+    "thinking_budget_1024": {
+     "thinking_tokens": 1023,
+     "finish": "stop",
+     "completion_tokens": 1417
+    },
+    "tool_call_parsed": [
+     {
+      "tool_calls": 1,
+      "names": [
+       "bash"
+      ],
+      "finish": "tool_calls"
+     }
+    ],
+    "speed": {
+     "short_decode_tok_s": [
+      31.58,
+      30.75,
+      31.05
+     ],
+     "long_reply_tokens": 11449,
+     "long_reply_decode_tok_s": 30.07,
+     "first_token_s": {
+      "7k": {
+       "prompt_tokens": 7267,
+       "first_s": 9.99
+      },
+      "24k": {
+       "prompt_tokens": 24322,
+       "first_s": 29.86
+      }
+     }
+    },
+    "server_sockets": {
+     "listening_on_loopback_only": true,
+     "remote_connections": 0
+    },
+    "memory_guard_fired": false
+   },
+   "UD-IQ4_XS": {
+    "criteria": {
+     "1_load": true,
+     "2_tokenize": true,
+     "3_template": true,
+     "4_repeat": true,
+     "5_examples": false,
+     "6_budget": true,
+     "7_tool_call": true,
+     "8_speed": true,
+     "9_sockets": true,
+     "no_error": true
+    },
+    "startup_s": 206.2,
+    "mem_available_low_gib": 47.07,
+    "tokenize_same_ids_all_arms": true,
+    "template": {
+     "low_differs_from_default": true,
+     "tools_in_agent_prompt": true,
+     "same_as_jinja2_report_only": {
+      "low": true,
+      "default": true,
+      "agent": true
+     }
+    },
+    "greedy_twice_identical": true,
+    "examples_D2": {
+     "correct": 4,
+     "of": 5,
+     "answered": 4,
+     "tokens": 28612,
+     "finish": [
+      "stop",
+      "stop",
+      "stop",
+      "stop",
+      "stop"
+     ]
+    },
+    "thinking_budget_1024": {
+     "thinking_tokens": 1023,
+     "finish": "stop",
+     "completion_tokens": 1573
+    },
+    "tool_call_parsed": [
+     {
+      "tool_calls": 1,
+      "names": [
+       "bash"
+      ],
+      "finish": "tool_calls"
+     }
+    ],
+    "speed": {
+     "short_decode_tok_s": [
+      25.89,
+      25.36,
+      25.04
+     ],
+     "long_reply_tokens": 11445,
+     "long_reply_decode_tok_s": 25.07,
+     "first_token_s": {
+      "7k": {
+       "prompt_tokens": 7267,
+       "first_s": 10.75
+      },
+      "24k": {
+       "prompt_tokens": 24322,
+       "first_s": 32.05
+      }
+     }
+    },
+    "server_sockets": {
+     "listening_on_loopback_only": true,
+     "remote_connections": 0
+    },
+    "memory_guard_fired": false
+   }
+  },
+  "reference_tensorfold_started": true,
+  "reference_startup_s": 82.1,
+  "estimated_gpu_hours": {
+   "A": 133.8,
+   "B": 61.1
+  },
+  "limit_hours": 100,
+  "pipeline_result": "stopped: UD-IQ4_XS failed criterion 5 as coded (every example answered); the plan text (at least 4/5 correct, no garbled replies) passed it",
+  "user_decision_after_seeing_this": "follow the plan text; usage B (400 tasks, D2) by the time rule"
+ },
+ "PLAN_18c_P0": {
+  "runs": {
+   "U3X-off": {
+    "nmax": 0,
+    "draft_loaded": false,
+    "startup_s": 10.0,
+    "decode_tok_s": 30.566,
+    "acceptance": null,
+    "probe_tokens": 47376,
+    "examples_correct": 5,
+    "examples_of": 5,
+    "examples_tokens": 3118,
+    "identical_to_off": null,
+    "mem_low_gib": 53.0,
+    "memory_guard_fired": false,
+    "request_errors": 0,
+    "requests_with_zero_drafts": 0
+   },
+   "U3M-n2": {
+    "nmax": 2,
+    "draft_loaded": true,
+    "startup_s": 24.5,
+    "decode_tok_s": 51.35,
+    "acceptance": 0.9115,
+    "probe_tokens": 53367,
+    "examples_correct": 5,
+    "examples_of": 5,
+    "examples_tokens": 3154,
+    "identical_to_off": 1,
+    "mem_low_gib": 49.3,
+    "memory_guard_fired": false,
+    "request_errors": 0,
+    "requests_with_zero_drafts": 0
+   },
+   "U3M-n3": {
+    "nmax": 3,
+    "draft_loaded": true,
+    "startup_s": 30.1,
+    "decode_tok_s": 55.455,
+    "acceptance": 0.8626,
+    "probe_tokens": 49587,
+    "examples_correct": 5,
+    "examples_of": 5,
+    "examples_tokens": 14012,
+    "identical_to_off": 1,
+    "mem_low_gib": 49.5,
+    "memory_guard_fired": false,
+    "request_errors": 0,
+    "requests_with_zero_drafts": 0
+   },
+   "U3M-n4": {
+    "nmax": 4,
+    "draft_loaded": true,
+    "startup_s": 20.1,
+    "decode_tok_s": 57.901,
+    "acceptance": 0.7918,
+    "probe_tokens": 44382,
+    "examples_correct": 4,
+    "examples_of": 5,
+    "examples_tokens": 67480,
+    "identical_to_off": 0,
+    "mem_low_gib": 49.5,
+    "memory_guard_fired": false,
+    "request_errors": 0,
+    "requests_with_zero_drafts": 0
+   }
+  },
+  "n_rule": "highest probe decode speed; the smallest N within 97% of it",
+  "nmax_chosen": 4,
+  "criteria": {
+   "1_mtp_runs": {
+    "U3M-n2": true,
+    "U3M-n3": true,
+    "U3M-n4": true
+   },
+   "2_examples_at_N": true,
+   "3_ref": true,
+   "4_memory": true
+  },
+  "choice": "go",
+  "reference_tensorfold": {
+   "ok": true,
+   "startup_s": 82.0,
+   "mem_available_low_gib": 37.6
+  }
+ }
+}

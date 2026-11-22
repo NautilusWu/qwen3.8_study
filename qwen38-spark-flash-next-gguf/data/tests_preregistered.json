@@ -1,0 +1,272 @@
+{
+ "PLAN_18": {
+  "tasks": 400,
+  "usage": "D2 (low thinking), greedy, output limit 65,536, 120-minute limit per task",
+  "Q1_primary_holm_over_2": {
+   "IQ3_S vs UD-IQ4_XS": {
+    "only_first": 15,
+    "only_second": 11,
+    "p": 0.5572,
+    "p_holm_primary": 1.0,
+    "acc_diff_pp": 1.0,
+    "acc_ci95": [
+     -1.5,
+     3.5
+    ],
+    "time_ratio": 1.157,
+    "time_ci95": [
+     0.941,
+     1.432
+    ],
+    "decision": "no detectable accuracy difference"
+   },
+   "IQ3_S vs UD-IQ3_XXS": {
+    "only_first": 12,
+    "only_second": 9,
+    "p": 0.6636,
+    "p_holm_primary": 1.0,
+    "acc_diff_pp": 0.75,
+    "acc_ci95": [
+     -1.5,
+     3.0
+    ],
+    "time_ratio": 1.489,
+    "time_ci95": [
+     1.264,
+     1.794
+    ],
+    "decision": "no detectable accuracy difference"
+   }
+  },
+  "Q1_report_only": {
+   "UD-IQ4_XS vs UD-IQ3_XXS": {
+    "only_first": 13,
+    "only_second": 14,
+    "p": 1.0,
+    "acc_diff_pp": -0.25,
+    "acc_ci95": [
+     -2.75,
+     2.25
+    ],
+    "time_ratio": 1.287,
+    "time_ci95": [
+     1.013,
+     1.648
+    ]
+   }
+  },
+  "verdict_on_the_claim": "no detectable difference",
+  "Q2_secondary_output_length_and_loops": {
+   "IQ3_S vs UD-IQ4_XS": {
+    "tokens_ratio_total": 1.305,
+    "tokens_ratio_ci95": [
+     1.079,
+     1.583
+    ],
+    "tokens_ratio_median": 1.036,
+    "loops_only_first": 1,
+    "loops_only_second": 1,
+    "loops_p": 1.0
+   },
+   "IQ3_S vs UD-IQ3_XXS": {
+    "tokens_ratio_total": 1.456,
+    "tokens_ratio_ci95": [
+     1.255,
+     1.735
+    ],
+    "tokens_ratio_median": 1.041,
+    "loops_only_first": 1,
+    "loops_only_second": 1,
+    "loops_p": 1.0
+   },
+   "UD-IQ4_XS vs UD-IQ3_XXS": {
+    "tokens_ratio_total": 1.116,
+    "tokens_ratio_ci95": [
+     0.903,
+     1.384
+    ],
+    "tokens_ratio_median": 0.991,
+    "loops_only_first": 1,
+    "loops_only_second": 1,
+    "loops_p": 1.0
+   }
+  },
+  "Q2_loops_by_threshold": {
+   "IQ3_S": {
+    "0.05": 1,
+    "0.1": 1,
+    "0.15": 1
+   },
+   "UD-IQ3_XXS": {
+    "0.05": 1,
+    "0.1": 1,
+    "0.15": 1
+   },
+   "UD-IQ4_XS": {
+    "0.05": 1,
+    "0.1": 1,
+    "0.15": 1
+   }
+  },
+  "Q3_secondary_tool_calls": {
+   "counts": {
+    "IQ3_S": {
+     "valid": 72,
+     "malformed": 0,
+     "text": 22,
+     "cut": 2,
+     "error": 0
+    },
+    "UD-IQ3_XXS": {
+     "valid": 73,
+     "malformed": 0,
+     "text": 22,
+     "cut": 1,
+     "error": 0
+    },
+    "UD-IQ4_XS": {
+     "valid": 74,
+     "malformed": 0,
+     "text": 22,
+     "cut": 0,
+     "error": 0
+    },
+    "TensorFold_NVFP4": {
+     "valid": 71,
+     "malformed": 0,
+     "text": 22,
+     "cut": 3,
+     "error": 0
+    }
+   },
+   "malformed_pairs": {
+    "IQ3_S vs UD-IQ4_XS": {
+     "paired": 96,
+     "malformed_only_first": 0,
+     "malformed_only_second": 0,
+     "p": 1.0
+    },
+    "IQ3_S vs UD-IQ3_XXS": {
+     "paired": 96,
+     "malformed_only_first": 0,
+     "malformed_only_second": 0,
+     "p": 1.0
+    },
+    "UD-IQ4_XS vs UD-IQ3_XXS": {
+     "paired": 96,
+     "malformed_only_first": 0,
+     "malformed_only_second": 0,
+     "p": 1.0
+    }
+   }
+  }
+ },
+ "PLAN_18c": {
+  "Q1_primary": {
+   "UD-IQ3_XXS_MTP vs TensorFold_NVFP4": {
+    "only_first": 7,
+    "only_second": 10,
+    "p": 0.6291,
+    "acc_diff_pp": -0.75,
+    "acc_ci95": [
+     -2.75,
+     1.25
+    ],
+    "time_ratio": 0.76,
+    "time_ci95": [
+     0.599,
+     0.952
+    ],
+    "decision": "GGUF + MTP faster (detectable)",
+    "identical_text": 0
+   }
+  },
+  "Q2_report_time_only": {
+   "UD-IQ3_XXS_MTP vs UD-IQ3_XXS": {
+    "only_first": 9,
+    "only_second": 8,
+    "p": 1.0,
+    "acc_diff_pp": 0.25,
+    "acc_ci95": [
+     -1.75,
+     2.25
+    ],
+    "time_ratio": 0.524,
+    "time_ci95": [
+     0.425,
+     0.644
+    ],
+    "identical_text": 9
+   },
+   "decode_tok_s": {
+    "UD-IQ3_XXS_MTP": 55.92,
+    "UD-IQ3_XXS": 29.27
+   },
+   "draft_acceptance": {
+    "draft_n": 1328004,
+    "accepted": 1099008,
+    "rate": 0.8276
+   }
+  },
+  "Q3_report_only": {
+   "IQ3_S": {
+    "decode_off": 29.767,
+    "decode_mtp": 53.98,
+    "speedup": 1.813,
+    "acceptance": {
+     "draft_n": 51904,
+     "accepted": 39810,
+     "rate": 0.767
+    },
+    "identical_text": 0,
+    "p18_min_per_correct": 3.209,
+    "estimated_min_per_correct_mtp": 1.77
+   },
+   "UD-IQ3_XXS": {
+    "decode_off": 26.038,
+    "decode_mtp": 57.419,
+    "speedup": 2.205,
+    "acceptance": {
+     "draft_n": 42590,
+     "accepted": 33722,
+     "rate": 0.7918
+    },
+    "identical_text": 0,
+    "p18_min_per_correct": 2.155,
+    "estimated_min_per_correct_mtp": 0.977,
+    "measured_min_per_correct_U3M": 1.13
+   },
+   "UD-IQ4_XS": {
+    "decode_off": 25.083,
+    "decode_mtp": 50.771,
+    "speedup": 2.024,
+    "acceptance": {
+     "draft_n": 46018,
+     "accepted": 33609,
+     "rate": 0.7303
+    },
+    "identical_text": 0,
+    "p18_min_per_correct": 2.774,
+    "estimated_min_per_correct_mtp": 1.371
+   }
+  },
+  "Q4_report_only": {
+   "TensorFold_NVFP4 vs TensorFold_NVFP4_part6": {
+    "only_first": 0,
+    "only_second": 0,
+    "p": 1.0,
+    "acc_diff_pp": 0.0,
+    "acc_ci95": [
+     0.0,
+     0.0
+    ],
+    "time_ratio": 0.863,
+    "time_ci95": [
+     0.857,
+     0.869
+    ],
+    "identical_text": 400
+   }
+  }
+ }
+}

@@ -1,0 +1,401 @@
+task_id,kind,language,topic_similar,block,send_order,worker,start_s,end_s,passed,status,wall_s,output_tokens,finish,timed_out
+O001,Debugging,py,0,7,20,3,72.346,82.743,1,pass,10.397,549,stop,0
+O002,Debugging,py,0,2,26,1,109.942,131.141,1,pass,21.199,1298,stop,0
+O003,Debugging,py,0,5,31,2,110.542,118.976,1,pass,8.434,424,stop,0
+O004,Debugging,py,0,7,49,1,177.090,192.605,1,pass,15.515,1094,stop,0
+O005,Debugging,py,0,2,40,2,183.057,209.375,1,pass,26.317,1064,stop,0
+O006,Debugging,py,0,3,48,2,172.886,189.400,1,pass,16.513,1132,stop,0
+O007,Debugging,py,0,0,34,0,150.388,161.906,1,pass,11.517,632,stop,0
+O008,Debugging,py,0,1,22,0,98.094,105.101,1,pass,7.006,406,stop,0
+O009,Debugging,py,0,1,9,1,31.132,59.609,1,pass,28.476,1270,stop,0
+O010,Debugging,py,0,0,4,3,0.001,17.873,1,pass,17.871,818,stop,0
+O011,Debugging,py,0,4,41,2,171.190,194.055,1,pass,22.865,1118,stop,0
+O012,Debugging,py,0,4,48,2,194.055,206.914,1,pass,12.857,779,stop,0
+O013,Debugging,py,0,2,7,0,14.339,21.288,1,pass,6.948,398,stop,0
+O014,Debugging,py,0,0,31,1,135.608,159.644,1,pass,24.035,1042,stop,0
+O015,Debugging,py,0,7,10,2,29.450,45.260,1,pass,15.809,875,stop,0
+O016,Debugging,py,0,0,36,2,155.936,174.638,1,pass,18.701,903,stop,0
+O017,Debugging,py,0,4,35,0,146.964,173.449,1,pass,26.484,1601,stop,0
+O018,Debugging,py,0,4,25,3,98.626,147.970,1,pass,49.343,2674,stop,0
+O019,Debugging,py,0,7,16,1,48.938,127.904,1,pass,78.966,3777,stop,0
+O020,Debugging,py,0,0,2,1,0.001,18.855,1,pass,18.854,875,stop,0
+O021,Debugging,py,0,0,41,2,183.438,216.923,1,pass,33.484,1701,stop,0
+O022,Debugging,py,0,0,49,2,229.513,238.556,1,pass,9.042,482,stop,0
+O023,Debugging,py,0,7,15,0,45.826,59.932,1,pass,14.105,756,stop,0
+O024,Debugging,py,0,0,16,3,61.448,73.428,1,pass,11.979,701,stop,0
+O025,Debugging,py,0,5,41,1,139.207,156.958,1,pass,17.751,1025,stop,0
+O026,Debugging,py,0,2,37,2,163.605,183.057,1,pass,19.450,935,stop,0
+O027,Debugging,py,0,6,47,3,175.494,193.645,1,pass,18.151,775,stop,0
+O028,Debugging,py,0,2,32,1,131.142,166.523,1,pass,35.381,1815,stop,0
+O029,Debugging,py,0,6,48,1,181.861,193.058,1,pass,11.196,655,stop,0
+O030,Debugging,py,0,5,18,1,70.981,84.999,1,pass,14.017,798,stop,0
+O031,Debugging,py,0,1,16,0,76.874,87.914,1,pass,11.039,578,stop,0
+O032,Debugging,py,0,3,38,1,133.287,223.803,1,pass,90.515,4249,stop,0
+O033,Debugging,py,0,7,14,2,45.260,58.583,1,pass,13.322,684,stop,0
+O034,Debugging,py,0,4,47,1,189.539,218.551,1,pass,29.011,1556,stop,0
+O035,Debugging,py,0,1,5,2,6.035,74.588,1,pass,68.553,3504,stop,0
+O036,Debugging,py,0,3,45,0,160.804,202.478,1,pass,41.674,1768,stop,0
+O037,Debugging,py,1,4,38,1,156.497,174.651,1,pass,18.153,813,stop,0
+O038,Debugging,py,0,3,16,1,43.456,54.946,1,pass,11.488,620,stop,0
+O039,Debugging,py,0,2,41,1,187.666,193.186,1,pass,5.519,372,stop,0
+O040,Debugging,py,0,1,30,2,122.394,128.453,1,pass,6.059,288,stop,0
+O041,Debugging,py,0,4,17,0,53.372,64.384,0,wrong_answer,11.012,653,stop,0
+O042,Debugging,py,0,2,50,1,222.373,231.859,1,pass,9.485,655,stop,0
+O043,Debugging,py,0,2,24,0,100.702,111.708,1,pass,11.005,581,stop,0
+O044,Debugging,py,0,7,18,2,58.583,77.704,1,pass,19.120,1044,stop,0
+O045,Debugging,py,0,6,43,0,166.339,171.784,1,pass,5.444,252,stop,0
+O046,Debugging,py,0,6,7,0,17.019,36.181,1,pass,19.161,925,stop,0
+O047,Debugging,py,0,4,10,3,26.159,42.945,1,pass,16.785,915,stop,0
+O048,Debugging,py,0,3,29,3,92.823,105.604,1,pass,12.780,635,stop,0
+O049,Debugging,py,0,0,43,0,193.705,203.327,1,pass,9.622,579,stop,0
+O050,Debugging,py,0,4,7,3,14.684,19.604,1,pass,4.919,323,stop,0
+O051,Debugging,py,0,5,15,0,54.657,65.408,1,pass,10.750,655,stop,0
+O052,Debugging,py,0,1,19,0,87.914,98.094,1,pass,10.179,562,stop,0
+O053,Debugging,py,1,0,45,0,203.327,218.149,1,pass,14.821,736,stop,0
+O054,Debugging,py,0,2,43,0,200.775,212.626,1,pass,11.851,563,stop,0
+O055,Debugging,py,0,2,42,1,193.187,204.144,1,pass,10.957,621,stop,0
+O056,Debugging,py,0,7,40,3,141.160,154.929,1,pass,13.769,818,stop,0
+O057,Debugging,py,0,6,45,0,171.784,188.306,1,pass,16.522,750,stop,0
+O058,Debugging,py,0,6,38,2,141.377,161.919,1,pass,20.541,999,stop,0
+O059,Debugging,py,0,1,24,2,99.727,110.004,1,pass,10.277,631,stop,0
+O060,Debugging,py,0,6,18,1,59.258,71.507,1,pass,12.249,679,stop,0
+O061,Debugging,py,0,4,37,2,151.830,163.916,1,pass,12.085,594,stop,0
+O062,Debugging,py,0,6,1,0,0.000,8.584,1,pass,8.583,503,stop,0
+O063,Debugging,py,0,5,34,2,118.976,128.187,1,pass,9.210,405,stop,0
+O064,Debugging,py,0,4,13,3,42.945,53.250,1,pass,10.303,568,stop,0
+O065,Debugging,py,0,5,28,1,99.617,117.793,1,pass,18.175,978,stop,0
+O066,Debugging,py,0,7,33,3,122.757,129.579,1,pass,6.822,404,stop,0
+O067,Debugging,py,0,3,23,1,65.960,71.564,1,pass,5.604,342,stop,0
+O068,Debugging,py,1,3,7,2,12.402,36.408,1,pass,24.006,1298,stop,0
+O069,Debugging,py,0,4,15,1,52.033,75.762,1,pass,23.728,1421,stop,0
+O070,Debugging,py,0,3,43,2,152.465,163.561,1,pass,11.096,571,stop,0
+O071,Debugging,py,0,7,25,0,87.262,103.714,1,pass,16.451,957,stop,0
+O072,Debugging,py,0,5,25,3,90.571,100.190,1,pass,9.618,492,stop,0
+O073,Debugging,py,0,4,18,0,64.384,83.172,1,pass,18.786,1100,stop,0
+O074,Debugging,py,0,6,12,0,36.181,47.634,1,pass,11.452,685,stop,0
+O075,Debugging,py,0,7,4,3,0.002,14.636,1,pass,14.633,837,stop,0
+O076,Debugging,py,0,1,35,2,139.413,150.122,1,pass,10.708,536,stop,0
+O077,Debugging,py,0,6,46,2,171.906,185.600,1,pass,13.694,765,stop,0
+O078,Debugging,py,0,1,21,1,95.545,113.130,1,pass,17.584,1065,stop,0
+O079,Debugging,py,0,5,37,2,128.187,139.205,1,pass,11.017,679,stop,0
+O080,Debugging,py,0,1,43,1,176.713,185.941,1,pass,9.227,515,stop,0
+O081,Debugging,py,0,6,17,3,55.518,68.871,1,pass,13.352,712,stop,0
+O082,Debugging,py,0,0,20,3,73.429,85.787,1,pass,12.357,648,stop,0
+O083,Debugging,py,0,1,15,2,74.589,92.509,1,pass,17.919,905,stop,0
+O084,Debugging,py,0,3,31,0,96.784,106.954,1,pass,10.169,594,stop,0
+O085,Debugging,py,0,4,50,3,198.626,208.816,1,pass,10.190,660,stop,0
+O086,Debugging,py,0,6,29,0,109.428,116.422,1,pass,6.993,249,stop,0
+O087,Debugging,py,0,6,15,0,47.634,63.176,1,pass,15.542,770,stop,0
+O088,Debugging,py,0,4,20,1,75.762,100.136,1,pass,24.373,1260,stop,0
+O089,Debugging,py,0,5,38,3,130.823,138.653,1,pass,7.829,445,stop,0
+O090,Debugging,py,0,1,47,1,194.250,204.388,1,pass,10.137,506,stop,0
+O091,Debugging,py,1,5,42,0,140.585,152.642,1,pass,12.056,616,stop,0
+O092,Debugging,py,0,7,36,3,129.579,141.160,1,pass,11.580,594,stop,0
+O093,Debugging,py,0,3,14,0,40.687,48.600,1,pass,7.912,450,stop,0
+O094,Debugging,py,0,3,33,3,105.604,113.893,1,pass,8.288,414,stop,0
+O095,Debugging,py,1,5,35,3,122.439,130.823,1,pass,8.383,429,stop,0
+O096,Debugging,py,0,6,40,0,148.822,166.339,1,pass,17.516,909,stop,0
+O097,Debugging,py,0,6,4,3,0.002,22.324,1,pass,22.322,1103,stop,0
+O098,Debugging,py,0,7,48,2,170.028,182.913,1,pass,12.884,602,stop,0
+O099,Debugging,py,0,3,13,2,36.409,42.900,1,pass,6.491,270,stop,0
+O100,Debugging,py,0,6,37,1,139.514,168.940,1,pass,29.426,1318,stop,0
+O101,Debugging,py,0,3,1,0,0.000,15.531,1,pass,15.530,673,stop,0
+O102,Debugging,py,0,5,36,0,126.209,140.585,1,pass,14.375,658,stop,0
+O103,Debugging,py,0,7,47,0,166.011,185.727,1,pass,19.715,1100,stop,0
+O104,Debugging,py,0,5,27,2,93.937,110.541,1,pass,16.603,1124,stop,0
+O105,Debugging,py,0,4,2,1,0.001,9.011,1,pass,9.009,528,stop,0
+O106,Debugging,py,0,6,27,1,103.367,122.573,1,pass,19.204,1030,stop,0
+O107,Debugging,py,0,1,10,3,37.237,54.695,1,pass,17.457,1068,stop,0
+O108,Debugging,py,0,6,21,3,68.871,81.401,1,pass,12.529,772,stop,0
+O109,Debugging,py,0,6,33,1,122.573,139.514,1,pass,16.940,863,stop,0
+O110,Debugging,py,0,2,47,0,212.627,226.962,1,pass,14.335,880,stop,0
+O111,Debugging,py,0,1,17,1,77.472,95.545,1,pass,18.073,819,stop,0
+O112,Debugging,py,0,0,38,0,161.907,179.853,1,pass,17.946,1109,stop,0
+O113,Debugging,py,0,1,39,2,164.359,212.977,0,wrong_answer,48.616,2643,stop,0
+O114,Debugging,py,0,1,42,0,174.853,189.045,1,pass,14.192,756,stop,0
+O115,Debugging,py,0,5,9,3,22.628,78.780,1,pass,56.152,3051,stop,0
+O116,Debugging,py,0,7,7,3,14.637,25.804,1,pass,11.166,673,stop,0
+O117,Debugging,py,0,4,23,0,83.172,94.893,1,pass,11.720,750,stop,0
+O118,Debugging,py,0,4,26,1,100.136,117.911,1,pass,17.775,1024,stop,0
+O119,Debugging,py,1,4,6,1,13.072,39.584,1,pass,26.511,1446,stop,0
+O120,Debugging,py,0,6,10,2,26.126,37.927,1,pass,11.800,639,stop,0
+O121,Debugging,py,0,7,38,2,136.563,145.568,1,pass,9.005,500,stop,0
+O122,Debugging,py,0,2,15,0,53.671,92.766,1,pass,39.095,2106,stop,0
+O123,Debugging,py,0,3,21,0,62.928,77.371,1,pass,14.443,815,stop,0
+O124,Debugging,py,0,6,41,3,160.936,175.493,1,pass,14.556,898,stop,0
+O125,Debugging,py,0,7,41,2,145.568,164.412,1,pass,18.843,1057,stop,0
+O126,Debugging,py,0,7,8,1,24.182,38.340,1,pass,14.157,878,stop,0
+O127,Debugging,py,0,6,8,1,19.025,27.213,1,pass,8.187,438,stop,0
+O128,Debugging,py,0,2,1,0,0.000,14.339,1,pass,14.339,809,stop,0
+O129,Debugging,py,0,6,30,3,110.510,116.958,1,pass,6.447,413,stop,0
+O130,Debugging,py,0,3,19,0,56.016,62.928,1,pass,6.911,320,stop,0
+O131,Debugging,py,0,4,34,1,141.107,156.497,1,pass,15.390,791,stop,0
+O132,Debugging,py,0,4,32,0,128.218,135.446,1,pass,7.227,453,stop,0
+O133,Debugging,py,0,0,25,2,90.640,137.114,1,pass,46.473,2306,stop,0
+O134,Debugging,py,0,7,39,0,136.684,148.443,1,pass,11.758,533,stop,0
+O135,Debugging,py,0,6,25,3,93.988,110.510,1,pass,16.521,987,stop,0
+O136,Debugging,py,0,7,1,0,0.000,8.315,1,pass,8.314,371,stop,0
+O137,Debugging,cpp,0,0,6,3,17.873,24.749,1,pass,6.874,386,stop,0
+O138,Debugging,cpp,0,0,32,2,137.114,148.515,1,pass,11.401,671,stop,0
+O139,Debugging,cpp,1,4,29,0,112.718,128.217,1,pass,15.498,791,stop,0
+O140,Debugging,cpp,0,6,42,2,161.919,171.906,1,pass,9.986,524,stop,0
+O141,Debugging,cpp,0,7,34,2,126.024,136.563,1,pass,10.538,609,stop,0
+O142,Debugging,cpp,0,3,17,0,48.600,56.016,1,pass,7.415,460,stop,0
+O143,Debugging,cpp,0,5,22,2,83.251,93.937,1,pass,10.685,664,stop,0
+O144,Debugging,cpp,1,1,20,2,92.509,99.727,1,pass,7.217,418,stop,0
+O145,Debugging,cpp,0,4,46,1,184.228,189.539,1,pass,5.310,280,stop,0
+O146,Debugging,cpp,0,0,12,3,32.380,48.312,1,pass,15.931,870,stop,0
+O147,Debugging,cpp,0,6,2,1,0.001,19.025,1,pass,19.024,928,stop,0
+O148,Debugging,cpp,0,7,43,3,154.929,164.410,1,pass,9.481,600,stop,0
+O149,Debugging,cpp,0,0,10,0,27.371,41.841,1,pass,14.469,673,stop,0
+O150,Debugging,cpp,1,2,11,3,23.827,67.922,1,pass,44.095,2647,stop,0
+O151,Debugging,cpp,0,0,15,3,48.312,61.448,1,pass,13.135,779,stop,0
+O152,Debugging,cpp,0,2,34,2,141.750,154.642,1,pass,12.891,713,stop,0
+O153,Debugging,cpp,0,0,19,1,71.927,81.548,1,pass,9.620,514,stop,0
+O154,Debugging,cpp,0,3,24,1,71.564,84.664,1,pass,13.099,720,stop,0
+O155,Debugging,cpp,0,7,30,0,110.826,121.031,1,pass,10.204,544,stop,0
+O156,Debugging,cpp,0,1,44,3,183.008,197.303,1,pass,14.294,717,stop,0
+O157,Debugging,cpp,0,6,11,1,27.214,40.744,1,pass,13.530,745,stop,0
+O158,Debugging,cpp,1,0,1,0,0.000,16.906,1,pass,16.905,915,stop,0
+O159,Debugging,cpp,0,7,42,0,148.443,166.011,1,pass,17.567,804,stop,0
+O160,Debugging,cpp,0,3,28,1,84.664,95.584,1,pass,10.919,676,stop,0
+O161,Implementation,py,0,5,10,0,30.615,41.035,1,pass,10.419,588,stop,0
+O162,Implementation,py,0,7,31,3,112.756,122.757,1,pass,10.000,531,stop,0
+O163,Implementation,py,0,0,40,0,179.853,193.705,1,pass,13.850,835,stop,0
+O164,Implementation,py,0,4,4,3,0.003,14.684,1,pass,14.680,801,stop,0
+O165,Implementation,py,0,5,47,3,158.876,169.393,1,pass,10.515,594,stop,0
+O166,Implementation,py,0,7,24,3,82.743,95.980,1,pass,13.236,637,stop,0
+O167,Implementation,py,0,3,46,2,163.562,172.886,1,pass,9.324,547,stop,0
+O168,Implementation,py,0,5,12,2,39.438,52.001,1,pass,12.562,841,stop,0
+O169,Implementation,py,0,3,18,1,54.946,65.960,1,pass,11.013,503,stop,0
+O170,Implementation,py,0,0,30,3,129.409,153.174,1,pass,23.764,1168,stop,0
+O171,Implementation,py,0,0,21,1,81.548,112.957,1,pass,31.408,1511,stop,0
+O172,Implementation,py,0,5,3,2,0.001,39.438,0,wrong_answer,39.436,1904,stop,0
+O173,Implementation,py,0,6,49,2,185.601,193.965,1,pass,8.364,491,stop,0
+O174,Implementation,py,0,3,50,3,190.975,202.916,1,pass,11.941,727,stop,0
+O175,Implementation,py,0,1,49,0,202.034,237.661,1,pass,35.626,2188,stop,0
+O176,Implementation,py,0,1,4,3,0.002,27.427,1,pass,27.425,1519,stop,0
+O177,Implementation,py,0,5,46,2,158.307,180.039,1,pass,21.731,1096,stop,0
+O178,Implementation,py,0,5,33,1,117.793,139.206,1,pass,21.413,1073,stop,0
+O179,Implementation,py,1,4,1,0,0.000,22.941,1,pass,22.940,1184,stop,0
+O180,Implementation,py,0,1,2,1,0.001,31.132,1,pass,31.130,1783,stop,0
+O181,Implementation,py,1,2,45,1,204.144,222.373,1,pass,18.228,1051,stop,0
+O182,Implementation,py,0,4,22,3,80.845,98.626,1,pass,17.780,1086,stop,0
+O183,Implementation,py,0,0,46,1,210.298,244.730,1,pass,34.432,1726,stop,0
+O184,Implementation,py,0,2,9,0,21.288,41.899,1,pass,20.610,1266,stop,0
+O185,Implementation,py,0,0,14,0,41.841,69.266,1,pass,27.424,1465,stop,0
+O186,Implementation,py,0,6,22,1,71.508,91.435,1,pass,19.927,1089,stop,0
+O187,Implementation,py,0,1,8,0,29.403,51.778,1,pass,22.375,1196,stop,0
+O188,Implementation,py,0,4,3,2,0.001,37.137,1,pass,37.135,1828,stop,0
+O189,Implementation,py,0,0,8,2,19.961,63.366,0,wrong_answer,43.405,2095,stop,0
+O190,Implementation,py,0,2,23,1,95.246,109.941,1,pass,14.695,844,stop,0
+O191,Implementation,py,0,5,5,0,5.049,30.615,1,pass,25.566,1278,stop,0
+O192,Implementation,py,0,3,37,3,113.894,138.154,1,pass,24.259,1203,stop,0
+O193,Implementation,py,0,5,21,3,78.780,90.571,1,pass,11.790,676,stop,0
+O194,Implementation,py,0,4,28,2,104.590,113.316,1,pass,8.726,541,stop,0
+O195,Implementation,py,0,4,33,0,135.446,146.964,1,pass,11.517,673,stop,0
+O196,Implementation,py,0,3,3,2,0.001,12.401,1,pass,12.400,742,stop,0
+O197,Implementation,py,0,0,47,2,216.923,229.513,1,pass,12.589,839,stop,0
+O198,Implementation,py,0,1,41,3,171.190,183.008,1,pass,11.817,645,stop,0
+O199,Implementation,py,0,4,9,0,22.941,53.372,1,pass,30.430,1421,stop,0
+O200,Implementation,py,0,7,11,3,36.903,55.366,1,pass,18.461,834,stop,0
+O201,Implementation,py,0,4,19,3,68.430,80.845,1,pass,12.414,726,stop,0
+O202,Implementation,py,0,7,29,2,110.704,126.024,1,pass,15.319,910,stop,0
+O203,Implementation,py,0,5,8,1,19.260,37.330,1,pass,18.069,962,stop,0
+O204,Implementation,py,0,3,32,1,102.484,110.452,1,pass,7.967,456,stop,0
+O205,Implementation,py,0,3,15,2,42.900,60.310,1,pass,17.409,874,stop,0
+O206,Implementation,py,0,7,9,3,25.804,36.903,1,pass,11.099,641,stop,0
+O207,Implementation,py,0,6,44,1,168.941,181.861,1,pass,12.920,556,stop,0
+O208,Implementation,py,0,5,11,1,37.330,57.815,1,pass,20.485,1023,stop,0
+O209,Implementation,py,0,3,10,0,24.599,34.715,1,pass,10.115,538,stop,0
+O210,Implementation,py,0,5,17,0,65.408,78.099,1,pass,12.691,813,stop,0
+O211,Implementation,py,0,7,26,3,95.981,112.756,1,pass,16.774,998,stop,0
+O212,Implementation,py,0,0,18,0,69.267,88.928,1,pass,19.661,1146,stop,0
+O213,Implementation,py,0,7,45,3,164.411,177.207,1,pass,12.795,704,stop,0
+O214,Implementation,py,0,0,3,2,0.001,19.960,1,pass,19.959,1009,stop,0
+O215,Implementation,py,0,0,50,2,238.556,244.287,1,pass,5.730,365,stop,0
+O216,Implementation,py,0,3,5,3,8.022,21.326,1,pass,13.304,765,stop,0
+O217,Implementation,py,0,7,28,0,103.715,110.825,1,pass,7.110,413,stop,0
+O218,Implementation,py,0,4,31,1,117.911,141.106,1,pass,23.195,1173,stop,0
+O219,Implementation,py,0,2,19,1,70.689,82.635,1,pass,11.946,667,stop,0
+O220,Implementation,py,0,6,39,3,146.121,160.936,1,pass,14.814,856,stop,0
+O221,Implementation,py,0,7,50,3,177.207,198.050,0,wrong_answer,20.842,1172,stop,0
+O222,Implementation,py,0,1,11,0,51.778,76.874,1,pass,25.095,1245,stop,0
+O223,Implementation,py,0,6,13,2,37.928,54.848,1,pass,16.920,921,stop,0
+O224,Implementation,py,0,0,27,0,104.586,116.915,1,pass,12.329,706,stop,0
+O225,Implementation,py,0,1,25,0,105.102,139.292,1,pass,34.189,1731,stop,0
+O226,Implementation,py,0,0,13,1,40.250,71.927,1,pass,31.676,1730,stop,0
+O227,Implementation,py,0,6,23,3,81.401,93.988,1,pass,12.586,909,stop,0
+O228,Implementation,py,1,2,39,3,171.979,201.998,1,pass,30.019,1106,stop,0
+O229,Implementation,py,0,4,49,0,195.282,213.016,1,pass,17.733,975,stop,0
+O230,Implementation,py,0,2,49,2,218.593,235.632,1,pass,17.038,1167,stop,0
+O231,Implementation,py,1,2,28,3,114.199,123.108,1,pass,8.908,582,stop,0
+O232,Implementation,py,0,2,4,3,0.001,11.469,1,pass,11.468,659,stop,0
+O233,Implementation,py,0,7,3,2,0.001,29.450,0,wrong_answer,29.448,1350,stop,0
+O234,Implementation,py,0,2,35,3,148.498,171.979,1,pass,23.480,1369,stop,0
+O235,Implementation,py,0,5,14,2,52.001,72.470,1,pass,20.469,1018,stop,0
+O236,Implementation,py,0,0,37,1,159.644,191.853,0,wrong_answer,32.208,1593,stop,0
+O237,Implementation,py,0,5,45,1,156.958,171.074,1,pass,14.115,752,stop,0
+O238,Implementation,py,0,3,40,0,140.124,160.804,1,pass,20.679,1321,stop,0
+O239,Implementation,py,0,4,14,2,46.583,78.777,1,pass,32.194,1743,stop,0
+O240,Implementation,py,0,1,48,3,197.303,216.506,1,pass,19.203,1171,stop,0
+O241,Implementation,py,0,4,42,0,173.450,195.282,1,pass,21.831,1344,stop,0
+O242,Implementation,py,0,1,13,1,59.609,77.472,1,pass,17.861,809,stop,0
+O243,Implementation,py,0,2,18,3,67.922,90.242,1,pass,22.319,1408,stop,0
+O244,Implementation,py,0,3,42,2,147.154,152.464,1,pass,5.310,367,stop,0
+O245,Implementation,py,0,1,33,3,130.211,154.041,1,pass,23.829,1395,stop,0
+O246,Implementation,py,0,2,10,1,22.356,33.102,1,pass,10.745,638,stop,0
+O247,Implementation,py,0,3,25,2,76.152,142.650,1,pass,66.497,3384,stop,0
+O248,Implementation,py,0,2,3,2,0.001,8.350,1,pass,8.349,436,stop,0
+O249,Implementation,py,0,3,49,2,189.401,199.015,1,pass,9.613,513,stop,0
+O250,Implementation,py,0,0,48,0,218.149,239.918,1,pass,21.769,1382,stop,0
+O251,Implementation,py,0,3,47,3,164.896,190.974,1,pass,26.077,1576,stop,0
+O252,Implementation,py,0,4,45,3,180.781,198.625,1,pass,17.844,1047,stop,0
+O253,Implementation,py,1,0,35,3,153.174,409.748,1,pass,256.573,16495,stop,0
+O254,Implementation,py,0,5,24,0,88.622,105.323,1,pass,16.700,833,stop,0
+O255,Implementation,py,0,1,37,2,150.122,164.359,1,pass,14.236,765,stop,0
+O256,Implementation,py,0,1,23,3,99.603,120.306,1,pass,20.703,1083,stop,0
+O257,Implementation,py,0,4,5,1,9.011,13.072,1,pass,4.061,225,stop,0
+O258,Implementation,py,0,1,26,2,110.005,115.917,1,pass,5.912,312,stop,0
+O259,Implementation,py,0,2,44,3,201.999,217.107,1,pass,15.108,828,stop,0
+O260,Implementation,py,0,5,16,1,57.815,70.981,1,pass,13.165,779,stop,0
+O261,Implementation,py,0,2,14,0,41.899,53.671,1,pass,11.771,713,stop,0
+O262,Implementation,py,0,5,7,1,12.066,19.259,1,pass,7.192,430,stop,0
+O263,Implementation,py,0,5,40,2,139.205,158.307,1,pass,19.101,949,stop,0
+O264,Implementation,py,0,5,50,0,170.954,190.636,1,pass,19.681,1238,stop,0
+O265,Implementation,py,1,2,27,0,111.708,130.588,1,pass,18.879,1181,stop,0
+O266,Implementation,py,0,4,12,1,39.584,52.033,1,pass,12.448,738,stop,0
+O267,Implementation,py,0,4,21,2,78.777,104.590,1,pass,25.812,1189,stop,0
+O268,Implementation,py,1,7,19,0,59.932,73.960,1,pass,14.027,854,stop,0
+O269,Implementation,py,0,2,48,3,217.107,239.903,1,pass,22.795,1624,stop,0
+O270,Implementation,py,0,1,38,3,154.042,171.190,1,pass,17.148,1019,stop,0
+O271,Implementation,py,0,1,27,1,113.130,128.454,1,pass,15.324,910,stop,0
+O272,Implementation,py,0,3,27,3,81.442,92.823,1,pass,11.381,617,stop,0
+O273,Implementation,py,0,2,20,1,82.635,95.246,1,pass,12.609,645,stop,0
+O274,Implementation,py,0,2,30,3,123.108,141.205,1,pass,18.096,1073,stop,0
+O275,Implementation,py,0,7,44,1,163.194,177.089,1,pass,13.894,777,stop,0
+O276,Implementation,py,0,3,39,3,138.154,153.798,1,pass,15.643,1025,stop,0
+O277,Implementation,py,1,0,17,2,63.366,85.092,1,pass,21.725,1318,stop,0
+O278,Implementation,py,0,6,14,1,40.744,59.258,1,pass,18.513,964,stop,0
+O279,Implementation,py,0,2,38,1,166.524,187.666,1,pass,21.142,1394,stop,0
+O280,Implementation,py,0,3,35,1,110.452,133.286,1,pass,22.833,1067,stop,0
+O281,Implementation,py,0,0,28,1,112.957,135.608,1,pass,22.650,1237,stop,0
+O282,Implementation,py,0,4,30,2,113.317,151.830,1,pass,38.513,1836,stop,0
+O283,Implementation,py,0,7,32,0,121.031,136.684,1,pass,15.652,812,stop,0
+O284,Implementation,py,0,3,9,3,21.326,81.441,1,pass,60.115,3423,stop,0
+O285,Implementation,py,0,2,12,2,32.127,102.980,1,pass,70.853,3269,stop,0
+O286,Implementation,py,0,4,36,3,147.971,165.471,1,pass,17.500,859,stop,0
+O287,Implementation,py,0,5,6,3,8.812,22.627,1,pass,13.814,844,stop,0
+O288,Implementation,py,0,3,36,0,112.802,140.123,1,pass,27.320,1546,stop,0
+O289,Implementation,py,0,7,17,3,55.366,72.346,1,pass,16.979,1024,stop,0
+O290,Implementation,py,0,4,24,0,94.893,103.627,1,pass,8.733,495,stop,0
+O291,Implementation,py,0,3,44,3,153.798,164.896,1,pass,11.097,568,stop,0
+O292,Implementation,py,0,1,18,3,81.127,99.603,1,pass,18.475,965,stop,0
+O293,Implementation,py,0,6,32,3,116.958,124.069,1,pass,7.111,402,stop,0
+O294,Implementation,py,0,5,39,3,138.653,152.766,1,pass,14.112,835,stop,0
+O295,Implementation,py,0,2,2,1,0.001,14.924,1,pass,14.923,842,stop,0
+O296,Implementation,py,0,3,6,1,9.116,31.984,1,pass,22.868,1400,stop,0
+O297,Implementation,cpp,0,5,20,0,78.100,88.622,1,pass,10.521,567,stop,0
+O298,Implementation,cpp,0,5,48,0,160.476,170.954,1,pass,10.477,751,stop,0
+O299,Implementation,cpp,0,0,7,1,18.855,30.547,1,pass,11.692,731,stop,0
+O300,Implementation,cpp,0,5,1,0,0.000,5.048,1,pass,5.048,297,stop,0
+O301,Implementation,cpp,0,3,20,2,60.310,65.958,0,wrong_answer,5.647,295,stop,0
+O302,Implementation,cpp,0,0,22,2,85.092,90.639,1,pass,5.546,297,stop,0
+O303,Implementation,cpp,1,1,1,0,0.000,15.522,1,pass,15.521,784,stop,0
+O304,Implementation,cpp,0,0,5,0,16.906,27.371,1,pass,10.465,695,stop,0
+O305,Implementation,cpp,0,2,6,3,11.470,23.826,1,pass,12.356,691,stop,0
+O306,Implementation,cpp,0,2,36,2,154.643,163.605,1,pass,8.961,667,stop,0
+O307,Implementation,cpp,0,3,34,0,106.954,112.802,1,pass,5.847,338,stop,0
+O308,Implementation,cpp,0,7,27,2,101.213,110.704,1,pass,9.490,628,stop,0
+O309,Implementation,cpp,0,5,32,0,114.437,126.209,1,pass,11.771,594,stop,0
+O310,Implementation,cpp,0,7,6,1,11.528,24.182,1,pass,12.653,643,stop,0
+O311,Implementation,cpp,0,5,49,3,169.393,179.612,1,pass,10.219,743,stop,0
+O312,Implementation,cpp,0,3,30,1,95.584,102.484,1,pass,6.899,411,stop,0
+O313,Implementation,cpp,1,1,46,0,189.045,202.034,1,pass,12.988,749,stop,0
+O314,Implementation,cpp,0,4,27,0,103.627,112.718,1,pass,9.090,570,stop,0
+O315,Implementation,cpp,0,1,32,1,128.454,142.423,0,wrong_answer,13.968,604,stop,0
+O316,Implementation,cpp,1,2,13,1,33.102,58.154,1,pass,25.052,1350,stop,0
+O317,Implementation,cpp,0,1,34,0,139.292,166.392,1,pass,27.100,1210,stop,0
+O318,Implementation,cpp,0,6,6,2,12.891,26.126,1,pass,13.234,805,stop,0
+O319,Implementation,cpp,0,6,50,0,188.306,199.221,1,pass,10.914,699,stop,0
+O320,Implementation,cpp,0,3,26,0,77.371,96.783,1,pass,19.411,1097,stop,0
+O321,Program logic,json,1,5,43,0,152.642,160.476,1,pass,7.832,367,stop,0
+O322,Program logic,json,0,0,39,2,174.638,183.438,1,pass,8.800,447,stop,0
+O323,Program logic,json,0,0,26,0,96.789,104.585,1,pass,7.796,443,stop,0
+O324,Program logic,json,0,0,42,1,191.853,200.037,1,pass,8.183,356,stop,0
+O325,Program logic,json,0,0,33,2,148.516,155.935,1,pass,7.419,456,stop,0
+O326,Program logic,json,0,3,12,0,34.715,40.687,1,pass,5.971,313,stop,0
+O327,Program logic,json,0,7,12,1,38.340,48.938,1,pass,10.597,463,stop,0
+O328,Program logic,json,0,1,12,3,54.695,61.963,1,pass,7.267,438,stop,0
+O329,Program logic,json,0,6,3,2,0.001,12.891,1,pass,12.889,500,stop,0
+O330,Program logic,json,0,4,8,3,19.604,26.159,1,pass,6.554,339,stop,0
+O331,Program logic,json,0,7,2,1,0.001,11.528,1,pass,11.526,656,stop,0
+O332,Program logic,json,0,7,46,2,164.412,170.028,1,pass,5.616,269,stop,0
+O333,Program logic,json,0,1,28,2,115.918,122.394,1,pass,6.475,308,stop,0
+O334,Program logic,json,0,2,8,1,14.924,22.355,0,wrong_answer,7.431,449,stop,0
+O335,Program logic,json,0,1,7,3,27.427,37.236,1,pass,9.809,471,stop,0
+O336,Program logic,json,0,2,25,2,102.981,117.170,1,pass,14.189,677,stop,0
+O337,Program logic,json,0,2,22,0,92.767,100.702,1,pass,7.935,434,stop,0
+O338,Program logic,json,0,5,23,1,84.999,91.630,1,pass,6.630,395,stop,0
+O339,Program logic,json,0,3,22,2,65.958,76.152,1,pass,10.192,571,stop,0
+O340,Program logic,json,0,5,19,2,72.471,83.251,1,pass,10.780,533,stop,0
+O341,Program logic,json,0,1,3,2,0.001,6.035,1,pass,6.033,328,stop,0
+O342,Program logic,json,0,1,45,1,185.941,194.250,1,pass,8.308,528,stop,0
+O343,Program logic,json,0,1,40,0,166.393,174.852,1,pass,8.459,448,stop,0
+O344,Program logic,json,0,0,24,0,88.928,96.789,1,pass,7.860,375,stop,0
+O345,Program logic,json,0,4,16,3,53.250,68.430,1,pass,15.179,687,stop,0
+O346,Program logic,json,0,2,46,2,209.375,218.593,1,pass,9.217,480,stop,0
+O347,Program logic,json,0,0,9,3,24.749,32.380,1,pass,7.631,362,stop,0
+O348,Program logic,json,0,7,21,0,73.960,82.197,1,pass,8.236,543,stop,0
+O349,Program logic,json,0,6,26,2,97.887,105.729,1,pass,7.841,393,stop,0
+O350,Program logic,json,0,5,4,3,0.001,8.812,1,pass,8.810,378,stop,0
+O351,Program logic,json,0,7,23,0,82.197,87.262,1,pass,5.065,288,stop,0
+O352,Program logic,json,0,0,11,1,30.547,40.249,1,pass,9.701,486,stop,0
+O353,Program logic,json,0,6,16,2,54.848,62.512,1,pass,7.662,385,stop,0
+O354,Program logic,json,0,5,44,3,152.766,158.876,1,pass,6.110,260,stop,0
+O355,Program logic,json,0,4,39,2,163.916,171.190,1,pass,7.274,390,stop,0
+O356,Program logic,json,0,4,40,3,165.472,174.531,1,pass,9.058,390,stop,0
+O357,Program logic,json,0,3,4,3,0.002,8.021,0,wrong_answer,8.019,374,stop,0
+O358,Program logic,json,0,1,29,3,120.307,130.211,0,wrong_answer,9.904,501,stop,0
+O359,Program logic,json,0,2,33,3,141.205,148.498,1,pass,7.292,389,stop,0
+O360,Program logic,json,0,3,41,2,142.650,147.154,1,pass,4.502,282,stop,0
+O361,Program logic,json,0,4,44,1,174.651,184.228,1,pass,9.576,478,stop,0
+O362,Program logic,json,0,4,11,2,37.137,46.583,1,pass,9.445,493,stop,0
+O363,Program logic,json,0,6,28,2,105.729,141.377,1,pass,35.647,1499,stop,0
+O364,Program logic,json,0,5,2,1,0.001,12.066,1,pass,12.065,583,stop,0
+O365,Program logic,json,0,2,31,0,130.588,200.775,0,wrong_answer,70.185,3143,stop,0
+O366,Program logic,json,0,2,5,2,8.350,32.127,1,pass,23.775,1220,stop,0
+O367,Program logic,json,0,6,9,3,22.325,55.517,1,pass,33.192,1767,stop,0
+O368,Program logic,json,0,6,34,3,124.070,138.592,0,wrong_answer,14.522,887,stop,0
+O369,Program logic,json,0,1,6,0,15.522,29.402,1,pass,13.880,725,stop,0
+O370,Program logic,json,0,1,14,3,61.963,81.127,1,pass,19.164,824,stop,0
+O371,Program logic,json,0,3,11,1,31.985,43.456,1,pass,11.471,529,stop,0
+O372,Program logic,json,0,6,35,0,130.156,148.822,1,pass,18.665,845,stop,0
+O373,Program logic,json,0,1,36,1,142.424,176.712,1,pass,34.288,1967,stop,0
+O374,Program logic,json,0,3,8,0,15.531,24.599,1,pass,9.067,474,stop,0
+O375,Program logic,json,0,7,37,1,135.003,163.194,1,pass,28.190,1228,stop,0
+O376,Program logic,json,0,5,29,3,100.190,122.438,1,pass,22.248,1183,stop,0
+O377,Program logic,json,0,7,5,0,8.315,40.789,1,pass,32.474,1781,stop,0
+O378,Program logic,json,0,0,23,3,85.787,129.409,1,pass,43.622,1817,stop,0
+O379,Program logic,json,0,3,2,1,0.001,9.116,1,pass,9.115,331,stop,0
+O380,Program logic,json,0,1,50,1,204.388,221.389,1,pass,17.000,1040,stop,0
+O381,Pure logic,json,0,4,43,3,174.531,180.781,1,pass,6.249,381,stop,0
+O382,Pure logic,json,0,0,44,1,200.037,210.298,1,pass,10.260,579,stop,0
+O383,Pure logic,json,0,2,16,1,58.155,63.983,1,pass,5.828,287,stop,0
+O384,Pure logic,json,0,1,31,2,128.453,139.413,1,pass,10.959,578,stop,0
+O385,Pure logic,json,0,7,35,1,127.905,135.003,1,pass,7.097,410,stop,0
+O386,Pure logic,json,0,7,22,2,77.704,101.213,1,pass,23.509,1274,stop,0
+O387,Pure logic,json,0,5,13,0,41.035,54.657,1,pass,13.621,605,stop,0
+O388,Pure logic,json,0,6,5,0,8.584,17.019,1,pass,8.434,406,stop,0
+O389,Pure logic,json,0,5,30,0,105.323,114.437,1,pass,9.113,495,stop,0
+O390,Pure logic,json,0,6,31,0,116.422,130.156,1,pass,13.733,728,stop,0
+O391,Pure logic,json,1,2,29,2,117.170,141.750,1,pass,24.579,1181,stop,0
+O392,Pure logic,json,0,6,19,2,62.512,97.887,1,pass,35.374,1796,stop,0
+O393,Pure logic,json,1,6,36,3,138.592,146.121,1,pass,7.528,455,stop,0
+O394,Pure logic,json,0,6,24,1,91.435,103.357,1,pass,11.921,502,stop,0
+O395,Pure logic,json,0,6,20,0,63.177,109.428,1,pass,46.251,2122,stop,0
+O396,Pure logic,json,0,5,26,1,91.630,99.617,1,pass,7.986,298,stop,0
+O397,Pure logic,json,0,7,13,0,40.789,45.826,1,pass,5.036,345,stop,0
+O398,Pure logic,json,0,2,17,1,63.983,70.688,1,pass,6.705,316,stop,0
+O399,Pure logic,json,0,2,21,3,90.242,114.199,1,pass,23.955,1007,stop,0
+O400,Pure logic,json,0,0,29,0,116.915,150.388,1,pass,33.472,1826,stop,0

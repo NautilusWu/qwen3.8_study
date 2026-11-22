@@ -1,0 +1,292 @@
+{
+ "PLAN_19": {
+  "Q1 (primary): Flash Next vs 27B, one stream": {
+   "totals": {
+    "flashnext": {
+     "correct": 395,
+     "total_min": 126.3,
+     "min_per_correct": 0.32
+    },
+    "27b": {
+     "correct": 386,
+     "total_min": 79.9,
+     "min_per_correct": 0.207
+    }
+   },
+   "pair": {
+    "only_first": 13,
+    "only_second": 4,
+    "p": 0.049,
+    "acc_diff_pp": 2.25,
+    "acc_ci95": [
+     0.25,
+     4.25
+    ],
+    "time_ratio": 1.546,
+    "time_ci95": [
+     1.092,
+     2.092
+    ]
+   },
+   "accuracy_reading": "Flash Next more accurate (detectable)",
+   "time_reading": "Flash Next slower (detectable)"
+  },
+  "Q2 (secondary): accuracy on set O minus set T, sets resampled independently": {
+   "27b": {
+    "all": {
+     "setT": "363/400",
+     "setO": "386/400",
+     "setT_pct": 90.75,
+     "setO_pct": 96.5,
+     "setO_minus_setT_pp": 5.75,
+     "ci95": [
+      2.5,
+      9.25
+     ]
+    },
+    "py": {
+     "setT": "157/170",
+     "setO": "265/272",
+     "setT_pct": 92.35,
+     "setO_pct": 97.43,
+     "setO_minus_setT_pp": 5.07,
+     "ci95": [
+      0.74,
+      9.71
+     ]
+    },
+    "cpp": {
+     "setT": "30/30",
+     "setO": "46/48",
+     "setT_pct": 100.0,
+     "setO_pct": 95.83,
+     "setO_minus_setT_pp": -4.17,
+     "ci95": [
+      -10.42,
+      0.0
+     ]
+    },
+    "reason": {
+     "setT": "176/200",
+     "setO": "75/80",
+     "setT_pct": 88.0,
+     "setO_pct": 93.75,
+     "setO_minus_setT_pp": 5.75,
+     "ci95": [
+      -1.5,
+      12.5
+     ]
+    }
+   },
+   "flashnext": {
+    "all": {
+     "setT": "384/400",
+     "setO": "395/400",
+     "setT_pct": 96.0,
+     "setO_pct": 98.75,
+     "setO_minus_setT_pp": 2.75,
+     "ci95": [
+      0.5,
+      5.0
+     ]
+    },
+    "py": {
+     "setT": "164/170",
+     "setO": "271/272",
+     "setT_pct": 96.47,
+     "setO_pct": 99.63,
+     "setO_minus_setT_pp": 3.16,
+     "ci95": [
+      0.44,
+      6.32
+     ]
+    },
+    "cpp": {
+     "setT": "30/30",
+     "setO": "48/48",
+     "setT_pct": 100.0,
+     "setO_pct": 100.0,
+     "setO_minus_setT_pp": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    "reason": {
+     "setT": "190/200",
+     "setO": "76/80",
+     "setT_pct": 95.0,
+     "setO_pct": 95.0,
+     "setO_minus_setT_pp": 0.0,
+     "ci95": [
+      -6.0,
+      5.25
+     ]
+    }
+   },
+   "reading": "set T harder for both models (detectable)",
+   "model_gap_report_only": {
+    "setT_flashnext_minus_27b_pp": 5.25,
+    "setO_flashnext_minus_27b_pp": 2.25,
+    "change_ci95": [
+     -6.5,
+     0.75
+    ],
+    "note": "report only"
+   },
+   "time_report_only": {
+    "27b": {
+     "setT_min_per_correct": 0.955,
+     "setO_min_per_correct": 0.207,
+     "setT_tokens_median": 1654.0,
+     "setO_tokens_median": 749.5
+    },
+    "flashnext": {
+     "setT_min_per_correct": 1.723,
+     "setO_min_per_correct": 0.32,
+     "setT_tokens_median": 1555.0,
+     "setO_tokens_median": 685.0
+    }
+   }
+  }
+ },
+ "PLAN_20": {
+  "Q1 (primary): Flash Next vs 27B, four streams, shared time": {
+   "totals": {
+    "flashnext": {
+     "correct": 395,
+     "total_min": 80.5,
+     "min_per_correct": 0.204
+    },
+    "27b": {
+     "correct": 386,
+     "total_min": 32.0,
+     "min_per_correct": 0.083
+    }
+   },
+   "pair": {
+    "only_first": 13,
+    "only_second": 4,
+    "p": 0.049,
+    "acc_diff_pp": 2.25,
+    "acc_ci95": [
+     0.25,
+     4.25
+    ],
+    "time_ratio": 2.458,
+    "time_ci95": [
+     1.424,
+     3.611
+    ]
+   },
+   "time_reading": "Flash Next slower at 4 streams (detectable)"
+  },
+  "Q2 (primary): 27b, four streams vs one stream": {
+   "totals": {
+    "4streams": {
+     "correct": 386,
+     "total_min": 32.0,
+     "min_per_correct": 0.083
+    },
+    "1stream": {
+     "correct": 386,
+     "total_min": 79.9,
+     "min_per_correct": 0.207
+    }
+   },
+   "pair": {
+    "only_first": 0,
+    "only_second": 0,
+    "p": 1.0,
+    "acc_diff_pp": 0.0,
+    "acc_ci95": [
+     0.0,
+     0.0
+    ],
+    "time_ratio": 0.401,
+    "time_ci95": [
+     0.373,
+     0.444
+    ],
+    "speedup": 2.494,
+    "speedup_ci95": [
+     2.252,
+     2.681
+    ]
+   },
+   "time_reading": "concurrency raises throughput (detectable)"
+  },
+  "Q2 (primary): flashnext, four streams vs one stream": {
+   "totals": {
+    "4streams": {
+     "correct": 395,
+     "total_min": 80.5,
+     "min_per_correct": 0.204
+    },
+    "1stream": {
+     "correct": 395,
+     "total_min": 126.3,
+     "min_per_correct": 0.32
+    }
+   },
+   "pair": {
+    "only_first": 0,
+    "only_second": 0,
+    "p": 1.0,
+    "acc_diff_pp": 0.0,
+    "acc_ci95": [
+     0.0,
+     0.0
+    ],
+    "time_ratio": 0.637,
+    "time_ci95": [
+     0.488,
+     0.741
+    ],
+    "speedup": 1.57,
+    "speedup_ci95": [
+     1.35,
+     2.049
+    ]
+   },
+   "time_reading": "concurrency raises throughput (detectable)"
+  }
+ },
+ "PLAN_21b": {
+  "Q1 (primary): 27B, 8 streams vs 4 streams, both this run, shared time": {
+   "totals": {
+    "8streams": {
+     "correct": 386,
+     "total_min": 26.4,
+     "min_per_correct": 0.068
+    },
+    "4streams": {
+     "correct": 386,
+     "total_min": 32.3,
+     "min_per_correct": 0.084
+    }
+   },
+   "pair": {
+    "only_first": 0,
+    "only_second": 0,
+    "p": 1.0,
+    "acc_diff_pp": 0.0,
+    "acc_ci95": [
+     0.0,
+     0.0
+    ],
+    "time_ratio": 0.81,
+    "time_ci95": [
+     0.777,
+     0.866
+    ],
+    "speedup": 1.235,
+    "speedup_ci95": [
+     1.155,
+     1.287
+    ]
+   },
+   "time_reading": "8 streams raise throughput over 4 (detectable)"
+  }
+ }
+}

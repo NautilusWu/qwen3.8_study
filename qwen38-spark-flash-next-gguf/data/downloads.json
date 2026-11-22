@@ -1,0 +1,104 @@
+{
+ "llama.cpp": {
+  "repo": "https://github.com/ggml-org/llama.cpp",
+  "tag": "v1.0.0",
+  "commit": "b1b770d90d94cad9e9ea5b993bdbc383a522fb28"
+ },
+ "gguf": [
+  {
+   "arm": "IQ3_S",
+   "repo": "ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-GGUF",
+   "revision": "ed59f92082b1e93c0e96d60a8b11aab089b52f09",
+   "path": "IQ3_S/Qwen3.8-Flash-Next-GSQ-RCO-IQ3_S-00001-of-00002.gguf",
+   "size": 54817524224,
+   "sha256": "4c1eb2ceb4915e1192f4f386021897bde56a97f40a0bb78bb86465e0f7d2aca3"
+  },
+  {
+   "arm": "IQ3_S",
+   "repo": "ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-GGUF",
+   "revision": "ed59f92082b1e93c0e96d60a8b11aab089b52f09",
+   "path": "IQ3_S/Qwen3.8-Flash-Next-GSQ-RCO-IQ3_S-00002-of-00002.gguf",
+   "size": 28800138432,
+   "sha256": "316b46f3a2dbd68c900f43136ab9449f9dcc3725dfd8c794847c204bc161e113"
+  },
+  {
+   "arm": "UD-IQ3_XXS",
+   "repo": "unsloth/Qwen3.8-Flash-Next-GGUF",
+   "revision": "f5d175de2cf7f720d45d6064019a81fcf056e986",
+   "path": "UD-IQ3_XXS/Qwen3.8-Flash-Next-UD-IQ3_XXS-00001-of-00004.gguf",
+   "size": 10946618,
+   "sha256": "9d5644b371ffac921427c8021cc7242dab8e3ba37d7b48d1e79fe3770fbf9915"
+  },
+  {
+   "arm": "UD-IQ3_XXS",
+   "repo": "unsloth/Qwen3.8-Flash-Next-GGUF",
+   "revision": "f5d175de2cf7f720d45d6064019a81fcf056e986",
+   "path": "UD-IQ3_XXS/Qwen3.8-Flash-Next-UD-IQ3_XXS-00002-of-00004.gguf",
+   "size": 49946027488,
+   "sha256": "aacaff3bdb9032c2c3be428167930809735f65d3cfb204eba07d85e421e7ddf4"
+  },
+  {
+   "arm": "UD-IQ3_XXS",
+   "repo": "unsloth/Qwen3.8-Flash-Next-GGUF",
+   "revision": "f5d175de2cf7f720d45d6064019a81fcf056e986",
+   "path": "UD-IQ3_XXS/Qwen3.8-Flash-Next-UD-IQ3_XXS-00003-of-00004.gguf",
+   "size": 4869325888,
+   "sha256": "ef8f14e790ab471b363f146d5e8664eefbaf03e5776f317a1fb96a2bc7707b07"
+  },
+  {
+   "arm": "UD-IQ3_XXS",
+   "repo": "unsloth/Qwen3.8-Flash-Next-GGUF",
+   "revision": "f5d175de2cf7f720d45d6064019a81fcf056e986",
+   "path": "UD-IQ3_XXS/Qwen3.8-Flash-Next-UD-IQ3_XXS-00004-of-00004.gguf",
+   "size": 28800138432,
+   "sha256": "5de8b5dbf89409acc39468decafd4a4a95b13c29d88a14b0356107897829ec36"
+  },
+  {
+   "arm": "UD-IQ4_XS",
+   "repo": "unsloth/Qwen3.8-Flash-Next-GGUF",
+   "revision": "f5d175de2cf7f720d45d6064019a81fcf056e986",
+   "path": "UD-IQ4_XS/Qwen3.8-Flash-Next-UD-IQ4_XS-00001-of-00004.gguf",
+   "size": 10946618,
+   "sha256": "93ff23a08e5cd7501f24fa16f5b415d5807d0175e04edd3ed6a7a41b601a4eef"
+  },
+  {
+   "arm": "UD-IQ4_XS",
+   "repo": "unsloth/Qwen3.8-Flash-Next-GGUF",
+   "revision": "f5d175de2cf7f720d45d6064019a81fcf056e986",
+   "path": "UD-IQ4_XS/Qwen3.8-Flash-Next-UD-IQ4_XS-00002-of-00004.gguf",
+   "size": 49604491008,
+   "sha256": "13d5dc8b93d039e4cfade5a9af7037f10c97f7ec4e53f75bd2e9ae34aae54aeb"
+  },
+  {
+   "arm": "UD-IQ4_XS",
+   "repo": "unsloth/Qwen3.8-Flash-Next-GGUF",
+   "revision": "f5d175de2cf7f720d45d6064019a81fcf056e986",
+   "path": "UD-IQ4_XS/Qwen3.8-Flash-Next-UD-IQ4_XS-00003-of-00004.gguf",
+   "size": 15256783680,
+   "sha256": "f6b9b5934908a2043732269dd740155d0f921d0763a1dcdd3452246311651f87"
+  },
+  {
+   "arm": "UD-IQ4_XS",
+   "repo": "unsloth/Qwen3.8-Flash-Next-GGUF",
+   "revision": "f5d175de2cf7f720d45d6064019a81fcf056e986",
+   "path": "UD-IQ4_XS/Qwen3.8-Flash-Next-UD-IQ4_XS-00004-of-00004.gguf",
+   "size": 28800138432,
+   "sha256": "5de8b5dbf89409acc39468decafd4a4a95b13c29d88a14b0356107897829ec36"
+  }
+ ],
+ "mtp_head": {
+  "repo": "unsloth/Qwen3.8-Flash-Next-GGUF",
+  "revision": "f5d175de2cf7f720d45d6064019a81fcf056e986",
+  "path": "mtp-Qwen3.8-Flash-Next-Q8_0.gguf",
+  "size": 4137429120,
+  "sha256": "58a47d6a216307e9b97172d5bfdc3436a8994b632f5e436b9bb6edf8951da8d1"
+ },
+ "chat_template": {
+  "repo": "local-inference-lab/Qwen3.8-Flash-Next-NVFP4",
+  "revision": "7c4f1bc1a2d6847e0cbc01ac6b823f00251de8dd",
+  "path": "chat_template.jinja",
+  "size": 8952,
+  "sha256": "c3cf9e34abf4f9e36c2d72165aa9c132d3e2a725b6c2586aaa3a8af9d7a81041"
+ },
+ "note": "The two Unsloth files share an identical fourth shard (same sha256); download it once."
+}

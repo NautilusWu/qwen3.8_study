@@ -1,0 +1,11 @@
+session,config,quant,mtp_drafts,decode_tok_s,draft_acceptance,probe_output_tokens,probe_same_text_as_mtp_off_of_12,startup_s,mem_available_low_gib,examples_correct_of_5,examples_output_tokens
+p0,UD-IQ3_XXS_off,UD-IQ3_XXS,0,30.566,,47376,,10.0,53.0,5,3118
+p0,UD-IQ3_XXS_mtp2,UD-IQ3_XXS,2,51.35,0.9115,53367,1,24.5,49.3,5,3154
+p0,UD-IQ3_XXS_mtp3,UD-IQ3_XXS,3,55.455,0.8626,49587,1,30.1,49.5,5,14012
+p0,UD-IQ3_XXS_mtp4,UD-IQ3_XXS,4,57.901,0.7918,44382,0,20.1,49.5,4,67480
+p3,IQ3_S_off,IQ3_S,0,29.767,,51877,,62.1,55.1,,
+p3,IQ3_S_mtp4,IQ3_S,4,53.98,0.767,52799,0,14.0,50.4,,
+p3,UD-IQ3_XXS_off,UD-IQ3_XXS,0,26.038,,47376,,54.1,55.7,,
+p3,UD-IQ3_XXS_mtp4,UD-IQ3_XXS,4,57.419,0.7918,44382,0,12.1,51.7,,
+p3,UD-IQ4_XS_off,UD-IQ4_XS,0,25.083,,51051,,108.1,45.6,,
+p3,UD-IQ4_XS_mtp4,UD-IQ4_XS,4,50.771,0.7303,45126,0,76.5,41.6,,

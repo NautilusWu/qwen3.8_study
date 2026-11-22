@@ -1,0 +1,8 @@
+study,model,streams,correct,minutes,min_per_correct,correct_per_hour,output_tokens,statuses,hit_limit,timed_out,latency_median_s,latency_p90_s,latency_max_s,per_stream_tok_s_median,total_tok_s,steady_tok_s_spread,steady_tok_s_full_tasks,full_tasks,under_n_share
+PLAN_19,27b,1,386,79.9,0.207,290.0,370786,pass 386; wrong_answer 14,0,0,9.0,20.2,226.0,79.2,77.4,,,,
+PLAN_20,27b,4,386,32.0,0.083,724.7,370786,pass 386; wrong_answer 14,0,0,13.4,29.4,256.6,54.2,193.4,213.2,219.0,193,0.149
+PLAN_19,flashnext,1,395,126.3,0.32,187.6,464962,format_error 1; pass 395; wrong_answer 4,1,0,10.5,20.6,1278.0,64.1,61.3,,,,
+PLAN_20,flashnext,4,395,80.5,0.204,294.5,464962,format_error 1; pass 395; wrong_answer 4,1,0,19.3,40.2,1460.5,34.4,96.3,136.4,137.2,235,0.503
+PLAN_21b,27b,2,386,47.5,0.123,487.4,370786,pass 386; wrong_answer 14,0,0,10.7,23.5,255.8,67.1,130.0,132.3,134.4,309,0.035
+PLAN_21b,27b,4,386,32.3,0.084,716.0,370786,pass 386; wrong_answer 14,0,0,13.5,29.7,258.2,53.6,191.1,210.4,215.8,202,0.147
+PLAN_21b,27b,8,386,26.4,0.068,877.0,370786,pass 386; wrong_answer 14,0,0,20.6,44.1,268.5,35.2,234.0,277.2,296.6,107,0.254

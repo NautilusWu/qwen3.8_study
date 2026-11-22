@@ -1,0 +1,7 @@
+config,study,engine,weights,mtp,tasks,correct,correct_coding_python,correct_coding_cpp,correct_reasoning,total_min,min_per_correct,output_tokens,hit_output_limit,loop_detected,over_40_min,timed_out,decode_tok_s,first_token_median_s,draft_acceptance,mem_available_low_gib
+IQ3_S,PLAN_18,llama.cpp v1.0.0,ISTA-DASLab GSQ-RCO IQ3_S,off,400,383,164,30,189,1229.1,3.209,2086062,1,1,0,0,28.37,0.5,,52.0
+UD-IQ4_XS,PLAN_18,llama.cpp v1.0.0,Unsloth UD-IQ4_XS,off,400,379,162,29,188,1051.4,2.774,1598688,4,1,4,0,25.43,0.53,,42.8
+UD-IQ3_XXS,PLAN_18,llama.cpp v1.0.0,Unsloth UD-IQ3_XXS,off,400,380,164,29,187,818.9,2.155,1432914,5,1,2,0,29.27,0.51,,52.3
+UD-IQ3_XXS_MTP,PLAN_18c,llama.cpp v1.0.0,Unsloth UD-IQ3_XXS + Unsloth MTP head (Q8_0),up to 4 drafts,400,381,162,29,190,430.4,1.13,1431344,4,1,0,0,55.92,0.55,0.8276,48.4
+TensorFold_NVFP4,PLAN_18c,TensorFold 0.6.0,local-inference-lab NVFP4 (own MTP head),"threshold 0.6, up to 6 drafts",400,384,164,30,190,570.8,1.487,2052826,5,2,0,0,,,,35.8
+TensorFold_NVFP4_part6,Part 6 (PLAN_07),TensorFold 0.6.0,local-inference-lab NVFP4 (own MTP head),"threshold 0.6, up to 6 drafts",400,384,164,30,190,661.6,1.723,2052826,5,2,0,0,,,,

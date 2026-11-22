@@ -1,0 +1,582 @@
+{
+ "PLAN_19 one stream, Flash Next vs 27B": {
+  "token_ratio": 1.254,
+  "speed_ratio": 0.792,
+  "correct_ratio": 1.023,
+  "flashnext_faster_on_tasks": 129,
+  "median_per_task_time_ratio": 1.154,
+  "share_of_extra_time_top1_top5_top10": [
+   0.377,
+   0.88,
+   0.926
+  ],
+  "time_ratio_without_top5_top10": [
+   1.047,
+   1.02
+  ],
+  "longest_two": [
+   {
+    "task_id": "O253",
+    "flashnext_min": 21.3,
+    "flashnext_tokens": 58988,
+    "flashnext_status": "pass",
+    "27b_min": 3.8
+   },
+   {
+    "task_id": "O372",
+    "flashnext_min": 13.6,
+    "flashnext_tokens": 65536,
+    "flashnext_status": "format_error",
+    "27b_min": 0.2
+   }
+  ],
+  "both_wrong": [
+   "O334"
+  ]
+ },
+ "PLAN_19 by kind and language, one stream": {
+  "Debugging / py": {
+   "tasks": 136,
+   "27b_correct": 134,
+   "flashnext_correct": 136,
+   "27b_tokens_median": 756.0,
+   "flashnext_tokens_median": 639.5,
+   "27b_minutes": 26.6,
+   "flashnext_minutes": 26.1
+  },
+  "Debugging / cpp": {
+   "tasks": 24,
+   "27b_correct": 24,
+   "flashnext_correct": 24,
+   "27b_tokens_median": 674.5,
+   "flashnext_tokens_median": 571.5,
+   "27b_minutes": 3.6,
+   "flashnext_minutes": 4.0
+  },
+  "Implementation / py": {
+   "tasks": 136,
+   "27b_correct": 131,
+   "flashnext_correct": 135,
+   "27b_tokens_median": 963.0,
+   "flashnext_tokens_median": 861.5,
+   "27b_minutes": 33.6,
+   "flashnext_minutes": 64.0
+  },
+  "Implementation / cpp": {
+   "tasks": 24,
+   "27b_correct": 22,
+   "flashnext_correct": 24,
+   "27b_tokens_median": 679.0,
+   "flashnext_tokens_median": 690.5,
+   "27b_minutes": 3.2,
+   "flashnext_minutes": 4.3
+  },
+  "Program logic / json": {
+   "tasks": 60,
+   "27b_correct": 55,
+   "flashnext_correct": 56,
+   "27b_tokens_median": 472.5,
+   "flashnext_tokens_median": 447.5,
+   "27b_minutes": 9.2,
+   "flashnext_minutes": 22.8
+  },
+  "Pure logic / json": {
+   "tasks": 20,
+   "27b_correct": 20,
+   "flashnext_correct": 20,
+   "27b_tokens_median": 540.0,
+   "flashnext_tokens_median": 465.5,
+   "27b_minutes": 3.6,
+   "flashnext_minutes": 5.1
+  }
+ },
+ "PLAN_19 without the topic-similar tasks": {
+  "excluded": 24,
+  "27b": "362/376",
+  "flashnext": "371/376",
+  "excluded_correct": {
+   "27b": 24,
+   "flashnext": 24
+  }
+ },
+ "PLAN_20 four streams": {
+  "same_text_as_one_stream": {
+   "27b": 400,
+   "flashnext": 400
+  },
+  "latency_ratio_median_per_task": {
+   "27b": 1.458,
+   "flashnext": 1.877
+  },
+  "per_stream_speed_vs_one_stream": {
+   "27b": 0.684,
+   "flashnext": 0.537
+  },
+  "total_speed_gain": {
+   "27b": 2.5,
+   "flashnext": 1.57
+  },
+  "steady_speed_gain_spread": {
+   "27b": 2.75,
+   "flashnext": 2.23
+  },
+  "steady_speed_gain_full_tasks": {
+   "27b": 2.83,
+   "flashnext": 2.24
+  },
+  "flashnext_over_27b_without_top5_top10": [
+   1.329,
+   1.293
+  ],
+  "top5_share_of_flashnext_extra_time": 0.787,
+  "top5_tasks": [
+   {
+    "task_id": "O253",
+    "flashnext_shared_min": 20.5,
+    "flashnext_tokens": 58988,
+    "flashnext_status": "pass"
+   },
+   {
+    "task_id": "O372",
+    "flashnext_shared_min": 13.1,
+    "flashnext_tokens": 65536,
+    "flashnext_status": "format_error"
+   },
+   {
+    "task_id": "O230",
+    "flashnext_shared_min": 4.4,
+    "flashnext_tokens": 13983,
+    "flashnext_status": "pass"
+   },
+   {
+    "task_id": "O277",
+    "flashnext_shared_min": 3.1,
+    "flashnext_tokens": 14269,
+    "flashnext_status": "pass"
+   },
+   {
+    "task_id": "O133",
+    "flashnext_shared_min": 0.7,
+    "flashnext_tokens": 4674,
+    "flashnext_status": "pass"
+   }
+  ],
+  "minutes_by_tasks_running": {
+   "27b": {
+    "1": 3.9,
+    "2": 0.4,
+    "3": 0.5,
+    "4": 27.2
+   },
+   "flashnext": {
+    "1": 35.6,
+    "2": 3.8,
+    "3": 1.1,
+    "4": 40.0
+   }
+  }
+ },
+ "PLAN_20 per block (no time sharing needed)": {
+  "27b": [
+   {
+    "block": 0,
+    "busy_min_4streams": 6.8,
+    "sum_wall_min_1stream": 13.9,
+    "speedup": 2.03,
+    "under_4_share": 0.414,
+    "correct": 48
+   },
+   {
+    "block": 1,
+    "busy_min_4streams": 4.0,
+    "sum_wall_min_1stream": 10.3,
+    "speedup": 2.59,
+    "under_4_share": 0.104,
+    "correct": 47
+   },
+   {
+    "block": 2,
+    "busy_min_4streams": 4.0,
+    "sum_wall_min_1stream": 10.8,
+    "speedup": 2.69,
+    "under_4_share": 0.054,
+    "correct": 48
+   },
+   {
+    "block": 3,
+    "busy_min_4streams": 3.7,
+    "sum_wall_min_1stream": 9.6,
+    "speedup": 2.57,
+    "under_4_share": 0.111,
+    "correct": 48
+   },
+   {
+    "block": 4,
+    "busy_min_4streams": 3.6,
+    "sum_wall_min_1stream": 9.7,
+    "speedup": 2.66,
+    "under_4_share": 0.053,
+    "correct": 49
+   },
+   {
+    "block": 5,
+    "busy_min_4streams": 3.2,
+    "sum_wall_min_1stream": 8.2,
+    "speedup": 2.59,
+    "under_4_share": 0.103,
+    "correct": 49
+   },
+   {
+    "block": 6,
+    "busy_min_4streams": 3.3,
+    "sum_wall_min_1stream": 8.8,
+    "speedup": 2.66,
+    "under_4_share": 0.031,
+    "correct": 49
+   },
+   {
+    "block": 7,
+    "busy_min_4streams": 3.3,
+    "sum_wall_min_1stream": 8.6,
+    "speedup": 2.62,
+    "under_4_share": 0.076,
+    "correct": 48
+   }
+  ],
+  "flashnext": [
+   {
+    "block": 0,
+    "busy_min_4streams": 29.0,
+    "sum_wall_min_1stream": 37.6,
+    "speedup": 1.3,
+    "under_4_share": 0.744,
+    "correct": 48
+   },
+   {
+    "block": 1,
+    "busy_min_4streams": 5.4,
+    "sum_wall_min_1stream": 10.8,
+    "speedup": 2.01,
+    "under_4_share": 0.123,
+    "correct": 49
+   },
+   {
+    "block": 2,
+    "busy_min_4streams": 9.5,
+    "sum_wall_min_1stream": 15.2,
+    "speedup": 1.6,
+    "under_4_share": 0.466,
+    "correct": 49
+   },
+   {
+    "block": 3,
+    "busy_min_4streams": 4.9,
+    "sum_wall_min_1stream": 10.3,
+    "speedup": 2.08,
+    "under_4_share": 0.052,
+    "correct": 50
+   },
+   {
+    "block": 4,
+    "busy_min_4streams": 4.9,
+    "sum_wall_min_1stream": 10.5,
+    "speedup": 2.12,
+    "under_4_share": 0.011,
+    "correct": 50
+   },
+   {
+    "block": 5,
+    "busy_min_4streams": 4.6,
+    "sum_wall_min_1stream": 9.5,
+    "speedup": 2.06,
+    "under_4_share": 0.082,
+    "correct": 50
+   },
+   {
+    "block": 6,
+    "busy_min_4streams": 17.8,
+    "sum_wall_min_1stream": 23.5,
+    "speedup": 1.32,
+    "under_4_share": 0.715,
+    "correct": 49
+   },
+   {
+    "block": 7,
+    "busy_min_4streams": 4.3,
+    "sum_wall_min_1stream": 8.9,
+    "speedup": 2.08,
+    "under_4_share": 0.082,
+    "correct": 50
+   }
+  ],
+  "flashnext_over_27b_busy": [
+   4.25,
+   1.36,
+   2.38,
+   1.32,
+   1.35,
+   1.45,
+   5.36,
+   1.3
+  ]
+ },
+ "Two ways to use the server": {
+  "27b": {
+   "one_stream_min_per_correct": 0.207,
+   "batch_of_50_min_per_correct": 0.083,
+   "never_dry_min_per_correct_estimate": 0.075,
+   "correct_per_hour": {
+    "one_stream": 290.0,
+    "batch_of_50": 724.7,
+    "never_dry_estimate": 799.0
+   }
+  },
+  "flashnext": {
+   "one_stream_min_per_correct": 0.32,
+   "batch_of_50_min_per_correct": 0.204,
+   "never_dry_min_per_correct_estimate": 0.144,
+   "correct_per_hour": {
+    "one_stream": 187.6,
+    "batch_of_50": 294.5,
+    "never_dry_estimate": 417.2
+   }
+  },
+  "flashnext_over_27b": {
+   "one_stream_min_per_correct": 1.55,
+   "batch_of_50_min_per_correct": 2.46,
+   "never_dry_min_per_correct_estimate": 1.92
+  },
+  "note": "never_dry = all output tokens / steady speed (spread estimate) / correct answers; not measured, it assumes a queue that always has four tasks waiting"
+ },
+ "PLAN_21b 27B at 2, 4 and 8 streams": {
+  "2_vs_4": {
+   "totals": {
+    "Q27_p2": {
+     "correct": 386,
+     "total_min": 47.5,
+     "min_per_correct": 0.123
+    },
+    "Q27_p4": {
+     "correct": 386,
+     "total_min": 32.3,
+     "min_per_correct": 0.084
+    }
+   },
+   "pair": {
+    "only_first": 0,
+    "only_second": 0,
+    "p": 1.0,
+    "acc_diff_pp": 0.0,
+    "acc_ci95": [
+     0.0,
+     0.0
+    ],
+    "time_ratio": 1.464,
+    "time_ci95": [
+     1.344,
+     1.564
+    ],
+    "speedup": 0.683,
+    "speedup_ci95": [
+     0.639,
+     0.744
+    ]
+   }
+  },
+  "vs_one_stream_PLAN_19": {
+   "2streams": {
+    "only_first": 0,
+    "only_second": 0,
+    "p": 1.0,
+    "acc_diff_pp": 0.0,
+    "acc_ci95": [
+     0.0,
+     0.0
+    ],
+    "time_ratio": 0.594,
+    "time_ci95": [
+     0.588,
+     0.604
+    ],
+    "speedup": 1.684,
+    "speedup_ci95": [
+     1.656,
+     1.701
+    ]
+   },
+   "4streams": {
+    "only_first": 0,
+    "only_second": 0,
+    "p": 1.0,
+    "acc_diff_pp": 0.0,
+    "acc_ci95": [
+     0.0,
+     0.0
+    ],
+    "time_ratio": 0.406,
+    "time_ci95": [
+     0.377,
+     0.448
+    ],
+    "speedup": 2.463,
+    "speedup_ci95": [
+     2.232,
+     2.653
+    ]
+   },
+   "8streams": {
+    "only_first": 0,
+    "only_second": 0,
+    "p": 1.0,
+    "acc_diff_pp": 0.0,
+    "acc_ci95": [
+     0.0,
+     0.0
+    ],
+    "time_ratio": 0.329,
+    "time_ci95": [
+     0.294,
+     0.387
+    ],
+    "speedup": 3.04,
+    "speedup_ci95": [
+     2.584,
+     3.401
+    ]
+   }
+  },
+  "replication_4streams_vs_PLAN_20": {
+   "totals": {
+    "Q27_p4": {
+     "correct": 386,
+     "total_min": 32.3,
+     "min_per_correct": 0.084
+    },
+    "Q27_p4_plan20": {
+     "correct": 386,
+     "total_min": 32.0,
+     "min_per_correct": 0.083
+    }
+   },
+   "pair": {
+    "only_first": 0,
+    "only_second": 0,
+    "p": 1.0,
+    "acc_diff_pp": 0.0,
+    "acc_ci95": [
+     0.0,
+     0.0
+    ],
+    "time_ratio": 1.012,
+    "time_ci95": [
+     1.01,
+     1.014
+    ],
+    "speedup": 0.988,
+    "speedup_ci95": [
+     0.986,
+     0.99
+    ]
+   },
+   "block_busy_ratio": [
+    1.007,
+    1.007,
+    1.013,
+    1.017,
+    1.02,
+    1.016,
+    1.017,
+    1.004
+   ],
+   "same_text_as_PLAN_20": 400
+  },
+  "same_text_as_one_stream": {
+   "2streams": 400,
+   "4streams": 400,
+   "8streams": 400
+  },
+  "per_run": {
+   "2streams": {
+    "never_dry_min_per_correct_estimate": 0.121,
+    "total_speed_vs_one_stream": 1.68,
+    "steady_speed_vs_one_stream": 1.71,
+    "per_stream_speed_vs_one_stream": 0.847,
+    "latency_ratio_median_per_task": 1.169,
+    "busy_s_per_block": [
+     502.2,
+     361.0,
+     378.9,
+     341.6,
+     345.9,
+     301.0,
+     315.4,
+     305.1
+    ],
+    "minutes_by_tasks_running": {
+     "1": 1.7,
+     "2": 45.9
+    }
+   },
+   "4streams": {
+    "never_dry_min_per_correct_estimate": 0.0761,
+    "total_speed_vs_one_stream": 2.47,
+    "steady_speed_vs_one_stream": 2.719,
+    "per_stream_speed_vs_one_stream": 0.677,
+    "latency_ratio_median_per_task": 1.479,
+    "busy_s_per_block": [
+     412.7,
+     239.3,
+     242.9,
+     227.6,
+     222.9,
+     193.7,
+     202.5,
+     198.9
+    ],
+    "minutes_by_tasks_running": {
+     "1": 3.9,
+     "2": 0.3,
+     "3": 0.5,
+     "4": 27.6
+    }
+   },
+   "8streams": {
+    "never_dry_min_per_correct_estimate": 0.0578,
+    "total_speed_vs_one_stream": 3.024,
+    "steady_speed_vs_one_stream": 3.582,
+    "per_stream_speed_vs_one_stream": 0.444,
+    "latency_ratio_median_per_task": 2.248,
+    "busy_s_per_block": [
+     375.0,
+     188.6,
+     186.7,
+     194.2,
+     175.4,
+     151.0,
+     156.7,
+     157.0
+    ],
+    "minutes_by_tasks_running": {
+     "1": 4.2,
+     "2": 0.7,
+     "3": 0.4,
+     "4": 0.5,
+     "5": 0.3,
+     "6": 0.3,
+     "7": 0.5,
+     "8": 19.7
+    }
+   }
+  },
+  "busy_ratio_8_over_4_per_block": [
+   0.909,
+   0.788,
+   0.769,
+   0.853,
+   0.787,
+   0.78,
+   0.774,
+   0.789
+  ]
+ }
+}
