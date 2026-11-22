@@ -1,0 +1,153 @@
+{
+ "weights_gb": {
+  "MLP": 9.626,
+  "DeltaNet": 5.588,
+  "embedding (one row a token)": 2.543,
+  "full attention": 1.678,
+  "vision (not read)": 0.921,
+  "mtp head (not used)": 0.849,
+  "head": 0.715,
+  "other": 0.001
+ },
+ "read_per_forward_gb": 17.608,
+ "B_gb_s": 219.5,
+ "B_from": [
+  "sum_fp32",
+  8.0
+ ],
+ "nominal_gb_s": 273,
+ "decision": "step 2: S >= 1.10 for at least one path",
+ "paths": {
+  "single": {
+   "T_hook": {
+    "requests": 3,
+    "rounds": 954,
+    "tokens": 6546,
+    "ms_per_round": 105.851,
+    "tokens_per_round": 6.862,
+    "stage_ms_per_round": {
+     "draft": 7.276,
+     "verify": 95.075,
+     "sample": 0.139,
+     "commit": 3.21
+    },
+    "rows_per_round": 16,
+    "accepted_per_round": 5.862,
+    "copy_rounds": 24
+   },
+   "nsys": {
+    "rounds": 318,
+    "wall_ms": 106.644,
+    "busy_ms": 103.791,
+    "idle_ms": 2.853,
+    "hk_ms": 6.633,
+    "gpu_ms_per_round": {
+     "verify:mm": 89.168,
+     "draft": 6.436,
+     "commit": 2.753,
+     "verify:gdn": 2.102,
+     "verify:attn": 1.858,
+     "verify": 1.431,
+     "sample": 0.039,
+     "other": 0.005
+    },
+    "matmul_per_round": {
+     "Fp8Linear": {
+      "ms": 35.611,
+      "gb": 7.214,
+      "calls": 208.0,
+      "gb_s": 202.6
+     },
+     "Plain8": {
+      "ms": 1.297,
+      "gb": 0.112,
+      "calls": 96.0,
+      "gb_s": 86.4
+     },
+     "Fp4Linear": {
+      "ms": 52.259,
+      "gb": 10.341,
+      "calls": 193.0,
+      "gb_s": 197.9
+     }
+    }
+   },
+   "estimate": {
+    "T_ms": 105.851,
+    "T_nsys_ms": 106.645,
+    "nsys_inflation": 1.008,
+    "H_k_ms": 6.633,
+    "H_g_ms_raw": 2.853,
+    "H_g_ms": 2.059,
+    "S": 1.089,
+    "proportions_only": false
+   },
+   "verify_curve_at_start": null
+  },
+  "multi": {
+   "T_hook": {
+    "rounds": 1137,
+    "ms_per_round": 139.593,
+    "host_ms_per_round": {
+     "commit": 5.513,
+     "copy": 0.09,
+     "draft_launch": 4.364,
+     "draft_taps": 1.33,
+     "sample": 106.91,
+     "tree": 7.462,
+     "verify_launch": 13.406
+    },
+    "rows_per_stream": 15.28,
+    "accepted_per_stream": 6.467,
+    "tokens_per_round": 29.869
+   },
+   "nsys": {
+    "rounds": 395,
+    "wall_ms": 139.403,
+    "busy_ms": 133.142,
+    "idle_ms": 6.261,
+    "hk_ms": 16.133,
+    "gpu_ms_per_round": {
+     "verify:mm": 103.339,
+     "draft": 8.188,
+     "commit": 7.709,
+     "verify:gdn": 5.861,
+     "verify:attn": 3.414,
+     "verify": 2.855,
+     "sample": 1.774
+    },
+    "matmul_per_round": {
+     "Fp8Linear": {
+      "ms": 41.468,
+      "gb": 7.214,
+      "calls": 208.0,
+      "gb_s": 174.0
+     },
+     "Plain8": {
+      "ms": 1.703,
+      "gb": 0.112,
+      "calls": 96.0,
+      "gb_s": 65.8
+     },
+     "Fp4Linear": {
+      "ms": 60.169,
+      "gb": 10.341,
+      "calls": 193.0,
+      "gb_s": 171.9
+     }
+    }
+   },
+   "estimate": {
+    "T_ms": 139.593,
+    "T_nsys_ms": 139.407,
+    "nsys_inflation": 0.999,
+    "H_k_ms": 16.133,
+    "H_g_ms_raw": 6.261,
+    "H_g_ms": 6.261,
+    "S": 1.191,
+    "proportions_only": false
+   },
+   "verify_curve_at_start": "1: 98.1, 2: 102.7, 4: 110.6, 8: 102.6, 12: 94.8, 16: 114.1, 24: 100.4, 32: 105.7, 48: 110.6, 64: 131.1"
+  }
+ }
+}

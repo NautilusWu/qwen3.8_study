@@ -1,0 +1,163 @@
+{
+ "cross_plan": [
+  {
+   "comparison": "PLAN_15 NVFP4 projections vs original (CL4)",
+   "kind": "change",
+   "ratio_time_per_correct": 1.047,
+   "ratio_tokens": 1.142,
+   "ratio_speed": 1.085,
+   "ratio_correct": 1.0054,
+   "tasks_A_faster": 249,
+   "median_task_time_ratio": 0.964,
+   "gap_min": 19.6,
+   "gap_from_top10_min": 43.6,
+   "ratio_without_top10": 0.929,
+   "tasks_tokens_within_10pct": 172,
+   "tasks_tokens_over_2x": 17,
+   "identical_text": 0
+  },
+  {
+   "comparison": "PLAN_15 NVFP4 projections vs original (D2)",
+   "kind": "change",
+   "ratio_time_per_correct": 0.916,
+   "ratio_tokens": 1.045,
+   "ratio_speed": 1.119,
+   "ratio_correct": 1.0193,
+   "tasks_A_faster": 241,
+   "median_task_time_ratio": 0.923,
+   "gap_min": -22.0,
+   "gap_from_top10_min": -37.4,
+   "ratio_without_top10": 1.055,
+   "tasks_tokens_within_10pct": 118,
+   "tasks_tokens_over_2x": 46,
+   "identical_text": 0
+  },
+  {
+   "comparison": "PLAN_17 TensorFold 1.2.7 vs 0.6.0 (D2, one stream)",
+   "kind": "change",
+   "ratio_time_per_correct": 1.025,
+   "ratio_tokens": 1.032,
+   "ratio_speed": 0.991,
+   "ratio_correct": 1.0165,
+   "tasks_A_faster": 251,
+   "median_task_time_ratio": 0.944,
+   "gap_min": 14.4,
+   "gap_from_top10_min": 77.1,
+   "ratio_without_top10": 0.803,
+   "tasks_tokens_within_10pct": 179,
+   "tasks_tokens_over_2x": 40,
+   "identical_text": 0
+  },
+  {
+   "comparison": "PLAN_13 TensorFold 1.2.5 vs 0.6.0 (CL4), Part 10",
+   "kind": "change",
+   "ratio_time_per_correct": 1.049,
+   "ratio_tokens": 1.05,
+   "ratio_speed": 0.99,
+   "ratio_correct": 1.0107,
+   "tasks_A_faster": 271,
+   "median_task_time_ratio": 0.925,
+   "gap_min": 21.5,
+   "gap_from_top10_min": 60.5,
+   "ratio_without_top10": 0.88,
+   "tasks_tokens_within_10pct": 187,
+   "tasks_tokens_over_2x": 22
+  },
+  {
+   "comparison": "Flash Next UD-IQ3_XXS, MTP on vs off (text changes, model does not), Part 11",
+   "kind": "text-only change",
+   "ratio_time_per_correct": 0.524,
+   "ratio_tokens": 0.999,
+   "ratio_speed": 1.9,
+   "ratio_correct": 1.0026,
+   "tasks_A_faster": 377,
+   "median_task_time_ratio": 0.516,
+   "gap_min": -388.5,
+   "gap_from_top10_min": -205.4,
+   "ratio_without_top10": 0.645,
+   "tasks_tokens_within_10pct": 181,
+   "tasks_tokens_over_2x": 41
+  },
+  {
+   "comparison": "Re-run: 27B D2 0.6.0, PLAN_15 vs Part 5",
+   "kind": "repeat",
+   "ratio_time_per_correct": 1.072,
+   "ratio_tokens": 1.0,
+   "ratio_speed": 0.933,
+   "ratio_correct": 1.0,
+   "tasks_A_faster": 26,
+   "median_task_time_ratio": 1.15,
+   "gap_min": 22.4,
+   "gap_from_top10_min": 10.5,
+   "ratio_without_top10": 1.047,
+   "tasks_tokens_within_10pct": 400,
+   "tasks_tokens_over_2x": 0,
+   "identical_text": 400,
+   "time_ratio_ci95": [
+    1.018,
+    1.12
+   ]
+  },
+  {
+   "comparison": "Re-run: 27B D2 0.6.0, PLAN_17 (one stream) vs Part 5",
+   "kind": "repeat",
+   "ratio_time_per_correct": 1.112,
+   "ratio_tokens": 1.0,
+   "ratio_speed": 0.899,
+   "ratio_correct": 1.0,
+   "tasks_A_faster": 16,
+   "median_task_time_ratio": 1.184,
+   "gap_min": 34.9,
+   "gap_from_top10_min": 13.9,
+   "ratio_without_top10": 1.087,
+   "tasks_tokens_within_10pct": 400,
+   "tasks_tokens_over_2x": 0,
+   "identical_text": 400,
+   "time_ratio_ci95": [
+    1.053,
+    1.164
+   ]
+  },
+  {
+   "comparison": "Re-run: 27B CL4 0.6.0, PLAN_15 vs Part 5",
+   "kind": "repeat",
+   "ratio_time_per_correct": 1.078,
+   "ratio_tokens": 0.999,
+   "ratio_speed": 0.926,
+   "ratio_correct": 1.0,
+   "tasks_A_faster": 7,
+   "median_task_time_ratio": 1.04,
+   "gap_min": 27.0,
+   "gap_from_top10_min": 11.8,
+   "ratio_without_top10": 1.057,
+   "tasks_tokens_within_10pct": 392,
+   "tasks_tokens_over_2x": 1,
+   "identical_text": 388,
+   "time_ratio_ci95": [
+    1.065,
+    1.092
+   ]
+  },
+  {
+   "comparison": "Re-run: 27B CL4 0.6.0, PLAN_13 vs Part 5, Part 10",
+   "kind": "repeat",
+   "ratio_time_per_correct": 1.036,
+   "ratio_tokens": 1.002,
+   "ratio_speed": 0.967,
+   "ratio_correct": 1.0,
+   "tasks_A_faster": 14,
+   "median_task_time_ratio": 1.032,
+   "gap_min": 12.3,
+   "gap_from_top10_min": 4.0,
+   "ratio_without_top10": 1.031,
+   "tasks_tokens_within_10pct": 390,
+   "tasks_tokens_over_2x": 5,
+   "time_ratio_ci95": [
+    1.032,
+    1.039
+   ]
+  }
+ ],
+ "PLAN_22_forward_all_850_ms": 86.944,
+ "PLAN_22_B_star_gb_s": 195.21
+}

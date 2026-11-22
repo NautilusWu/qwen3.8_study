@@ -1,0 +1,60 @@
+{
+ "B1a_synthetic": {
+  "top16_overlap": 0.951,
+  "first_candidate": 0.933,
+  "criterion": ">= 0.99 both",
+  "passed": false,
+  "note": "twin vs reference difference smaller than the fp32-vs-bf16 difference of the same implementation"
+ },
+ "B1a_real_taps": {
+  "top16_overlap": 0.9885,
+  "first_candidate": 0.9667
+ },
+ "served_4bit_vs_bf16_first_candidate": 0.8167,
+ "B1b": {
+  "sequences": 895,
+  "reply_tokens": 3515770,
+  "prompt_match": "895/895",
+  "tapcheck_first_candidate": 0.9653
+ },
+ "B1c": {
+  "gate": ">= 1.05 x accept proxy of the served 4-bit drafter",
+  "best_step": 800,
+  "proxy_finetuned": 5.424,
+  "proxy_original_served": 5.193,
+  "proxy_original_bf16": 5.216,
+  "ratio": 1.0445,
+  "passed": false
+ },
+ "B1d_report_only": {
+  "single": {
+   "speed": {
+    "O": [
+     79.955,
+     80.696
+    ],
+    "N": [
+     81.682,
+     81.352
+    ]
+   },
+   "ratio_N_over_O": 1.0148,
+   "both_N_beat_both_O": true
+  },
+  "four": {
+   "speed": {
+    "O": [
+     131.68975821787558,
+     122.73032952252859
+    ],
+    "N": [
+     138.7935883014623,
+     127.8937906237035
+    ]
+   },
+   "ratio_N_over_O": 1.0482,
+   "both_N_beat_both_O": false
+  },
+  "pass_single_1_03": false
+ }
+}

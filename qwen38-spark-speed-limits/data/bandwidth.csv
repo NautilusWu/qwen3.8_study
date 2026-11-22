@@ -1,0 +1,18 @@
+study,method,size_gb,setting,gb_s_median,gb_s_best,repetitions
+PLAN_14,torch sum_fp32,2.0,,211.1,224.1,10
+PLAN_14,torch sum_bf16,2.0,,215.0,226.2,10
+PLAN_14,torch rowsum_bf16,2.0,,225.0,233.1,10
+PLAN_14,torch gemv_bf16,2.0,,206.9,223.1,10
+PLAN_14,torch copy_fp32,2.0,,202.4,209.9,10
+PLAN_14,torch sum_fp32,8.0,,219.5,222.1,10
+PLAN_14,torch sum_bf16,8.0,,205.7,208.0,10
+PLAN_14,torch rowsum_bf16,8.0,,177.3,216.9,10
+PLAN_14,torch gemv_bf16,8.0,,141.7,151.4,10
+PLAN_14,torch copy_fp32,8.0,,181.6,187.9,10
+PLAN_14,torch sum_fp32,17.6,,192.8,197.6,10
+PLAN_14,torch sum_bf16,17.6,,187.3,188.1,10
+PLAN_14,torch rowsum_bf16,17.6,,185.9,192.4,10
+PLAN_14,torch gemv_bf16,17.6,,145.2,148.5,10
+PLAN_14,torch copy_fp32,17.6,,192.3,213.3,10
+PLAN_22,tuned read kernel (confirmation),8.0,"4,2,0,1024,1",195.21,218.43,30
+PLAN_22,tuned read kernel (confirmation),17.6,"4,2,0,1024,1",195.15,202.51,30

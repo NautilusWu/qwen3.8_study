@@ -1,0 +1,136 @@
+{
+ "PLAN_14 S single": 1.089,
+ "PLAN_14 S multi": 1.191,
+ "PLAN_14 decision": "write step 2",
+ "PLAN_15": {
+  "CL4": {
+   "only_first": 12,
+   "only_second": 10,
+   "p": 0.8318,
+   "acc_diff_pp": 0.5,
+   "acc_ci95": [
+    -1.75,
+    2.75
+   ],
+   "time_ratio": 1.047,
+   "time_ci95": [
+    0.952,
+    1.166
+   ],
+   "p_holm": 0.8318,
+   "accuracy_ok": true,
+   "faster": false
+  },
+  "D2": {
+   "only_first": 24,
+   "only_second": 17,
+   "p": 0.3489,
+   "acc_diff_pp": 1.75,
+   "acc_ci95": [
+    -1.25,
+    5.0
+   ],
+   "time_ratio": 0.916,
+   "time_ci95": [
+    0.803,
+    1.033
+   ],
+   "p_holm": 0.6978,
+   "accuracy_ok": true,
+   "faster": false
+  }
+ },
+ "PLAN_15 decision": "no accuracy drop detected; no speed difference detected",
+ "PLAN_16 B0": {
+  "16": {
+   "ratio_vs_16": 1.0,
+   "both_beat_both_16": false
+  },
+  "24": {
+   "ratio_vs_16": 1.0221,
+   "both_beat_both_16": true
+  },
+  "32": {
+   "ratio_vs_16": 1.0245,
+   "both_beat_both_16": true
+  }
+ },
+ "PLAN_16 B0 keep": 16,
+ "PLAN_16 B1c": {
+  "ratio": 1.0445,
+  "passed": false
+ },
+ "PLAN_17 Q1": {
+  "only_first": 19,
+  "only_second": 13,
+  "p": 0.3771,
+  "acc_diff_pp": 1.5,
+  "acc_ci95": [
+   -1.25,
+   4.25
+  ],
+  "time_ratio": 1.025,
+  "time_ci95": [
+   0.846,
+   1.255
+  ],
+  "accuracy_ok": true,
+  "faster": false
+ },
+ "PLAN_17 Q2 agent speed ratios": [
+  1.0121,
+  1.0088
+ ],
+ "PLAN_17 Q2 decision": "do not use DSpine",
+ "PLAN_22": {
+  "F_ms": 86.4044,
+  "S_kernel_only": 1.0485,
+  "by_width": {
+   "16": {
+    "g": 1.0,
+    "dS_ms": 0.0,
+    "C_hi": 1.0485,
+    "C_mid": 1.0485,
+    "C_lib": 0.932
+   },
+   "32": {
+    "g": 1.1135,
+    "dS_ms": 0.761,
+    "C_hi": 1.1674,
+    "C_mid": 1.1587,
+    "C_lib": 1.0291
+   },
+   "48": {
+    "g": 1.1625,
+    "dS_ms": 0.782,
+    "C_hi": 1.2189,
+    "C_mid": 1.2095,
+    "C_lib": 1.0494
+   },
+   "64": {
+    "g": 1.2006,
+    "dS_ms": 1.039,
+    "C_hi": 1.2588,
+    "C_mid": 1.2459,
+    "C_lib": 1.0726
+   },
+   "96": {
+    "g": 1.2197,
+    "dS_ms": 1.64,
+    "C_hi": 1.2788,
+    "C_mid": 1.2584,
+    "C_lib": 1.0649
+   },
+   "128": {
+    "g": 1.2376,
+    "dS_ms": 2.232,
+    "C_hi": 1.2976,
+    "C_mid": 1.2695,
+    "C_lib": 1.0704
+   }
+  },
+  "C_star": 1.2588,
+  "C_star_width": 64,
+  "verdict": "ceiling >= 1.20: the user decides"
+ }
+}

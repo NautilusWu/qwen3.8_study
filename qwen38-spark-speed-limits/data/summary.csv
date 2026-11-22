@@ -1,0 +1,8 @@
+run,study,correct,total_min,min_per_correct,output_tokens,tokens_per_s,hit_output_limit,correct_python,correct_cpp,correct_reasoning
+27b_CL4_fp4proj,PLAN_15,375,391.7,1.044,3186125,135.59,1,154,27,194
+27b_CL4_original,PLAN_15,373,372.0,0.997,2789980,125.0,0,154,28,191
+27b_D2_fp4proj,PLAN_15,370,312.2,0.844,1461130,77.99,0,155,29,186
+27b_D2_original,PLAN_15,363,334.2,0.921,1397899,69.71,0,157,30,176
+27b_D2_p1_tf127,PLAN_17,369,361.1,0.979,1442237,66.57,0,156,30,183
+27b_D2_p1_tf060,PLAN_17,363,346.7,0.955,1397899,67.2,0,157,30,176
+27b_D2_original_part5_run,Part 5 (re-run reference),363,311.8,0.859,1397899,74.71,0,157,30,176
